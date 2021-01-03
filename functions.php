@@ -25,4 +25,32 @@ function theme_enqueue_scripts() {
         }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
+
+function certificate_proyetech(){
+
+    $labels = array (
+        'name' => 'PROYETECH-Certs',
+        'singular_name' => 'PROYETECH-Cert',
+        'menu_name' => 'PROYETECH',
+    );
+    $args = array(
+            'label' => 'PROYETECH-Certs',
+            'descripcion' => 'Certificados de usuarios PROYETECH',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 5,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'proyetech', $args );
+}
+
+
+add_action( 'init', 'certificate_proyetech');
+
 ?>
