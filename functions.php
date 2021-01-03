@@ -2,6 +2,13 @@
 
 /* elimina el menu de arriba */
 add_filter( 'show_admin_bar', '__return_false' );
+
+function init_template(){
+
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'title-tag' );
+
+}
 /**
  * Include CSS files
  */
