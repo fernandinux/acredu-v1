@@ -53,4 +53,8 @@ function certificate_proyetech(){
 
 add_action( 'init', 'certificate_proyetech');
 
+if ( function_exists( 'add_theme_support' ) ) { 
+  add_theme_support( 'post-thumbnails' ); 
+}
+
 ?>
