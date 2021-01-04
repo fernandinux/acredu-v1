@@ -30,9 +30,9 @@
 			<div class="h2 text-center my-3"><?php the_field('name_event'); ?></div>
 			
 				<div class="row d-flex justify-content-center">
-					<a id="shareface" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a>
-					<a id="sharelink" onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnpshare');" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>/&title=Acredu&summary=PLANIFICACIÓN_Y_CONTROL_DE_PROYECTOS_CON_PRIMAVERA_P6"><i class="fa fa-linkedin"></i></a>
-					<a id="sharepdf" href="https://docs.google.com/viewer?url=<?php echo get_template_directory_uri()?>/assets/pdf/<?php $imageContent = get_the_content();
+					<a id="shareface" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a>
+					<a id="sharelink" target="_blank" onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnpshare');" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>/&title=Acredu&summary=PLANIFICACIÓN_Y_CONTROL_DE_PROYECTOS_CON_PRIMAVERA_P6"><i class="fa fa-linkedin"></i></a>
+					<a id="sharepdf" target="_blank" href="https://docs.google.com/viewer?url=<?php echo get_template_directory_uri()?>/assets/pdf/<?php $imageContent = get_the_content();
 						$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 						echo $stripped; ?>.pdf"><i class="fa fa-download"></i></a>
 				</div>
@@ -44,12 +44,12 @@
 				
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2">
 					<div>
-						<a id="logousach" href="https://bit.ly/3h37q2J" class="">
+						<a target="_blank" id="logousach" href="https://bit.ly/3h37q2J" class="">
 							<img alt="Proyetech Consultores" src="https://app.acredu.org/wp-content/uploads/2021/01/Nuevo_Logo_Proyetech_azul.png" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
-						<a href="https://bit.ly/3h37q2J">http://www.proyetech.com/
+						<a target="_blank" href="https://bit.ly/3h37q2J">http://www.proyetech.com/
 						</a>
 	
 					</div>	
@@ -62,7 +62,7 @@
 					<p class="my-0 text-center "> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
-				<a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=PLANIFICACIÓN Y CONTROL DE PROYECTOS CON PRIMAVERA P6&amp;organizationId=1270398&amp;issueYear=2020&amp;issueMonth=10&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php $imageContent = get_the_content();
+				<a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=PLANIFICACIÓN Y CONTROL DE PROYECTOS CON PRIMAVERA P6&amp;organizationId=1270398&amp;issueYear=2020&amp;issueMonth=10&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php $imageContent = get_the_content();
 					$stripped = strip_tags($imageContent, '<p>'); echo $stripped; ?>">
 					<img class="mb-2 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 				</a>
@@ -78,7 +78,7 @@
 					
 						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
 					<div class="text-center">	
-						<a id="brochureproyetech" href="https://bit.ly/2Mv9Pbf" class="btn btn-primary">
+						<a target="_blank" id="brochureproyetech" href="https://bit.ly/2Mv9Pbf" class="btn btn-primary">
 							Aquí
 						</a>  
 					</div>
@@ -114,7 +114,7 @@
 				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 				echo $stripped; ?>   
 			</p>
-			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido el:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
+			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido en:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
 				
 			<div class="text-center">
 				<p><strong>En PROYETECH CONSULTORES</strong></p>
@@ -184,7 +184,7 @@
 				<!--/.Controls-->
 			</div>
 			<!--/.Carousel Wrapper-->
-			<div class="text-center mx-5 my-5"><p><small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp para ayudarte:</small></p> <a id="ayudabnp" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>
+			<div class="text-center mx-5 my-5"><p><small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp para ayudarte:</small></p> <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>
 		</div>
 	</div>
 	
