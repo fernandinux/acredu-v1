@@ -17,7 +17,7 @@
                     <!-- Inicio single -->
                     
 	<div class="row">		
-		<div class="col-md-12 py-3 cloudy-knoxville-gradient">
+		<div class="col-md-12 py-5 cloudy-knoxville-gradient">
 							
         	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow mx-auto d-block animated zoomIn' )); ?>
 						
@@ -55,7 +55,7 @@
 				<div class="col-md-5 col-sm-12 text-lg-left my-4">
 				<p class="my-0 text-blue-proyetech">Credencial emitida a:</p>
 					<h3 class="my-2 text-center"><?php the_title(); ?></h3>
-					<p class="my-0 text-center text-white-50"> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
+					<p class="my-0 text-center "> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
 				<a href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=PLANIFICACIÓN Y CONTROL DE PROYECTOS CON PRIMAVERA P6&amp;organizationId=1270398&amp;issueYear=2020&amp;issueMonth=10&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php $imageContent = get_the_content();
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
-				<div class="col-sm-12 col-lg-10 mx-auto my-5 text-white-50">
+				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
 					
 					
 					
@@ -110,11 +110,11 @@
 				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 				echo $stripped; ?>   
 			</p>
-			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido el:</p><p class="text-white-50"><?php the_field('fechainicio'); ?></p></div></div>
+			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido el:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
 				
 			<div class="text-center">
 				<p><strong>El Centro de Innovación de la Facultad de Ingeniería</strong></p>
-				<p class="mb-5 font-italic mx-5 text-white-50 text-justify">
+				<p class="mb-5 font-italic mx-5  text-justify">
 				<small>Es el lugar propicio para que académicos, investigadores, estudiantes de pregrado, posgrado y egresados de la Universidad de Santiago de Chile, lleven sus proyectos de innovación y emprendimiento al siguiente paso.
 				</small></p> 
 				
@@ -173,7 +173,7 @@
 				<!--/.Controls-->
 			</div>
 			<!--/.Carousel Wrapper-->
-			<div class="text-center mx-5 my-5 text-white-50"><p><small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp para ayudarte:</small></p> <a id="ayudabnp" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>
+			<div class="text-center mx-5 my-5"><p><small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp para ayudarte:</small></p> <a id="ayudabnp" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>
 		</div>
 	</div>
 	
