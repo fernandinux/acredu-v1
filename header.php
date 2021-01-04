@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/35d6a5945d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/styleacredu.css">
+    <link rel="stylesheet" href="singlestyle.css">
     <!-- Parametros facebook -->
     <meta property="og:url"
         content="acredu.org" />    
