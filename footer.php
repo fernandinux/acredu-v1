@@ -15,7 +15,7 @@
 
         <!--Copyright-->
         <p class="text-center text-md-left">
-          <a href="https://coralify.com">Powered by aCredu © 2020 </a>
+          <a href="https://acredu.org">Powered by aCredu © 2020 </a>
         </p>
 
       </div>
