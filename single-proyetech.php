@@ -25,7 +25,7 @@
 	</div>
 
 
-	<div class="row bg-dark text-white pt-3 align-middle">
+	<div class="row text-white pt-3 align-middle">
 		<div class="col-md-8">
 			<div class="h2 text-center my-3"><?php the_field('name_event'); ?></div>
 			
@@ -127,10 +127,6 @@
 					<li data-target="#carousel-example-1z" data-slide-to="1"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="2"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="3"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="4"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="5"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="6"></li>
-					<li data-target="#carousel-example-1z" data-slide-to="7"></li>	
 				
 				</ol>
 					<!--/.Indicators-->
@@ -138,52 +134,29 @@
 				<div class="carousel-inner" role="listbox"> 
 					<!--First slide-->
 					<div class="carousel-item active">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/1-scaled.jpg"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider3.jpeg"
 						alt="First slide">
 					</div>
 					<!--/First slide-->
 					<!--Second slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/2.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider4.jpg"
 						alt="Second slide">
 					</div>
 					<!--/Second slide-->
 					<!--Third slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/3.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider1.jpeg"
 						alt="Third slide">
 					</div>
 					<!--/Third slide-->
 					<!--4 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/4.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider2.jpeg"
 						alt="Third slide">
 					</div>
 					<!--/4 slide-->
-					<!--5 slide-->
-					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/5.png"
-						alt="Third slide">
-					</div>
-					<!--/5 slide-->
-					<!--6 slide-->
-					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/6.png"
-						alt="Third slide">
-					</div>
-					<!--/6 slide-->
-					<!--7 slide-->
-					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/7-scaled.jpg"
-						alt="Third slide">
-					</div>
-					<!--/7 slide-->
-					<!--8 slide-->
-					<div class="carousel-item">
-						<img class="d-block w-100" src="https://coralify.com/wp-content/uploads/2020/10/8-scaled.jpg"
-						alt="Third slide">
-					</div>
-					<!--/8 slide-->
+					
 		
 
 				</div>
