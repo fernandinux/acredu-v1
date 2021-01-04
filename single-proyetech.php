@@ -19,7 +19,7 @@
 	<div class="row">		
 		<div class="col-md-12 py-5 cloudy-knoxville-gradient">
 							
-        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow mx-auto d-block animated zoomIn' )); ?>
+        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
 						
 		</div>
 	</div>
@@ -39,17 +39,21 @@
 				
 			
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
-			<div class="row align-middle">
+			<div class="d-md-flex justify-content-sm-center">
 			
 				
-				<div class="col-md-5 col-sm-12 text-lg-left text-center my-auto ml-lg-4 nameinstitution">
-				
-				<a id="logousach" href="https://bit.ly/2TcXngr"><img alt="Proyetech Consultores" src="https://coralify.com/wp-content/uploads/2020/12/logo.png" class="rounded-circle mt-4 mb-4 w-25 mw-50 img-fluid" ></a>
-					<br>
+				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2">
 					<div>
-					<h5 class="my-0">Proyetech Consultores</h5><br>
-					<a id="linkusach" href="https://bit.ly/3h37q2J" class="ml-lg-4">http://proyetech.com/</a>	
+						<a id="logousach" href="https://bit.ly/3h37q2J" class="">
+							<img alt="Proyetech Consultores" src="https://app.acredu.org/wp-content/uploads/2021/01/Nuevo_Logo_Proyetech_azul.png" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+						</a>
 					</div>
+					<div>
+						<a href="https://bit.ly/3h37q2J">http://www.proyetech.com/
+						</a>
+	
+					</div>	
+
 														
 				</div>
 				<div class="col-md-5 col-sm-12 text-lg-left my-4">
