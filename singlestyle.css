@@ -1,0 +1,53 @@
+.nameinstitution{
+    display: flex;
+}
+
+.logob2b{
+    width: 60px;
+}
+.title-executive{
+   margin-left: 70px;
+        }
+.iconcirculos{
+    margin-left: 50px;
+        }
+.subtitulosflex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.video{
+    width: 100%; height: 450px;  margin: 0px auto;
+}
+  /* css button add to profiel linkedin */
+.button-linkedin-web{
+    margin: 5px;
+    background-color: #5b5b5b;
+    border-radius: .25rem;
+}
+.button-linkedin-mobile{
+    display: none;
+}
+  /* end- css button add to profiel linkedin */
+
+@media only screen and (max-width: 400px) {
+    .title-executive{
+text-align: center;
+margin: 0px;
+    }
+    .iconcirculos{
+        text-align: center;
+        margin: 0px;
+    }
+    .video{
+        width: 100%; height: 150px;  margin: 0px auto;
+    }
+    .button-linkedin-web{
+        display: none;
+    }
+    .button-linkedin-mobile{
+        display: block;
+    }
+  }
+
+  
