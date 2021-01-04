@@ -72,23 +72,23 @@
 					<p class="text-justify"><?php the_field('descripcion_event1'); ?></p>
 					<br/>  
 					
-						<p class="mt-5 text-center">Conoce el Programa de Emprendimiento:</p>
+						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
 					<div class="text-center">	
-						<a id="brochurebnp" href="https://bit.ly/2TfJden" class="btn btn-default">
+						<a id="brochureproyetech" href="https://bit.ly/2Mv9Pbf" class="btn btn-primary">
 							Aquí
 						</a>  
 					</div>
 					<br/>
                     <br/>               
-                    <div class="video">
+                    <!-- <div class="video">
                         <iframe id="videobnp" width="100%" height="100%" 
                         src="https://bit.ly/37x16gX" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
-                    </iframe>
+                    	</iframe>
                     </div>
-					<p class="text-justify"><?php the_field('descripcion_event3'); ?></p>
+					<p class="text-justify"><?php the_field('descripcion_event3'); ?></p> -->
 					
 				</div>
 				
@@ -113,9 +113,16 @@
 			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido el:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
 				
 			<div class="text-center">
-				<p><strong>El Centro de Innovación de la Facultad de Ingeniería</strong></p>
+				<p><strong>En PROYETECH CONSULTORES</strong></p>
 				<p class="mb-5 font-italic mx-5  text-justify">
-				<small>Es el lugar propicio para que académicos, investigadores, estudiantes de pregrado, posgrado y egresados de la Universidad de Santiago de Chile, lleven sus proyectos de innovación y emprendimiento al siguiente paso.
+				<small>somos especialistas en control de proyectos. Estamos listos para 
+						acompañar a su empresa a optimizar sus procesos de control de proyectos y
+						maximizar la visibilidad sobre los datos de sus proyectos que
+						sus gerentes requieren para tomar decisiones oportunas sobre el 
+						negocio. Contamos con más 25 años de experiencia atendiendo los 
+						requerimientos de clientes en distintos países de Latinoamérica. Somos 
+						expertos en Primavera P6 y en la valoración, diseño y/o rediseño
+						de procesos de control de proyectos.
 				</small></p> 
 				
 			</div>
