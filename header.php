@@ -17,9 +17,9 @@
     <meta property="og:image" content="<?php the_post_thumbnail_url('full'); ?>" />
     <meta name="theme-color" content="#013155" />
 <link rel="canonical" href="https://acredu.org/" />
-    <title>
-        <?php bloginfo( 'name'); ?>
-    </title>
+    <!-- <title>
+         <?php /* bloginfo( 'name');*/ ?>
+    </title> -->
     <?php wp_head(); ?>
 </head>
 <body>
