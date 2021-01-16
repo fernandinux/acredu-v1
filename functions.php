@@ -52,8 +52,34 @@ function certificate_proyetech(){
 }
 
 
+
+
+function certificate_imce(){
+
+    $labels = array (
+        'name' => 'IMCE-Certs',
+        'singular_name' => 'IMCE-Certs',
+        'menu_name' => 'IMCE',
+    );
+    $args = array(
+            'label' => 'IMCE-Certs',
+            'descripcion' => 'Certificados de usuarios IMCE',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 5,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'imce', $args );
+}
+
+
 add_action( 'init', 'certificate_proyetech');
-
-
+add_action( 'init', 'certificate_imce');
 
 ?>
