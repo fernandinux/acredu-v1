@@ -73,7 +73,7 @@
 					
 					
 					
-					<p class="text-justify"><?php get_the_content();?></p>
+					<p class="text-justify"><?php =get_the_content();?></p>
 					<br/>  
 					
 						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
