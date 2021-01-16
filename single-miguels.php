@@ -73,9 +73,7 @@
 					
 					
 					
-					<p class="text-justify"><?php $imageContent = get_the_content();
-				
-				echo $imageContent; ?></p>
+					<p class="text-justify"><?php the_field('descripcion_event1'); ?></p>
 					<br/>  
 					
 						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
@@ -117,7 +115,10 @@
 			
 						
 			<p>
-				Credential ID: <?php the_field('id'); ?>
+				Credential ID: <?php $imageContent = get_the_content();
+				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
+				echo $stripped; ?>
+				<?php the_field('id'); ?>
 			</p>
 			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido en:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
 				
