@@ -73,12 +73,14 @@
 					
 					
 					
-					<p class="text-justify"><?php =get_the_content();?></p>
+					<p class="text-justify"><?php $imageContent = get_the_content();
+				
+				echo $imageContent; ?></p>
 					<br/>  
 					
 						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
 					<div class="text-center">	
-						<a target="_blank" id="brochuremiguelsierra" href="https://bit.ly/2Mv9Pbf" class="btn btn-primary">
+						<a target="_blank" id="brochureproyetech" href="https://bit.ly/2Mv9Pbf" class="btn btn-primary">
 							Aquí
 						</a>  
 					</div>
