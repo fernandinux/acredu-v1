@@ -77,7 +77,7 @@
 					
 						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
 					<div class="text-center">	
-						<a target="_blank" id="brochureimce" href="https://bit.ly/2XHHSiP" class="btn btn-primary">
+						<a target="_blank" id="brochureimce" href="https://bit.ly/2XHHSiP" class="btn btn-primary" style="background-color:#69327a !important">
 							Aquí
 						</a>  
 					</div>
