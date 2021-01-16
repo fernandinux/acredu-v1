@@ -44,7 +44,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2">
 					<div>
 						<a target="_blank" id="logousach" href="https://bit.ly/3nQtrDD" class="">
-							<img alt="IMCE" src="https://app.acredu.org/wp-content/uploads/2021/01/IMCE-FINAL.png" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="IMCE" src="https://app.acredu.org/wp-content/uploads/2021/01/IMCE-FINAL.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
@@ -126,58 +126,58 @@ Aprender es uno de los principales objetivos del cerebro humano y mediar este pr
 				
 			</div>
 			<!--Carousel Wrapper-->
-			<div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
+			<!-- <div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel"> -->
 				<!--Indicators-->
-				<ol class="carousel-indicators">
+				<!-- <ol class="carousel-indicators">
 					<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="1"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="2"></li>
 					<li data-target="#carousel-example-1z" data-slide-to="3"></li>
 				
-				</ol>
+				</ol> -->
 					<!--/.Indicators-->
 					<!--Slides-->
-				<div class="carousel-inner" role="listbox"> 
+				<!-- <div class="carousel-inner" role="listbox">  -->
 					<!--First slide-->
-					<div class="carousel-item active">
+					<!-- <div class="carousel-item active">
 						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider3.jpeg"
 						alt="First slide">
-					</div>
+					</div> -->
 					<!--/First slide-->
 					<!--Second slide-->
-					<div class="carousel-item">
+					<!-- <div class="carousel-item">
 						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider4.jpg"
 						alt="Second slide">
-					</div>
+					</div> -->
 					<!--/Second slide-->
 					<!--Third slide-->
-					<div class="carousel-item">
+					<!-- <div class="carousel-item">
 						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider1.jpeg"
 						alt="Third slide">
-					</div>
+					</div> -->
 					<!--/Third slide-->
 					<!--4 slide-->
-					<div class="carousel-item">
+					<!-- <div class="carousel-item">
 						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/slider2.jpeg"
 						alt="Third slide">
-					</div>
+					</div> -->
 					<!--/4 slide-->
 					
 		
 
-				</div>
+				<!-- </div> -->
 				<!--/.Slides-->
 				<!--Controls-->
-				<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+				<!-- <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="sr-only">Previous</span>
 				</a>
 				<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
-				</a>
+				</a> -->
 				<!--/.Controls-->
-			</div>
+			<!-- </div> -->
 			<!--/.Carousel Wrapper-->
 			<div class="text-center mx-5 my-5"><p><small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp para ayudarte:</small></p> <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>
 		</div>
