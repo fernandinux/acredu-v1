@@ -78,7 +78,32 @@ function certificate_imce(){
     register_post_type( 'imce', $args );
 }
 
+function certificate_miguelsierra(){
 
+    $labels = array (
+        'name' => 'MIGUELS-Certs',
+        'singular_name' => 'MIGUELS-Certs',
+        'menu_name' => 'MIGUELS',
+    );
+    $args = array(
+            'label' => 'MIGUELS-Certs',
+            'descripcion' => 'Certificados de usuarios MIGUELS',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 5,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'miguels', $args );
+}
+
+
+add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
 
