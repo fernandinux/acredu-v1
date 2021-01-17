@@ -99,7 +99,7 @@ function certificate_miguelsierra(){
             'rewrite' => true,
             'show_in_rest' => true,
     );
-    register_post_type( 'miguels', $args );
+    register_post_type( 'miguelsierra', $args );
 }
 
 
