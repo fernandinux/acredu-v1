@@ -60,8 +60,7 @@
 					<p class="my-0 text-center "> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
-				<a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=64519562&amp;issueYear=2020&amp;issueMonth=12&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php $imageContent = get_the_content();
-					$stripped = strip_tags($imageContent, '<p>'); echo $stripped; ?>">
+				<a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=64519562&amp;issueYear=2020&amp;issueMonth=12&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
 					<img class="mb-2 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 				</a>
 				</div>
