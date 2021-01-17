@@ -44,8 +44,8 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2">
 					<div>
 						<a target="_blank" id="logo miguel sierra" href="https://bit.ly/3h37q2J" class="">
-							<!-- <img alt="Miguel Sierra" src="https://app.acredu.org/wp-content/uploads/2021/01/Nuevo_Logo_Proyetech_azul.png" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> -->
-						<h4>Miguel Sierra Canto</h4>
+							<img alt="Miguel Sierra" src="https://app.acredu.org/wp-content/uploads/2021/01/logo.jpg" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> 
+						
 						</a>
 					</div>
 					<div>
@@ -71,7 +71,9 @@
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
 				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
 					
-					
+					<?php $imageContent = get_the_content();
+				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
+				echo $stripped; ?>
 					
 					<p class="text-justify"><?php the_field('descripcion_event1'); ?></p>
 					<br/>  
@@ -115,24 +117,20 @@
 			
 						
 			<p>
-				Credential ID: <?php $imageContent = get_the_content();
-				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
-				echo $stripped; ?>
-				<?php the_field('id'); ?>
+				Credential ID: <?php the_field('id'); ?>
 			</p>
 			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido en:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
 				
 			<div class="text-center">
-				<p><strong>En PROYETECH CONSULTORES</strong></p>
+				<p><strong>Sobre Miguel Sierra</strong></p>
 				<p class="mb-5 font-italic mx-5  text-justify">
-				<small>somos especialistas en control de proyectos. Estamos listos para 
-						acompañar a su empresa a optimizar sus procesos de control de proyectos y
-						maximizar la visibilidad sobre los datos de sus proyectos que
-						sus gerentes requieren para tomar decisiones oportunas sobre el 
-						negocio. Contamos con más 25 años de experiencia atendiendo los 
-						requerimientos de clientes en distintos países de Latinoamérica. Somos 
-						expertos en Primavera P6 y en la valoración, diseño y/o rediseño
-						de procesos de control de proyectos.
+				<small>
+
+ A través de interactuar por muchos años con cientos de Empresarios y Directores de empresa, he constatado que en la mayoría de las veces cuentan con un elevado desarrollo y conocimiento del área técnica y funcional del negocio: los productos, el sector, el mercado y los clientes, el modelo de negocio y la estrategia, lo financiero y la operación… pero no así a la par las habilidades directivas para ejercer la tarea de dirigir personas (el factor humano), aspecto esencial del quehacer del director de empresa.
+ 
+ Por ello me decidí a desarrollar el programa Filosofía de la Acción Directiva, reuniendo a grupos de Empresarios y Directores de empresa para entrar de lleno y con profundidad a abordar este lado de la formación directiva que es esencial para dirigir mejor y abrir nuevos horizontes, para ser más capaces al dirigir a las personas y por tanto la empresa, elevando miras. 
+
+
 				</small></p> 
 				
 			</div>
@@ -153,37 +151,37 @@
 				<div class="carousel-inner" role="listbox"> 
 					<!--First slide-->
 					<div class="carousel-item active">
-						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/photo1.jpg"
+						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/photo1.jpg"
 						alt="First slide">
 					</div>
 					<!--/First slide-->
 					<!--Second slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/photo2.jpg"
+						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/photo2.jpg"
 						alt="Second slide">
 					</div>
 					<!--/Second slide-->
 					<!--Third slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-IDA.png"
+						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-IDA.png"
 						alt="Third slide">
 					</div>
 					<!--/Third slide-->
 					<!--4 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-JCH.png"
+						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-JCH.png"
 						alt="Third slide">
 					</div>
 					<!--/4 slide-->
 					<!--5 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-MG.png"
+						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-MG.png"
 						alt="Third slide">
 					</div>
 					<!--/5 slide-->
 					<!--6 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-STC.png"
+						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-STC.png"
 						alt="Third slide">
 					</div>
 					<!--/6 slide-->
