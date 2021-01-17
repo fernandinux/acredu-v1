@@ -93,11 +93,11 @@
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                     	</iframe> -->
-						<iframe data-v-6586e2fc="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+						<!-- <iframe data-v-6586e2fc="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 						allowfullscreen="allowfullscreen" class="embed-responsive-item iframe-full-height" 
 						style="border-radius: 0px; border: 1px dotted rgb(0, 0, 0);" 
 						src="https://videomng.builderall.com/embed/XyL7SjpxTf/?autoplay=1&amp;controls=1&amp;allowpause=1" 
-						width="875px" height="493px" frameborder="0"></iframe>
+						width="875px" height="493px" frameborder="0"></iframe> -->
                     </div>
 					<p class="text-justify"><?php the_field('descripcion_event3'); ?></p> 
 					
