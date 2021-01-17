@@ -69,8 +69,8 @@
 				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
 					
 					<?php $imageContent = get_the_content();
-				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
-				echo $stripped; ?>
+				 
+				echo $imageContent; ?>
 					
 					<p class="text-justify"><?php the_field('descripcion_event1'); ?></p>
 					<br/>  
