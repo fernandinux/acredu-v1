@@ -148,40 +148,40 @@
 				</ol>
 					<!--/.Indicators-->
 					<!--Slides-->
-				<div class="carousel-inner" role="listbox"> 
+				<div class="carousel-inner" role="listbox" style="margin:0px 20px;" > 
 					<!--First slide-->
 					<div class="carousel-item active">
-						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/photo1.jpg"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/photo1.jpg"
 						alt="First slide">
 					</div>
 					<!--/First slide-->
 					<!--Second slide-->
 					<div class="carousel-item">
-						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/photo2.jpg"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/photo2.jpg"
 						alt="Second slide">
 					</div>
 					<!--/Second slide-->
 					<!--Third slide-->
 					<div class="carousel-item">
-						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-IDA.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-IDA.png"
 						alt="Third slide">
 					</div>
 					<!--/Third slide-->
 					<!--4 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-JCH.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-JCH.png"
 						alt="Third slide">
 					</div>
 					<!--/4 slide-->
 					<!--5 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-MG.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-MG.png"
 						alt="Third slide">
 					</div>
 					<!--/5 slide-->
 					<!--6 slide-->
 					<div class="carousel-item">
-						<img class="d-block w-75" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-STC.png"
+						<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/01/Testimonial-STC.png"
 						alt="Third slide">
 					</div>
 					<!--/6 slide-->
