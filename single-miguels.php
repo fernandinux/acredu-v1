@@ -86,19 +86,10 @@
 					</div>
 					<br/>
                     <br/>               
-                    <div class="container-fluid">
-                        <!-- <iframe id="videobnp" width="100%" height="100%" 
-                        src="https://bit.ly/37x16gX" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    	</iframe> -->
-						<iframe data-v-6586e2fc="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-						allowfullscreen="allowfullscreen"  
-						style="border-radius: 0px; border: 1px dotted rgb(0, 0, 0);" 
-						src="https://videomng.builderall.com/embed/XyL7SjpxTf/?autoplay=1&amp;controls=1&amp;allowpause=1" 
-						width="100%" height="100%" frameborder="0"></iframe> 
-                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">  
+
+  						<iframe class="embed-responsive-item" src="https://videomng.builderall.com/embed/XyL7SjpxTf/" title="Miguel Sierra" allowfullscreen=""></iframe>
+					</div>
 					<p class="text-justify"><?php the_field('descripcion_event3'); ?></p> 
 					
 				</div>
