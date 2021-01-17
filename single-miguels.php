@@ -97,8 +97,7 @@
 			<!-- Inicio add Linkedin profile -->
 			<div class="button-linkedin-web zoom animated zoomIn slow pt-2">
 				<p class=" mb-0 mx-auto">Agrégalo con solo 2 clicks</p>
-				<a onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnp');" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=64519562&amp;issueYear=2020&amp;issueMonth=12&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php $imageContent = get_the_content();
-				$stripped = strip_tags($imageContent, '<p>'); echo $stripped; ?>">
+				<a onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnp');" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=64519562&amp;issueYear=2020&amp;issueMonth=12&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
 				<img class="my-3 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
 			</div>
 			<!-- Fin add linkedin profile -->
