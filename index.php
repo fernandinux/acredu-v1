@@ -12,6 +12,8 @@
             </div>
             
         </div>
+        <?php get_search_form(); ?>
+        
         
         <div class="features">
             <h2 class="feature-main-title">¿Porqué debes usar Certificados Digitales?</h2>
