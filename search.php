@@ -1,62 +1,53 @@
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-	
-<!--llamada a la cabecera; logo, menú...-->
 <?php
+/**
+ * The template for displaying search results pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ *
+ * @package Draft-acredu
+ */
+
 get_header();
 ?>
-<!--contenido principal-->
-<div id="main-content">
- <div class="container">
- <div id="content-area" class="clearfix">
- <div id="left-area">
-                        <!--el loop-->
- <?php while ( have_posts() ) : the_post(); ?>
-                               <!-- recopilando info de cada post -->
- <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                                        <!-- título del post -->
- <h1 class="entry-title main_title"><?php the_title(); ?></h1>
- <!-- contenido del post -->
-                                        <div class="entry-content">
- <?php
- the_content();
- ?>
- </div> <!-- fin contenido post -->
- </article> <!-- fin info de cada post -->
- <?php endwhile; ?><!-- fin del loop -->
- </div> <!-- termina contenido derecha -->
- 
- <?php get_sidebar(); ?><!-- barra lateral -->
- </div> <!-- fin de div contentarea -->
- </div> <!-- fin de div container -->
-</div> <!-- fin de div contenido principal -->
- 
-<?php get_footer(); ?><!-- llamada al pie de página -->
+
+	<main id="primary" class="site-main">
+
+		<?php if ( have_posts() ) : ?>
+
+			<header class="page-header">
+				<h1 class="page-title">
+					<?php
+					/* translators: %s: search query. */
+					printf( esc_html__( 'Search Results for: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
+					?>
+				</h1>
+			</header><!-- .page-header -->
+
+			<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+
+				/**
+				 * Run the loop for the search to output the results.
+				 * If you want to overload this in a child theme then include a file
+				 * called content-search.php and that will be used instead.
+				 */
+				get_template_part( 'template-parts/content', 'search' );
+
+			endwhile;
+
+			the_posts_navigation();
+
+		else :
+
+			get_template_part( 'template-parts/content', 'none' );
+
+		endif;
+		?>
+
+	</main><!-- #main -->
+
+<?php
+get_sidebar();
+get_footer();
