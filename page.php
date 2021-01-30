@@ -30,6 +30,9 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
+		<?php $imageContent = get_the_content();
+				 
+				echo $imageContent; ?>
 
 	</main><!-- #main -->
 
