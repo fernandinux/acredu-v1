@@ -31,6 +31,7 @@ get_header();
 		endwhile; // End of the loop.
 		?>
 		<?php get_the_content();
+		the_content();
 				 
 			 ?>
 
