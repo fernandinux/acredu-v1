@@ -30,7 +30,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-		<?php the_content();
+		<?php get_the_content();
 				 
 			 ?>
 
