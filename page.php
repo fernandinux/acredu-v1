@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-
+Hola estoy en pagephp
 	<main id="primary" class="site-main">
 
 		<?php
