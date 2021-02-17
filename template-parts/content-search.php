@@ -25,11 +25,7 @@ content search
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="w-25 py-5 cloudy-knoxville-gradient">
-							
-        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
-						
-		</div>
+	<?php the_post_thumbnail(); ?>
 
 
 
