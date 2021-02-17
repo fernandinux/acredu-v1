@@ -30,7 +30,7 @@ get_header();
 
 		// endwhile; // End of the loop.
 		?>
-        <div class="page-content">
+        <div class="text-center">
 				<!-- <p><?php //esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'draft-acredu' ); ?></p> -->
 
 					<?php
@@ -63,5 +63,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 
-<hr style="height:1px;border-width:0;color:black;background-color:gray" class="my-0">
+<!-- <hr style="height:1px;border-width:0;color:black;background-color:gray" class="my-0"> -->
 <!-- Footer -->
 <footer class="page-footer font-small elegant-color-dark pt-4">
 

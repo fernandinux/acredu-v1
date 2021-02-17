@@ -30,7 +30,8 @@
   <!-- <input type="submit" class="search-submit" value="<?php //echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php //echo get_search_query() ?>"/> -->
 <!-- </form> -->
 
-<img src="https://app.acredu.org/wp-content/uploads/2021/02/escudo.jpg" class="img-fluid" alt="verificador" />
+<img src="https://app.acredu.org/wp-content/uploads/2021/02/escudo.jpg" class="img-fluid w-25" alt="verificador" />
+<div class="veriText"> <h2>Verifica la validez del certificado</h2> </div>
 
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
   <!-- ID input -->
@@ -44,5 +45,5 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block" value="<?php echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php echo get_search_query() ?>">Sign in</button>
+  <button type="submit" class="btn btn-success btn-block" value="<?php echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php echo get_search_query() ?>">Sign in</button>
 </form>
