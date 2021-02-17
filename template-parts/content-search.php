@@ -34,6 +34,6 @@ content search
 
 	<footer class="entry-footer">
 		footer
-		<?php entry_footer(); ?>
+		<?php footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
