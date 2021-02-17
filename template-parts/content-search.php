@@ -18,14 +18,14 @@ content search
 		<div class="entry-meta">
 			<?php
 			
-			draft_acredu_posted_on();
+			posted_on();
 			draft_acredu_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php draft_acredu_post_thumbnail(); ?>
+	<?php post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		
@@ -34,6 +34,6 @@ content search
 
 	<footer class="entry-footer">
 		footer
-		<?php draft_acredu_entry_footer(); ?>
+		<?php entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
