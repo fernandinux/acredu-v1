@@ -34,7 +34,11 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
   <!-- ID input -->
   <div class="form-outline mb-4">
-    <input type="search" id="form1Example1" class="form-control" placeholder="<?php echo esc_attr_x( 'ID Credential', 'placeholder' ) ?>"/>
+    <input type="search" 
+    class="form-control" 
+    placeholder="<?php echo esc_attr_x( 'ID Credential', 'placeholder' ) ?>"
+    value="<?php echo get_search_query() ?>" 
+    name="s" />
     
   </div>
 
