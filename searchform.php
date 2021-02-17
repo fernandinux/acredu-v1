@@ -1,4 +1,4 @@
-<!-- <form role="search" method="get" class="search-form" action="<?php //echo home_url( '/' ); ?>"> -->
+<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> 
   <label>
     <!-- <span class="screen-reader-text"><?php //echo _x( 'ID credential:', 'label' ) ?></span> -->
     <input type="search" 
@@ -35,7 +35,7 @@
   <!-- ID input -->
   <div class="form-outline mb-4">
     <input type="search" id="form1Example1" class="form-control" placeholder="<?php echo esc_attr_x( 'ID Credential', 'placeholder' ) ?>"/>
-    <label class="form-label" for="form1Example1">Email address</label>
+    
   </div>
 
   <!-- Submit button -->
