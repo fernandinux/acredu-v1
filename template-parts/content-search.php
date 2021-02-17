@@ -17,18 +17,18 @@ content search
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			posteadoo
+			
 			draft_acredu_posted_on();
 			draft_acredu_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-thumbanail
+
 	<?php draft_acredu_post_thumbnail(); ?>
 
 	<div class="entry-summary">
-		excertp
+		
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
