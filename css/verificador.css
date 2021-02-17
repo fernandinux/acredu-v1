@@ -11,3 +11,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.veriContent {
+  max-width: 400px;
+  margin: 20rem auto;
+}

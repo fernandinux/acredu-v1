@@ -1,13 +1,13 @@
-<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>"> 
-  <label>
+<!-- <form role="search" method="get" class="search-form" action="<?php //echo home_url( '/' ); ?>">  -->
+  <!-- <label> -->
     <!-- <span class="screen-reader-text"><?php //echo _x( 'ID credential:', 'label' ) ?></span> -->
-    <input type="search" 
+    <!-- <input type="search" 
     class="search-field" 
-    placeholder="<?php echo esc_attr_x( 'ID Credential', 'placeholder' ) ?>" 
-    value="<?php echo get_search_query() ?>" 
+    placeholder="<?php //echo esc_attr_x( 'ID Credential', 'placeholder' ) ?>" 
+    value="<?php //echo get_search_query() ?>" 
     name="s" 
-    title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
-  </label>
+    title="<?php //echo esc_attr_x( 'Search for:', 'label' ) ?>" /> -->
+  <!-- </label> -->
 
   <!-- <select id="category_name" name="category_name">
     <option value="">Todas</option>
@@ -27,9 +27,10 @@
 
   
 
-  <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php echo get_search_query() ?>"/>
-</form>
+  <!-- <input type="submit" class="search-submit" value="<?php //echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php //echo get_search_query() ?>"/> -->
+<!-- </form> -->
 
+<img src="https://app.acredu.org/wp-content/uploads/2021/02/escudo.jpg" class="img-fluid" alt="verificador" />
 
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
   <!-- ID input -->

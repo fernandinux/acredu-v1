@@ -15,8 +15,8 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-en page verificador
+	<main  class="veriContent">
+
 		<?php
 		// while ( have_posts() ) :
 		// 	the_post();
@@ -31,7 +31,7 @@ en page verificador
 		// endwhile; // End of the loop.
 		?>
         <div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'draft-acredu' ); ?></p>
+				<!-- <p><?php //esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'draft-acredu' ); ?></p> -->
 
 					<?php
 					get_search_form();
