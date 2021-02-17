@@ -25,15 +25,14 @@ content search
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php post_thumbnail(); ?>
+	<div class="w-25 py-5 cloudy-knoxville-gradient">
+							
+        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
+						
+		</div>
 
-	<div class="entry-summary">
-		
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
 
-	<footer class="entry-footer">
-		footer
-		<?php get_footer(); ?>
-	</footer><!-- .entry-footer -->
+
+
 </article><!-- #post-<?php the_ID(); ?> -->
+<?php get_footer(); ?>
