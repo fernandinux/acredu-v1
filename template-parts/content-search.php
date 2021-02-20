@@ -24,8 +24,14 @@
 			<p>Beneficiario del certificado:</p>
 			<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark"><i class="fas fa-graduation-cap" style="color:#007bff;font-size:29px;margin-right:5px" aria-hidden="true"></i>', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 			
-			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
+			
 			<p class="card-text">
+				<i class="far fa-check-square"></i>
+			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
+			Institución verificada por aCredu: Proyectech
+			</p>
+			<p class="card-text">
+				<i class="far fa-check-square"></i>
 			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
 			Institución verificada por aCredu: Proyectech
 			</p>
