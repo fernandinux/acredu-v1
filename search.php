@@ -9,16 +9,20 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
+<?php
+	get_template_part( 'template-parts/content', 'encabezado' );
+	?>
+	<main id="primary" class="">
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="card-header">
+
+			
+			<header class="">
 				<h1 >
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Los resultados para el ID: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Hemos ubicado en nuestros registros el ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
 			</header><!-- .page-header -->
