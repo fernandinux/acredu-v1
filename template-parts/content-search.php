@@ -19,8 +19,7 @@ content search
 		<div class="entry-meta">
 			<?php
 			
-			posted_on();
-			draft_acredu_posted_by();
+			variables
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -32,4 +31,3 @@ content search
 
 
 </article><!-- #post-<?php the_ID(); ?> -->
-<?php get_footer(); ?>
