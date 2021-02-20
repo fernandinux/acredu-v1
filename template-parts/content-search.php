@@ -18,19 +18,13 @@
 			<div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
     		</a>	
 		</div>
-	<div class="card-body">
-		<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-		<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
-		<p class="card-text">
-		<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
-		Institución verificada por aCredu: Proyectech
-		</p>
-		<a href="htpps://acredu.org" class="btn" style="background:#03AA99">Contactar al emisor</a>
-	</div><!-- .entry-header -->
-
-	
-
-
-
-
+		<div class="card-body">
+			<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
+			<p class="card-text">
+			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
+			Institución verificada por aCredu: Proyectech
+			</p>
+			<a href="htpps://acredu.org" class="btn" style="background:#03AA99">Contactar al emisor</a>
+		</div><!-- .entry-header -->
 </article><!-- #post-<?php the_ID(); ?> -->

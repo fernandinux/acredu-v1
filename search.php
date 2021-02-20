@@ -6,7 +6,7 @@ get_header();
 <?php
 	get_template_part( 'template-parts/content', 'encabezado' );
 	?>
-	<main id="primary" class="">
+	<main class="">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -16,7 +16,7 @@ get_header();
 				<p class="card-text">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Hemos ubicado en nuestros registros el <br> ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Hemos verificado la existencia del certificado con ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</p>
 			</div><!-- .page-header -->
@@ -46,6 +46,4 @@ get_header();
 
 	</main><!-- #main -->
 
-<?php
-
-get_footer(); ?>
+<?php get_footer(); ?>

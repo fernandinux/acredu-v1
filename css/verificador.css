@@ -3,7 +3,7 @@ html {
   position: relative;
 }
 
-footer {
+.verifooter {
   position: absolute;
   bottom: 0;
   width: 100%;

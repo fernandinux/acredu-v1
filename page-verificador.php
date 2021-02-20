@@ -65,7 +65,9 @@ get_header();
 			</div><!-- .page-content -->
 
 	</main><!-- #main -->
-
-<?php
+<div class="verifooter">
+	<?php
 // get_sidebar();
-get_footer();
+
+get_footer(); ?>
+</div>
