@@ -9,7 +9,7 @@
 
 ?>
 
-<article  class="card">
+<article  class="card" style="width:70%; margin:5rem auto">
 
 		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 							
