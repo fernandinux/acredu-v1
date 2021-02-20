@@ -68,6 +68,5 @@ get_header();
 <div class="verifooter">
 	<?php
 // get_sidebar();
-
 get_footer(); ?>
 </div>
