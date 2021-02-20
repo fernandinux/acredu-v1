@@ -1,11 +1,5 @@
 <?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Draft-acredu
- */
+
 
 get_header();
 ?>
@@ -53,5 +47,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
-get_footer();
+
+get_footer(); ?>
