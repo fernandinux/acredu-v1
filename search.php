@@ -12,11 +12,11 @@ get_header();
 
 
 			
-			<div style="padding:2rem;">
+			<div style="padding:2rem; text-align:center">
 				<p class="card-text">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Hemos ubicado en nuestros registros el ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'Hemos ubicado en nuestros registros el <br> ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</p>
 			</div><!-- .page-header -->

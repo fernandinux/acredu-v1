@@ -45,5 +45,5 @@
   </div>
 
   <!-- Submit button -->
-  <button type="submit" class="btn btn-success btn-block" value="<?php echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php echo get_search_query() ?>">Verificar</button>
+  <button type="submit" class="btn btn-block" style="background:#1EB478" value="<?php echo esc_attr_x( 'Verificar', 'submit button' ) ?>" value="<?php echo get_search_query() ?>">Verificar</button>
 </form>

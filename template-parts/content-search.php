@@ -9,11 +9,11 @@
 
 ?>
 
-<article  class="card" style="max-width:768px; margin:2rem auto">
+<article  class="card" style="max-width:300px; margin:2rem auto">
 
 		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 							
-        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid' )); ?>
+        	<?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' )); ?>
 			<a href="<?php the_permalink(); ?>">
 			<div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
     		</a>	
@@ -25,7 +25,7 @@
 		<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
 		Institución verificada por aCredu: Proyectech
 		</p>
-		<a href="htpps://acredu.org" class="btn btn-primary">Contactar al emisor</a>
+		<a href="htpps://acredu.org" class="btn" style="background:#03AA99">Contactar al emisor</a>
 	</div><!-- .entry-header -->
 
 	
