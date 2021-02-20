@@ -9,25 +9,24 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article  class="card">
 
-		<div class="col-md-12 py-5 cloudy-knoxville-gradient">
+		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 							
-        	<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
-						
+        	<?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' )); ?>
+			<a href="<?php the_permalink(); ?>">
+			<div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    		</a>	
 		</div>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+	<div class="card-body">
+		<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
-		<?php if ( 'proyetech' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			
-			variables
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+		<p class="card-text">
+		<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
+		Institución verificada por aCredu: Proyectech
+		</p>
+		<a href="htpps://acredu.org" class="btn btn-primary">Contactar al emisor</a>
+	</div><!-- .entry-header -->
 
 	
 

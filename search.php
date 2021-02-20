@@ -12,14 +12,14 @@ get_header();
 
 
 			
-			<header class="">
-				<h1 >
+			<div style="padding:2rem;">
+				<h1 class="card-title">
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Hemos ubicado en nuestros registros el ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
-			</header><!-- .page-header -->
+			</div><!-- .page-header -->
 
 			<?php
 			/* Start the Loop */
