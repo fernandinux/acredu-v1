@@ -13,7 +13,7 @@
 
 		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 							
-        	<?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' )); ?>
+        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid' )); ?>
 			<a href="<?php the_permalink(); ?>">
 			<div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
     		</a>	
