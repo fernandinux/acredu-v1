@@ -16,6 +16,10 @@ get_header();
 ?>
 
 	<main  class="veriContent">
+	<?php
+	get_template_part( 'template-parts/content', 'encabezado' );
+	?>
+
 
 		<?php
 		// while ( have_posts() ) :
