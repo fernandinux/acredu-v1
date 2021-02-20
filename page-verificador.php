@@ -14,11 +14,11 @@
 
 get_header();
 ?>
-
-	<main  class="veriContent">
-	<?php
+<?php
 	get_template_part( 'template-parts/content', 'encabezado' );
 	?>
+	<main  class="veriContent">
+	
 
 
 		<?php
