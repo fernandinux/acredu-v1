@@ -9,7 +9,7 @@
   margin-bottom: 1.5rem;
   padding: 1.5rem;
 }
-.pie_register {
+#pie_register {
   list-style-type: none;
   padding: 0;
 }
@@ -36,9 +36,8 @@
   width: 100%;
 }
 .forgetmenot {
-  padding-left: 1.5em;
+  padding-left: 3em;
   display: block;
-  margin-bottom: 0;
   min-height: auto;
 }
 #rememberme[type="checkbox"]:checked::after {
@@ -83,13 +82,13 @@
 }
 #rememberme[type="checkbox"]:checked {
   background-image: none;
-  background-color: #1266f1;
+  background-color: #03aa99;
 }
 #rememberme[type="checkbox"] {
   border-radius: 0.125rem;
 }
 #rememberme:checked {
-  border-color: #1266f1;
+  border-color: #03aa99;
 }
 #rememberme {
   margin-left: -1.79rem;
@@ -109,7 +108,7 @@
 #wp-login-submit {
   cursor: pointer;
   color: #fff;
-  background-color: #1266f1;
+  background-color: #03aa99;
   display: block;
   width: 100%;
   text-transform: uppercase;
@@ -129,4 +128,7 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
   -webkit-appearance: button;
+}
+#nav {
+  text-align: center;
 }
