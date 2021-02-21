@@ -5,5 +5,7 @@
 	        
     <?php the_content(); ?>
 	
-
+<div style="width:300px;margin:2rem auto">
+    <a href="https://app.acredu.org">Regresar al Login</a>
+</div>
     <?php get_footer(); ?>
