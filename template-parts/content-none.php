@@ -11,7 +11,7 @@
 
 <section class="no-results not-found">
 	<div style="padding:1rem; text-align:center">
-				<p class="card-text"> <i class="ffas fa-exclamation-circle" style="font-size:20px;color:red;" aria-hidden="true"></i>
+				<p class="card-text"> <i class="fas fa-exclamation-circle" style="font-size:20px;color:red;" aria-hidden="true"></i>
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Hemos verificado la existencia del certificado con ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
@@ -19,7 +19,7 @@
 				</p>
 	</div><!-- .page-header -->
 
-	<article  class="card" style="max-width:300px; margin:1rem auto">
+	<article  class="card" style="max-width:300px; margin:1rem auto 5rem auto">
 
 		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 							
