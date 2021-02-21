@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/animations.css">
     <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/styleacredu.css">
     <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/verificador.css">
+    <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/pieregister.css">
     <link rel="stylesheet"  href="https://app.acredu.org/wp-content/themes/acredu-v1/singlestyle.css" type="text/css" media="all">
    <!-- og para compartir -->
     <meta property="og:url" content="<?php the_permalink(); ?>" />
