@@ -27,8 +27,9 @@
 			<p>Información del certificado:</p>
 			<p class="card-text">
 				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
-			  Institución verificada por aCredu:<br><?php the_field('empresa_emisora'); ?>
+			  Institución verificada por aCredu:<br>
 			</p>
+			<div style="width:100%;text-align:center"><?php the_field('empresa_emisora'); ?></div>
 			<p class="card-text">
 				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
 			El curso registrado es:<br> <?php the_field('name_event'); ?>
