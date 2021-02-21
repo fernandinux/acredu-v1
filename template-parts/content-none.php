@@ -19,7 +19,7 @@
 				</p>
 	</div><!-- .page-header -->
 
-	<article  class="card" style="max-width:300px; margin:1rem auto 5rem auto">
+	<article  class="card" style="max-width:300px; margin:1rem auto 13rem auto">
 
 		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
 							
