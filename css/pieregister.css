@@ -132,3 +132,7 @@
 #nav {
   text-align: center;
 }
+.pieregformWrapper {
+  width: 300px;
+  margin: 2rem auto;
+}
