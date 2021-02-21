@@ -26,15 +26,18 @@
 			
 			
 			<p class="card-text">
-				<i class="far fa-check-square"></i>
-			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
-			Institución verificada por aCredu: Proyectech
+				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
+			 <?php the_field('empresa_emisora'); ?> es una institución verificada por aCredu.
 			</p>
 			<p class="card-text">
-				<i class="far fa-check-square"></i>
-			<?php printf( __( 'The post type is: %s', 'textdomain' ), get_post_type( get_the_ID() ) );?>
-			Institución verificada por aCredu: Proyectech
+				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
+			El curso registrado es: <?php the_field('nombre_evento'); ?>
 			</p>
+			<p class="card-text">
+				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
+			Este certificado se emitió: <?php the_field('fecha_inicio'); ?>
+			</p>
+			
 			<a href="htpps://acredu.org" class="btn" style="background:#03AA99"><i class="far fa-comment" style="font-size:18px;margin-right:5px"></i>Contactar al emisor</a>
 		</div><!-- .entry-header -->
 </article><!-- #post-<?php the_ID(); ?> -->
