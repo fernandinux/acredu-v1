@@ -41,7 +41,7 @@
     placeholder="<?php echo esc_attr_x( 'ID Credential', 'placeholder' ) ?>"
     value="<?php echo get_search_query() ?>" 
     name="s" 
-    require
+    required
     />    
   </div>
 
