@@ -32,12 +32,14 @@
 			<div style="width:100%;text-align:center"><?php the_field('empresa_emisora'); ?></div>
 			<p class="card-text">
 				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
-			El curso registrado es:<br> <?php the_field('name_event'); ?>
+			El curso registrado es:<br>
 			</p>
+			<div style="width:100%;text-align:center"><?php the_field('name_event'); ?></div>
 			<p class="card-text">
 				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
-			Este certificado se emitió:<br> <?php the_field('fechainicio'); ?>
+			Este certificado se emitió:<br>
 			</p>
+			<div style="width:100%;text-align:center"><?php the_field('fechainicio'); ?></div>
 			
 			<a href="htpps://acredu.org" class="btn" style="background:#03AA99"><i class="far fa-comment" style="font-size:18px;margin-right:5px"></i>Contactar al emisor</a>
 		</div><!-- .entry-header -->
