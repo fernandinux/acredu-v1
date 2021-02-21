@@ -24,17 +24,17 @@
 			<p>Beneficiario del certificado:</p>
 			<?php the_title( sprintf( '<h2 class="card-title"><a href="%s" rel="bookmark"><i class="fas fa-graduation-cap" style="color:#007bff;font-size:29px;margin-right:5px" aria-hidden="true"></i>', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 			
-			
+			<p>Información del certificado:</p>
 			<p class="card-text">
-				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
+				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
 			 <?php the_field('empresa_emisora'); ?> es una institución verificada por aCredu.
 			</p>
 			<p class="card-text">
-				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
+				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
 			El curso registrado es: <?php the_field('name_event'); ?>
 			</p>
 			<p class="card-text">
-				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
+				<i class="fas fa-check-circle" style="font-size:18px;color:#32c132;"></i>
 			Este certificado se emitió: <?php the_field('fechainicio'); ?>
 			</p>
 			
