@@ -31,11 +31,11 @@
 			</p>
 			<p class="card-text">
 				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
-			El curso registrado es: <?php the_field('nombre_evento'); ?>
+			El curso registrado es: <?php the_field('name_event'); ?>
 			</p>
 			<p class="card-text">
 				<i class="far fa-check-square" style="font-size:18px;color:#32c132;"></i>
-			Este certificado se emitió: <?php the_field('fecha_inicio'); ?>
+			Este certificado se emitió: <?php the_field('fechainicio'); ?>
 			</p>
 			
 			<a href="htpps://acredu.org" class="btn" style="background:#03AA99"><i class="far fa-comment" style="font-size:18px;margin-right:5px"></i>Contactar al emisor</a>
