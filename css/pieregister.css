@@ -161,7 +161,7 @@
     -webkit-box-shadow 0.15s ease-in-out;
   -webkit-appearance: button;
 }
-.piereg_forgotpassword {
+#piereg_forgotpassword {
   width: 300px;
   margin: 2rem auto;
 }
