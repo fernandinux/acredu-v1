@@ -14,7 +14,7 @@
 				<p class="card-text"> <i class="fas fa-exclamation-circle" style="font-size:20px;color:red;" aria-hidden="true"></i>
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Hemos verificado la existencia del certificado con ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
+					printf( esc_html__( 'No hemos podido verificar la existencia del certificado con ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</p>
 	</div><!-- .page-header -->
@@ -29,8 +29,8 @@
     		</a>	
 		</div>
 		<div class="card-body">
-			<p>No hemos encontrado el ID credential que buscas en nuestras bases de datos.</p>
-			<div style="width:100%;text-align:center;width:100%;text-align:center;margin: 0px auto 1rem auto;">Por favor, revisa el ID que deseas consultar y vuelve a intentarlo</div>
+			
+			<div style="width:100%;text-align:center;width:100%;text-align:center;margin:  2rem auto;">Por favor, revisa el ID que deseas consultar y vuelve a intentarlo</div>
 			
 			
 			
