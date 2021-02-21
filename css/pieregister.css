@@ -136,3 +136,27 @@
   width: 300px;
   margin: 2rem auto;
 }
+#upload_21 {
+  cursor: pointer;
+  color: #fff;
+  background-color: #03aa99;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  border: 0;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2),
+    0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  padding: 0.625rem 1.5rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-appearance: button;
+}
