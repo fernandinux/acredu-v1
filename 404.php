@@ -10,49 +10,13 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-en 404
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'draft-acredu' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'draft-acredu' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'draft-acredu' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$draft_acredu_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'draft-acredu' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$draft_acredu_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
+	<main>
+<div>
+	<img scr="https://app.acredu.org/wp-content/uploads/2021/02/diploam-fallado2.png" style="width:300px;margin:5rem auto"/>
+</div>
+		<div style="text-align:center">
+			<h3>Algo salio mal <i class="far fa-frown" style="font-size:15px"></i>, por favor, verifica el enlace al que quieres acceder</h3>
+		</div>
 
 	</main><!-- #main -->
 
