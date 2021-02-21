@@ -10,42 +10,31 @@
 ?>
 
 <section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'draft-acredu' ); ?></h1>
-	</header><!-- .page-header -->
+	<div style="padding:1rem; text-align:center">
+				<p class="card-text"> <i class="ffas fa-exclamation-circle" style="font-size:20px;color:red;" aria-hidden="true"></i>
+					<?php
+					/* translators: %s: search query. */
+					printf( esc_html__( 'Hemos verificado la existencia del certificado con ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
+					?>
+				</p>
+	</div><!-- .page-header -->
 
-	<div class="page-content">
-		<?php
-		if ( is_home() && current_user_can( 'publish_posts' ) ) :
+	<article  class="card" style="max-width:300px; margin:1rem auto">
 
-			printf(
-				'<p>' . wp_kses(
-					/* translators: 1: link to WP admin new post page. */
-					__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'draft-acredu' ),
-					array(
-						'a' => array(
-							'href' => array(),
-						),
-					)
-				) . '</p>',
-				esc_url( admin_url( 'post-new.php' ) )
-			);
-
-		elseif ( is_search() ) :
-			?>
-
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'draft-acredu' ); ?></p>
-			<?php
-			get_search_form();
-
-		else :
-			?>
-
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'draft-acredu' ); ?></p>
-			<?php
-			get_search_form();
-
-		endif;
-		?>
-	</div><!-- .page-content -->
+		<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							
+			<div class="mask" style="background-color: rgba(251, 251, 251, 0.15)">
+				<img src="https://app.acredu.org/wp-content/uploads/2021/02/oopsCertificate.jpg" class="img-fluid"/>
+			</div>
+    		</a>	
+		</div>
+		<div class="card-body">
+			<p>No hemos encontrado el ID credential que buscas en nuestras bases de datos.</p>
+			<div style="width:100%;text-align:center;width:100%;text-align:center;margin: 0px auto 1rem auto;">Por favor, revisa el ID que deseas consultar y vuelve a intentarlo</div>
+			
+			
+			
+			<a href="htpps://acredu.org" class="btn mt-5" style="background:#03AA99"><i class="fas fa-search" style="font-size:18px;margin-right:5px"></i>Nueva verificación</a>
+		</div><!-- .entry-header -->
+</article>
 </section><!-- .no-results -->

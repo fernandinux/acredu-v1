@@ -13,7 +13,7 @@ get_header();
 
 			
 			<div style="padding:1rem; text-align:center">
-				<p class="card-text"> <i class="fas fa-check-circle" style="font-size:20px;color:#32c132;" aria-hidden="true"></i>
+				<p class="card-text"> <i class="fas fa-shield-alt" style="font-size:20px;color:#32c132;" aria-hidden="true"></i>
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Hemos verificado la existencia del certificado con ID credential: %s', 'draft-acredu' ), '<span>' . get_search_query() . '</span>' );
@@ -34,7 +34,7 @@ get_header();
 				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
-
+			navigation
 			the_posts_navigation();
 
 		else :
