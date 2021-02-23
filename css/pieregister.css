@@ -8,14 +8,13 @@
   justify-content: center;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
+  flex-direction: column;
 }
 #pie_register {
   list-style-type: none;
   padding: 0;
 }
-.piereg_loginform {
-  width: 22rem;
-}
+
 .fields {
   list-style: none;
 }
@@ -188,4 +187,7 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
   -webkit-appearance: button;
+}
+.piereg_login_error {
+  color: red;
 }
