@@ -138,7 +138,7 @@ function guardar_postulante_por_cf7( $wpcf7 ) {
 		'post_title'    => $formulario['posted_data']['nombre-postulante'],
 		'post_content'  => $formulario['posted_data']['cv-postulante'],
 		'post_status'   => 'publish',       // Indicamos que el postulante está publicado
-		'post_type'     => 'postulante'     // Importante especificar que este post es del tipo "Postulante"
+		'post_type'     => 'miguelsierra'     // Importante especificar que este post es del tipo "Postulante"
 
 	) );
 
