@@ -170,7 +170,7 @@ function include_jquery_form_plugin(){
 }
 
 
-/hook the Ajax call
+//hook the Ajax call
 //for logged-in users
 add_action('wp_ajax_my_upload_action', 'my_ajax_upload');
 //for none logged-in users
