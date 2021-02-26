@@ -155,5 +155,3 @@ function guardar_postulante_por_cf7( $wpcf7 ) {
 
 }
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' );
-
-
