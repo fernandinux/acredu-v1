@@ -155,3 +155,50 @@ function guardar_postulante_por_cf7( $wpcf7 ) {
 
 }
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' );
+
+
+/*
+	 *experimento
+	 */
+
+     add_action('wp_print_scripts','include_jquery_form_plugin');
+function include_jquery_form_plugin(){
+    if (is_page('12')){ // only add this on the page that allows the upload
+        wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'jquery-form',array('jquery'),false,true ); 
+    }
+}
+
+
+/hook the Ajax call
+//for logged-in users
+add_action('wp_ajax_my_upload_action', 'my_ajax_upload');
+//for none logged-in users
+add_action('wp_ajax_nopriv_my_upload_action', 'my_ajax_upload');
+
+function my_ajax_upload(){
+//simple Security check
+    check_ajax_referer('upload_thumb');
+
+//get POST data
+    $post_id = $_POST['post_id'];
+
+//require the needed files
+    require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+    require_once(ABSPATH . "wp-admin" . '/includes/file.php');
+    require_once(ABSPATH . "wp-admin" . '/includes/media.php');
+//then loop over the files that were sent and store them using  media_handle_upload();
+    if ($_FILES) {
+        foreach ($_FILES as $file => $array) {
+            if ($_FILES[$file]['error'] !== UPLOAD_ERR_OK) {
+                echo "upload error : " . $_FILES[$file]['error'];
+                die();
+            }
+            $attach_id = media_handle_upload( $file, $post_id );
+        }   
+    }
+//and if you want to set that image as Post  then use:
+  update_post_meta($post_id,'_thumbnail_id',$attach_id);
+  echo "uploaded the new Thumbnail";
+  die();
+} 
