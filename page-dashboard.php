@@ -32,7 +32,7 @@
             }
     </script>
 	        
-    <?php the_content(); ?>
+    <?php //the_content(); ?>
 	
 
 <div class="verifooter">
