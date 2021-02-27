@@ -89,7 +89,7 @@ function certificate_miguelsierra(){
             'label' => 'MIGUELS-Certs',
             'descripcion' => 'Certificados de usuarios MIGUELS',
             'labels' => $labels,
-            'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
             'menu_position' => 7,
