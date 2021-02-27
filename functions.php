@@ -141,8 +141,10 @@ function guardar_postulante_por_cf7( $wpcf7 ) {
 		'post_type'     => 'miguelsierra'     // Importante especificar que este post es del tipo "Postulante"
 
 	) );
-
-    $imagen_id= media_handle_upload(['posted_data']['file-142'],$postulante_id);
+    require_once( ABSPATH . 'wp-admin/includes/image.php' );
+    require_once( ABSPATH . 'wp-admin/includes/file.php' );
+    require_once( ABSPATH . 'wp-admin/includes/media.php' );
+    $imagen_id = media_handle_upload(['posted_data']['file-142'],$postulante_id);
 	/*
 	 * Si no hubo ningún error guardando el postulante
 	 * podemos guardar su email en un campo post_meta.
