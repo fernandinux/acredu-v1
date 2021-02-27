@@ -136,8 +136,7 @@ function guardar_postulante_por_cf7( $wpcf7 ) {
 	$postulante_id = wp_insert_post( array(
 
 		'post_title'    => $formulario['posted_data']['nombre-postulante'],
-        // 'post_content'  => $formulario['posted_data']['cv-postulante'],
-        'field_60026949c531f'  => $formulario['posted_data']['cv-postulante'],
+        'post_content'  => $formulario['posted_data']['cv-postulante'],
 		'post_status'   => 'publish',       // Indicamos que el postulante está publicado
 		'post_type'     => 'miguelsierra'     // Importante especificar que este post es del tipo "Postulante"
 
@@ -149,6 +148,7 @@ function guardar_postulante_por_cf7( $wpcf7 ) {
 	 */
 	if( ! is_wp_error( $postulante_id ) ) {
 
+        update_field( 'id', $formulario['posted_data']['number-900'], $postulante_id );
 		add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['email-postulante'] );
 
 	}
