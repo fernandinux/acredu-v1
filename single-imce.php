@@ -82,7 +82,8 @@
 						</a>  
 					</div>
 					<br/>
-                    <br/>               
+                    <br/>
+					<?php the_field('descripcion_adicional'); ?>            
                     <!-- <div class="video">
                         <iframe id="videobnp" width="100%" height="100%" 
                         src="https://bit.ly/37x16gX" 
