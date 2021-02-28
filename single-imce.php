@@ -83,7 +83,7 @@
 					</div>
 					<br/>
                     <br/>
-					<?php the_field('descripcion_adicional'); ?>            
+					           
                     <!-- <div class="video">
                         <iframe id="videobnp" width="100%" height="100%" 
                         src="https://bit.ly/37x16gX" 
@@ -124,6 +124,9 @@
 Aprender es uno de los principales objetivos del cerebro humano y mediar este proceso es tarea fundamental del educador. Sin embargo, un número significativo de educadores no conoce cómo aprende el cerebro. Para ello, el IMCE nace para expandir la ciencia y las evidencias, eliminar los neuromitos y crear competencias en los educadores que les permitan reimaginar la educación, redirigir su práctica y reenaromarse de su profesión.
 
 				</small></p> 
+				<div style="margin:10px auto;">
+				<?php the_field('descripcion_adicional'); ?> 
+				</div>
 				
 			</div>
 			<!--Carousel Wrapper-->
