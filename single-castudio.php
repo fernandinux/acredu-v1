@@ -21,7 +21,7 @@
 							
         	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
 			<div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin: 20px auto 0px auto;">
-            <small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp:</small>
+            <small>¿Algo salió mal con tu certificado?, escribenos:</small>
             <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>			
 		</div>
         
@@ -45,7 +45,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div>
 						<a target="_blank" id="logousach" href="https://bit.ly/3kyDz3V" class="">
-							<img alt="CAstudio" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio.png" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="CAstudio" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
@@ -80,21 +80,21 @@
 					
 						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
 					<div class="text-center">	
-						<a target="_blank" id="brochureproyetech" href="https://bit.ly/2Mv9Pbf" class="btn btn-primary">
+						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3pWWZ3y" class="btn btn-primary">
 							Aquí
 						</a>  
 					</div>
 					<br/>
                     <br/>               
-                    <!-- <div class="video">
-                        <iframe id="videobnp" width="100%" height="100%" 
-                        src="https://bit.ly/37x16gX" 
+                     <div class="video">
+                        <iframe id="videoacstudio" width="100%" height="100%" 
+                        src="https://bit.ly/3bMESbw" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                     	</iframe>
                     </div>
-					<p class="text-justify"><?php //the_field('descripcion_event3'); ?></p> -->
+					<!--<p class="text-justify"><?php //the_field('descripcion_event3'); ?></p> -->
 					
 				</div>
 				
@@ -113,7 +113,12 @@
             </div>
 			<!-- Fin add linkedin profile -->
 			
-						
+            <div style="margin: 20px auto;">
+            <a href="http://bit.ly/3dPOqVQ" style="cursor: pointer;text-decoration: none;">
+                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:20rem;"/>
+            </a>
+                
+            </div>			
 			
 				
 			<div class="text-center">
