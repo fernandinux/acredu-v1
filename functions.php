@@ -197,7 +197,7 @@ $imagen_id = media_handle_upload('file-142',$postulante_id);
 if( ! is_wp_error( $postulante_id ) ) {
 update_field( 'id', $formulario['posted_data']['number-900'], $postulante_id );
 add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['email-postulante'] );
-// update_post_meta( $postulante_id, '_thumbnail_id', $imagen_id );
+update_post_meta( $postulante_id, '_thumbnail_id', 677 );
 }
 }
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
