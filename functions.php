@@ -102,7 +102,31 @@ function certificate_miguelsierra(){
     register_post_type( 'miguelsierra', $args );
 }
 
+function certificate_castudio(){
 
+    $labels = array (
+        'name' => 'CASTUDIO-Certs',
+        'singular_name' => 'CASTUDIO-Certs',
+        'menu_name' => 'CASTUDIO',
+    );
+    $args = array(
+            'label' => 'CASTUDIO-Certs',
+            'descripcion' => 'Certificados de usuarios CASTUDIO',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 8,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'castudio', $args );
+}
+
+add_action( 'init', 'certificate_castudio');
 add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
