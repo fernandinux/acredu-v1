@@ -88,7 +88,7 @@
                     <br/>               
                      <div class="video">
                         <iframe id="videoacstudio" width="100%" height="100%" 
-                        src="https://bit.ly/3bMESbw" 
+                        src="http://bit.ly/3kJdJdL" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
@@ -115,7 +115,7 @@
 			
             <div style="margin: 20px auto;">
             <a href="http://bit.ly/3dPOqVQ" style="cursor: pointer;text-decoration: none;">
-                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:20rem;"/>
+                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
             </a>
                 
             </div>			
