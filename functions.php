@@ -159,47 +159,7 @@ add_action( 'init', 'certificate_imce');
 
 
 
- /* PRUEBAS FORM post
- <?php
-/**
-* Función para capturar los valores enviados a través del formulario
-* de Contact Form 7 y guardarlos como registros del Custom Post Type "Postulante"
-*
-* @param $wpcf7
-* @return void
-*/
-function guardar_postulante_por_cf7( $wpcf7 ) {
-    $submission = WPCF7_Submission::get_instance();
-// En caso de que no haya valores salgo de la función
-    if( empty( $submission ) ) return;
-/*
-* Para recuperar todos los valores del formulario debemos
-* llamar a la función get_post_data del plugin CF7.
-*/
-    $formulario = array();
-    $formulario['posted_data'] = $submission->get_posted_data();
-    $postulante_id = wp_insert_post( array(
-        'post_title' => $formulario['posted_data']['nombre-postulante'],
-        'post_content' => $formulario['posted_data']['cv-postulante'],
-        'post_status' => 'publish', // Indicamos que el postulante está publicado
-        'post_type' => 'cursoscolectivo' // Importante especificar que este post es del tipo "Postulante"
-    ) );
-    require_once( ABSPATH . 'wp-admin/includes/image.php' );
-    require_once( ABSPATH . 'wp-admin/includes/file.php' );
-    require_once( ABSPATH . 'wp-admin/includes/media.php' );
-    $imagen_id = media_handle_upload($formulario['posted_data']['file-142'],$postulante_id);
-/*
-* Si no hubo ningún error guardando el postulante
-* podemos guardar su email en un campo post_meta.
-*/
-if( ! is_wp_error( $postulante_id ) ) {
-
-update_field( 'id', $formulario['posted_data']['number-900'], $postulante_id );
-add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['email-postulante'] );
-update_post_meta( $postulante_id, '_thumbnail_id', $imagen_id );
-}
-}
-add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
+ 
 
 
 
