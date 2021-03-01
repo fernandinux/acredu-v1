@@ -126,6 +126,31 @@ function certificate_castudio(){
     register_post_type( 'castudio', $args );
 }
 
+function cursos_colectivo(){
+
+    $labels = array (
+        'name' => 'COLECTIVO-Cursos',
+        'singular_name' => 'COLECTIVO-Cursos',
+        'menu_name' => 'COLECTIVO',
+    );
+    $args = array(
+            'label' => 'COLECTIVO-Cursos',
+            'descripcion' => 'Cursos de usuarios COLECTIVO',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 9,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'cursoscolectivo', $args );
+}
+
+add_action( 'init', 'cursos_colectivo');
 add_action( 'init', 'certificate_castudio');
 add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
@@ -133,37 +158,49 @@ add_action( 'init', 'certificate_imce');
 
 
 
- 
 
-// TEST PORTUGUES 
+ /* PRUEBAS FORM post
+ <?php
+/**
+* Función para capturar los valores enviados a través del formulario
+* de Contact Form 7 y guardarlos como registros del Custom Post Type "Postulante"
+*
+* @param $wpcf7
+* @return void
+*/
+function guardar_postulante_por_cf7( $wpcf7 ) {
+    $submission = WPCF7_Submission::get_instance();
+// En caso de que no haya valores salgo de la función
+    if( empty( $submission ) ) return;
+/*
+* Para recuperar todos los valores del formulario debemos
+* llamar a la función get_post_data del plugin CF7.
+*/
+    $formulario = array();
+    $formulario['posted_data'] = $submission->get_posted_data();
+    $postulante_id = wp_insert_post( array(
+        'post_title' => $formulario['posted_data']['nombre-postulante'],
+        'post_content' => $formulario['posted_data']['cv-postulante'],
+        'post_status' => 'publish', // Indicamos que el postulante está publicado
+        'post_type' => 'cursoscolectivo' // Importante especificar que este post es del tipo "Postulante"
+    ) );
+    require_once( ABSPATH . 'wp-admin/includes/image.php' );
+    require_once( ABSPATH . 'wp-admin/includes/file.php' );
+    require_once( ABSPATH . 'wp-admin/includes/media.php' );
+    $imagen_id = media_handle_upload($formulario['posted_data']['file-142'],$postulante_id);
+/*
+* Si no hubo ningún error guardando el postulante
+* podemos guardar su email en un campo post_meta.
+*/
+if( ! is_wp_error( $postulante_id ) ) {
 
-function cpt_save_cf7( $wpcf7 ) {
-  $submission = WPCF7_Submission::get_instance();
-  // Caso não haja valores deixo a função
-  if( empty( $submission ) ) return;
-  /*
-    * Para recuperar todos os valores de formulário, devemos
-    * chame a função get_post_data do plugin CF7.
-   */
-  $formulario = array();
-  $formulario['posted_data'] = $submission->get_posted_data();
-  // String do content, ele tem o estilo do visual composer.
-  $text = "[vc_row][vc_column width='4/12']<img src='http://localhost/wordpress/wp-content/uploads/wpcf7-submissions/".$formulario['posted_data']['your-photo']."' >[/vc_column][vc_column width='8/12'][vc_custom_heading text='".$formulario['posted_data']['your-name']."'][vc_custom_heading text='CRM ".$formulario['posted_data']['your-crm']."'][vc_column_text]".$formulario['posted_data']['your-message']."[/vc_column_text][/vc_column][/vc_row]";
-  $postulante_id = wp_insert_post( array(
-    'post_title'    => $formulario['posted_data']['your-name'],
-    'post_content'  => $text,
-    'post_status'   => 'pending',   // Nós indicamos que o o status do post, neste caso ele esta PENDENTE
-    'post_type'     => 'proyetech'     // Importante especificar o nome do POST_TYPE, por exemplo perfil
-  ) );
-  /*
-    * Se não houve erro em manter o POST_TYPE
-    * Podemos salvar seu email em um campo post_meta.
-   */
-  if( ! is_wp_error( $postulante_id ) ) {
-    add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['your-email'] );
-  }
+update_field( 'id', $formulario['posted_data']['number-900'], $postulante_id );
+add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['email-postulante'] );
+update_post_meta( $postulante_id, '_thumbnail_id', $imagen_id );
 }
-add_action('wpcf7_before_send_mail', 'cpt_save_cf7' );
+}
+add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
 
-// END TEST PORTUGUES 
+
+
 ?>
