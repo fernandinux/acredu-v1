@@ -20,9 +20,11 @@
 		<div class="col-md-12 py-5 cloudy-knoxville-gradient">
 							
         	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
-						
+			<div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin: 20px auto 0px auto;">
+            <small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp:</small>
+            <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>			
 		</div>
-        <div class="text-center mx-5 my-5"><p><small>¿Algo salió mal con tu certificado?, escribenos al Whatsapp para ayudarte:</small></p> <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>
+        
 	</div>
 
 
@@ -40,7 +42,7 @@
 			<div class="d-md-flex justify-content-sm-center">
 			
 				
-				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2">
+				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div>
 						<a target="_blank" id="logousach" href="https://bit.ly/3kyDz3V" class="">
 							<img alt="CAstudio" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio.png" class="w-sm-75 w-50 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
