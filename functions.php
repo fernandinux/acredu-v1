@@ -131,101 +131,39 @@ add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
 
+
+
+ 
+
+// TEST PORTUGUES 
+
+function cpt_save_cf7( $wpcf7 ) {
+  $submission = WPCF7_Submission::get_instance();
+  // Caso não haja valores deixo a função
+  if( empty( $submission ) ) return;
+  /*
+    * Para recuperar todos os valores de formulário, devemos
+    * chame a função get_post_data do plugin CF7.
+   */
+  $formulario = array();
+  $formulario['posted_data'] = $submission->get_posted_data();
+  // String do content, ele tem o estilo do visual composer.
+  $text = "[vc_row][vc_column width='4/12']<img src='http://localhost/wordpress/wp-content/uploads/wpcf7-submissions/".$formulario['posted_data']['your-photo']."' >[/vc_column][vc_column width='8/12'][vc_custom_heading text='".$formulario['posted_data']['your-name']."'][vc_custom_heading text='CRM ".$formulario['posted_data']['your-crm']."'][vc_column_text]".$formulario['posted_data']['your-message']."[/vc_column_text][/vc_column][/vc_row]";
+  $postulante_id = wp_insert_post( array(
+    'post_title'    => $formulario['posted_data']['your-name'],
+    'post_content'  => $text,
+    'post_status'   => 'pending',   // Nós indicamos que o o status do post, neste caso ele esta PENDENTE
+    'post_type'     => 'proyetech'     // Importante especificar o nome do POST_TYPE, por exemplo perfil
+  ) );
+  /*
+    * Se não houve erro em manter o POST_TYPE
+    * Podemos salvar seu email em um campo post_meta.
+   */
+  if( ! is_wp_error( $postulante_id ) ) {
+    add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['your-email'] );
+  }
+}
+add_action('wpcf7_before_send_mail', 'cpt_save_cf7' );
+
+// END TEST PORTUGUES 
 ?>
-
-<?php
-
-/**
- * Función para capturar los valores enviados a través del formulario
- * de Contact Form 7 y guardarlos como registros del Custom Post Type "Postulante"
- *
- * @param $wpcf7
- * @return void
- */
-function guardar_postulante_por_cf7( $wpcf7 ) {
-
-	$submission = WPCF7_Submission::get_instance();
-
-	// En caso de que no haya valores salgo de la función
-	if( empty( $submission ) ) return;
-
-	/*
-	 * Para recuperar todos los valores del formulario debemos
-	 * llamar a la función get_post_data del plugin CF7.
-	 */
-	$formulario = array();
-	$formulario['posted_data'] = $submission->get_posted_data();
-
-
-	$postulante_id = wp_insert_post( array(
-
-		'post_title'    => $formulario['posted_data']['nombre-postulante'],
-        'post_content'  => $formulario['posted_data']['cv-postulante'],
-		'post_status'   => 'publish',       // Indicamos que el postulante está publicado
-		'post_type'     => 'miguelsierra'     // Importante especificar que este post es del tipo "Postulante"
-
-	) );
-    require_once( ABSPATH . 'wp-admin/includes/image.php' );
-    require_once( ABSPATH . 'wp-admin/includes/file.php' );
-    require_once( ABSPATH . 'wp-admin/includes/media.php' );
-    $imagen_id = media_handle_upload(['posted_data']['file-142'],$postulante_id);
-	/*
-	 * Si no hubo ningún error guardando el postulante
-	 * podemos guardar su email en un campo post_meta.
-	 */
-	if( ! is_wp_error( $postulante_id ) ) {
-        
-        update_field( 'id', $formulario['posted_data']['number-900'], $postulante_id );
-		add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['email-postulante'] );
-        update_post_meta( $postulante_id, '_thumbnail_id', $imagen_id );
-	}
-
-}
-add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' );
-
-
-/*
-	 *experimento
-	 */
-
-     add_action('wp_print_scripts','include_jquery_form_plugin');
-function include_jquery_form_plugin(){
-    if (is_page('12')){ // only add this on the page that allows the upload
-        wp_enqueue_script( 'jquery' );
-        wp_enqueue_script( 'jquery-form',array('jquery'),false,true ); 
-    }
-}
-
-
-//hook the Ajax call
-//for logged-in users
-add_action('wp_ajax_my_upload_action', 'my_ajax_upload');
-//for none logged-in users
-add_action('wp_ajax_nopriv_my_upload_action', 'my_ajax_upload');
-
-function my_ajax_upload(){
-//simple Security check
-    check_ajax_referer('upload_thumb');
-
-//get POST data
-    $post_id = $_POST['post_id'];
-
-//require the needed files
-    require_once(ABSPATH . "wp-admin" . '/includes/image.php');
-    require_once(ABSPATH . "wp-admin" . '/includes/file.php');
-    require_once(ABSPATH . "wp-admin" . '/includes/media.php');
-//then loop over the files that were sent and store them using  media_handle_upload();
-    if ($_FILES) {
-        foreach ($_FILES as $file => $array) {
-            if ($_FILES[$file]['error'] !== UPLOAD_ERR_OK) {
-                echo "upload error : " . $_FILES[$file]['error'];
-                die();
-            }
-            $attach_id = media_handle_upload( $file, $post_id );
-        }   
-    }
-//and if you want to set that image as Post  then use:
-  update_post_meta($post_id,'_thumbnail_id',$attach_id);
-  echo "uploaded the new Thumbnail";
-  die();
-} 
