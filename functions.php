@@ -176,6 +176,7 @@ if( empty( $submission ) ) return;
 */
 $formulario = array();
 $formulario['posted_data'] = $submission->get_posted_data();
+$upload= $_FILES['file-142'];
 $postulante_id = wp_insert_post( array(
 'post_title' => $formulario['posted_data']['nombre-postulante'],
 'post_content' => $formulario['posted_data']['cv-postulante'],
@@ -187,7 +188,7 @@ if( ! is_wp_error( $postulante_id ) ) {
 require_once( ABSPATH . 'wp-admin/includes/image.php' );
 require_once( ABSPATH . 'wp-admin/includes/file.php' );
 require_once( ABSPATH . 'wp-admin/includes/media.php' );
-$imagen_id = media_handle_upload('https://marketplace.canva.com/EADzXt6esoI/1/0/400w/canva-p%C3%BArpura-sello-diploma-de-preparatoria-certificado-pkCrs014yYQ.jpg',$postulante_id);
+$imagen_id = media_handle_upload($upload,$postulante_id);
 
 }
 /*
