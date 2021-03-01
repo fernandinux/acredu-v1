@@ -17,7 +17,7 @@
                     <!-- Inicio single -->
                     
 	<div class="row">		
-		<div class="col-md-12 py-5 cloudy-knoxville-gradient">
+		<div class="col-md-12 pt-5 cloudy-knoxville-gradient">
 							
         	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
 			<div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin: 20px auto 0px auto;">
@@ -78,54 +78,18 @@
 					<?php the_content(); ?>
 					<br/>  
 					
-						<p class="mt-5 text-center">Conoce donde adquirir este curso:</p>
-					<div class="text-center">	
-						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3pWWZ3y" class="btn btn-primary">
-							Aquí
-						</a>  
-					</div>
+					
 					<br/>
                     <br/>               
-                     <div class="video">
+                     <!-- <div class="video">
                         <iframe id="videoacstudio" width="100%" height="100%" 
                         src="http://bit.ly/3kJdJdL" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                     	</iframe>
-                    </div>
-					<!--<p class="text-justify"><?php //the_field('descripcion_event3'); ?></p> -->
-					
-				</div>
-				
-		</div>
-		<div class="col-md-4 col-sm-12 text-center">
-			 
-			<!-- Inicio add Linkedin profile -->
-			<div class="button-linkedin-web zoom animated zoomIn slow pt-2">
-				<p class=" mb-0 mx-auto">Agrégalo con solo 2 clicks</p>
-				<a onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnp');" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=<?php the_field('id_linkedin'); ?>&amp;issueYear=<?php the_field('year_linkedin'); ?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
-				<img class="my-3 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
-                <p>
-				Credential ID: <?php the_field('id'); ?>  
-			</p>
-			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido en:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
-            </div>
-			<!-- Fin add linkedin profile -->
-			
-            <div style="margin: 20px auto;">
-            <a href="http://bit.ly/3dPOqVQ" style="cursor: pointer;text-decoration: none;">
-                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
-            </a>
-                
-            </div>			
-			
-				
-			<div class="text-center">
-				<?php the_field('descripcion_inst'); ?>
-				
-			</div>
-			<!--Carousel Wrapper-->
+                    </div> -->
+                    <!--Carousel Wrapper-->
 			<div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
 				<!--Indicators-->
 				<ol class="carousel-indicators">
@@ -178,7 +142,53 @@
 				</a>
 				<!--/.Controls-->
 			</div>
-			<!--/.Carousel Wrapper-->
+            <!--/.Carousel Wrapper-->
+            
+            <?php the_field('descripcion_event1'); ?>
+            
+            	<p class="mt-5 text-center">Para conocer nuestro plan de estudio completo haz click al siguiente enlace:</p>
+					<div class="text-center">	
+						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3bMFoWP"  class="btn btn-primary">
+							Plan de Estudio Aquí
+						</a>  
+                    </div>
+                <p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
+                <div class="text-center">	
+                    <a target="_blank" id="brochureproyetech" href="https://bit.ly/3pWWZ3y" class="btn btn-primary">
+                        Aquí
+                    </a>  
+                </div>
+					
+				</div>
+				
+		</div>
+		<div class="col-md-4 col-sm-12 text-center">
+			 
+			<!-- Inicio add Linkedin profile -->
+			<div class="button-linkedin-web zoom animated zoomIn slow pt-2">
+				<p class=" mb-0 mx-auto">Agrégalo con solo 2 clicks</p>
+				<a onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnp');" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=<?php the_field('id_linkedin'); ?>&amp;issueYear=<?php the_field('year_linkedin'); ?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
+				<img class="my-3 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                <p>
+				Credential ID: <?php the_field('id'); ?>  
+			</p>
+			<div class="mb-5"><div class="text-center"><p class="mb-0">Emitido en:</p><p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p></div></div>
+            </div>
+			<!-- Fin add linkedin profile -->
+			
+            <div style="margin: 20px auto;">
+            <a href="http://bit.ly/3dPOqVQ" style="cursor: pointer;text-decoration: none;">
+                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
+            </a>
+                
+            </div>			
+			
+				
+			<div class="text-center">
+				<?php the_field('descripcion_inst'); ?>
+				
+			</div>
+			
 			
 		</div>
 	</div>
