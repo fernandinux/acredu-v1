@@ -188,12 +188,13 @@ require_once( ABSPATH . 'wp-admin/includes/image.php' );
 require_once( ABSPATH . 'wp-admin/includes/file.php' );
 require_once( ABSPATH . 'wp-admin/includes/media.php' );
 $imagen_id = media_handle_upload('file-142',$postulante_id);
+
 }
 /*
 * Si no hubo ningún error guardando el postulante
 * podemos guardar su email en un campo post_meta.
 */
-if( ! is_wp_error( $imagen_id ) ) {
+if( ! is_wp_error( $postulante_id ) ) {
 update_field( 'id', $formulario['posted_data']['number-900'], $postulante_id );
 add_post_meta( $postulante_id, 'mgp_email', $formulario['posted_data']['email-postulante'] );
 update_post_meta( $postulante_id, '_thumbnail_id', $imagen_id );
