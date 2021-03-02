@@ -93,7 +93,12 @@
             </div>
         </div>
         <!-- card -->
-  
+        <div class="card" style="width: 18rem">
+            <div class="card-body text-center">
+                <h5 class="card-title">Agregar Nuevo Curso</h5>
+                <i class="far fa-plus-square" style="width:10rem;color:grey"></i>
+            </div>
+        </div>
   
     </div>
 	
