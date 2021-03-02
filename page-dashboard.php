@@ -6,7 +6,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
-                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                    src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
                     class="card-img-top"
                     alt="..."
                 />
@@ -77,7 +77,7 @@
         <!-- card -->
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200 text-center py-5">
-                <a href="https://google.com" ><i class="far fa-plus-square" style="font-size:20rem;color:#80808059"></i></a>
+                <a href="https://google.com" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
                 <div class="card-body">
                     <h5 class="card-title">Agregar Nuevo Curso</h5>                   
                 </div>
