@@ -1,8 +1,9 @@
 <?php get_header();?>
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
+<div style="max-width:300px; margin:10px auto">
 
-   <form>
+    <form>
         <!-- Name input -->
         <div class="form-outline mb-4">
             <input type="text" id="form4Example1" class="form-control" />
@@ -38,6 +39,9 @@
         <!-- Submit button -->
         <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
 </form>
+
+</div>
+   
 	
 
 <div class="verifooter">
