@@ -2,37 +2,72 @@
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
 
-    <form id="thumbnail_upload" method="post" action="#" enctype="multipart/form-data" >
-        <input type="file" name="thumbnail" id="thumbnail">
-        <input type='hidden' value='<?php wp_create_nonce( 'upload_thumb' ); ?>' name='_nonce' />
-        <input type="hidden" name="post_id" id="post_id" value="1">
-        <input type="hidden" name="action" id="action" value="my_upload_action">
-        <input id="submit-ajax" name="submit-ajax" type="submit" value="upload">
-    <form>
-    <div id="output1"></div>
-    <script>
-            $(document).ready(function() { 
-                var options = { 
-                    target:        '#output1',      // target element(s) to be updated with server response 
-                    beforeSubmit:  showRequest,     // pre-submit callback 
-                    success:       showResponse,    // post-submit callback 
-                    url:    ajaxurl                 // since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php     
-                }; 
-
-                // bind form using 'ajaxForm' 
-                $('#thumbnail_upload').ajaxForm(options); 
-            });
-            function showRequest(formData, jqForm, options) {
-            //do extra stuff before submit like disable the submit button
-            $('#output1').html('Sending...');
-            $('#submit-ajax').attr("disabled", "disabled");
-            }
-            function showResponse(responseText, statusText, xhr, $form)  {
-            //do extra stuff after submit
-            }
-    </script>
-	        
-    <?php //the_content(); ?>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="card">
+  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+    <img
+      src="https://mdbootstrap.com/img/new/standard/nature/111.jpg"
+      class="img-fluid"
+    />
+    <a href="#!">
+      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+    </a>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">
+      Some quick example text to build on the card title and make up the bulk of the
+      card's content.
+    </p>
+    <a href="#!" class="btn btn-primary">Button</a>
+  </div>
+</div>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="https://mdbootstrap.com/img/new/standard/city/042.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a short card.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="https://mdbootstrap.com/img/new/standard/city/043.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a longer card with supporting text below as a natural lead-in to
+          additional content.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="https://mdbootstrap.com/img/new/standard/city/044.jpg"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          This is a longer card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 	
 
 <div class="verifooter">
