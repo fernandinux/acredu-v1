@@ -20,9 +20,9 @@
                                 
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
-                                <p class="card-text">
+                                <div class="card-text fs-6">
                                 <?php the_content(); ?>
-                                </p>
+                                </div>
                                 <a href="#!" class="btn" style="background:#11af88">Agregar Lista</a>
                             </div>                               
                     <!-- <img
