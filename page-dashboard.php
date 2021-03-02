@@ -16,7 +16,7 @@
                     This is a longer card with supporting text below as a natural lead-in to
                     additional content. This content is a little bit longer.
                     </p>
-                    <a href="#!" class="btn btn-primary">Button</a>
+                    <a href="#!" class="btn" style="background:green">Button</a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
-                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+                    src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
                     class="card-img-top"
                     alt="..."
                 />
