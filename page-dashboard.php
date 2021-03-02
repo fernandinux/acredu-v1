@@ -77,28 +77,14 @@
         <!-- card -->
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
-                <img
-                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
-                    class="card-img-top"
-                    alt="..."
-                />
+                <a href="https://google.com" ><i class="far fa-plus-square" style="font-size:20rem;color:grey"></i></a>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                    This is a longer card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.
-                    </p>
-                    <a href="#!" class="btn btn-primary">Button</a>
+                    <h5 class="card-title">Agregar Nuevo Curso</h5>                   
                 </div>
             </div>
         </div>
         <!-- card -->
-        <div class="card" style="width: 18rem">
-            <div class="card-body text-center">
-                <h5 class="card-title">Agregar Nuevo Curso</h5>
-                <i class="far fa-plus-square" style="width:10rem;color:grey"></i>
-            </div>
-        </div>
+        
   
     </div>
 	
