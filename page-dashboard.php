@@ -6,7 +6,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
-                    src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
+                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
                     class="card-img-top"
                     alt="..."
                 />
@@ -24,7 +24,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
-                    src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
+                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
                     class="card-img-top"
                     alt="..."
                 />
@@ -42,7 +42,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
-                    src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
+                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
                     class="card-img-top"
                     alt="..."
                 />
@@ -60,7 +60,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
-                    src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
+                    src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
                     class="card-img-top"
                     alt="..."
                 />
