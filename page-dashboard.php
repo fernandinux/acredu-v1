@@ -31,7 +31,7 @@
 
                         <?php endwhile; ?>
                         <?php else:?>
-                        // no posts found
+                         <!-- no posts found -->
                        <?php endif; wp_reset_query();
                             ?>
 
