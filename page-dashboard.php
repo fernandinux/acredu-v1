@@ -3,7 +3,7 @@
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
-        <div class="col my-5">
+        <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
                     src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
@@ -21,7 +21,7 @@
             </div>
         </div>
         <!-- card -->
-        <div class="col my-5">
+        <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
                     src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
@@ -39,7 +39,7 @@
             </div>
         </div>
         <!-- card -->
-        <div class="col my-5">
+        <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
                     src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
@@ -57,7 +57,7 @@
             </div>
         </div>
         <!-- card -->
-        <div class="col my-5">
+        <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
                     src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
@@ -75,7 +75,7 @@
             </div>
         </div>
         <!-- card -->
-        <div class="col my-5">
+        <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                 <img
                     src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
