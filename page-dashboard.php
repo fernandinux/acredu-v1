@@ -14,8 +14,8 @@
                 <?php query_posts(array('post_type' => 'cursoscolectivo','orderby' => 'DESC')); ?>
                        <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
-                            <?php //the_post_thumbnail(array( 'class' => 'card-img-top' )); ?>
-                            <?php the_post_thumbnail(); ?>
+                            <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top' )); ?>
+                            <?php //the_post_thumbnail(); ?>
                                 
                                 
                             <div class="card-body">
