@@ -59,7 +59,7 @@
 				<div class="col-md-5 col-sm-12 text-lg-left my-4">
 				<p class="my-0 text-blue-proyetech">Credencial emitida a:</p>
 					<h3 class="my-2 text-center"><?php the_title(); ?></h3>
-					<p class="my-0 text-center "> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
+					<p class="my-0 text-center "><b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
 				<a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=<?php the_field('id_linkedin'); ?>&amp;issueYear=<?php the_field('year_linkedin'); ?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
@@ -74,8 +74,10 @@
 			</div>
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
 				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
-														
-					<?php the_content(); ?>
+						<div class="text-break">
+						<?php the_content(); ?>
+						</div>								
+					
 					<br/>  
 					
 					
