@@ -145,8 +145,10 @@
 				<!--/.Controls-->
 			</div>
             <!--/.Carousel Wrapper-->
+            <div style="text-align:justify;">
+				<?php the_field('descripcion_event1'); ?>
+			</div>
             
-            <?php the_field('descripcion_event1'); ?>
             
             	<p class="mt-5 text-center">Para conocer nuestro plan de estudio completo haz click al siguiente enlace:</p>
 					<div class="text-center">	
