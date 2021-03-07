@@ -188,7 +188,7 @@
             </div>			
 			
 				
-			<div class="text-center">
+			<div style="text-align:justify;"> 
 				<?php the_field('descripcion_inst'); ?>
 				
 			</div>
