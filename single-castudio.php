@@ -93,11 +93,11 @@
                     </div> -->
 				
 				<?php
-					if(get_field('mespublicacion') == 02):  
-						echo 'This is true, and will be shown.';
-					else:  
-						echo 'This is false, and will not be shown.';
-					endif;
+					if(get_field('mespublicacion') == 02):  ?>
+						<p>verdad</p>
+				<?php	else:  ?>
+						<p>vfalso</p>
+				<?php	endif;
 				?>
 
 
