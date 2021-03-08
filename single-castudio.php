@@ -92,11 +92,7 @@
                     	</iframe>
                     </div> -->
 				
-				<?php if (5=5): ?>
-					<?php echo ("Código que sea cierto Participacion"); ?>
-				<?php else: ?>
-					<?php echo ("Código que se ejecutará si no es cierto coo"); ?>					
-				<?php endif; ?>
+			
 
 
                     <!--Carousel Wrapper-->
