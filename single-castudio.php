@@ -93,11 +93,11 @@
                     </div> -->
 				
 				<?php
-					if(10 == 10):  
+					if(the_field('mespublicacion') == 03):  
 						echo 'This is true, and will be shown.';
 					endif;
 					
-					if(10 == 15):  
+					if(10 == 10):  
 						echo 'This is false, and will not be shown.';
 					endif;
 				?>
