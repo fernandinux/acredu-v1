@@ -93,7 +93,7 @@
                     </div> -->
 				
 				<?php
-					if(the_field('mespublicacion') == 02):  
+					if(get_the_field('mespublicacion') == 02):  
 						echo 'This is true, and will be shown.';
 					endif;
 					
