@@ -93,7 +93,7 @@
                     </div> -->
 				
 				<?php
-					if(get_field('mespublicacion') == 02):  ?>
+					if(get_field('name_event') == "Certificado de Participación"):  ?>
 						<p>verdad</p>
 				<?php	else:  ?>
 						<p>vfalso</p>
