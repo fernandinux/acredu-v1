@@ -92,7 +92,11 @@
                     	</iframe>
                     </div> -->
 				
-			
+				<?php if (str_contains('La duda es uno de los nombres de la inteligencia', 'duda')): ?>
+					<?php echo ("Código que sea cierto Participacion"); ?>
+				<?php else: ?>
+					<?php echo ("Código que se ejecutará si no es cierto coo"); ?>					
+				<?php endif; ?>
 
 
                     <!--Carousel Wrapper-->
