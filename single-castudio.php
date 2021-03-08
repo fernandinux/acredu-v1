@@ -92,7 +92,7 @@
                     	</iframe>
                     </div> -->
 				
-				<?php if (the_field('name_event')=="Certificado de Participación"): ?>
+				<?php if (the_field('name_event')=='Certificado de Participación'): ?>
 					<?php echo ("Código que sea cierto Participacion"); ?>
 				<?php else: ?>
 					<?php echo ("Código que se ejecutará si no es cierto coo"); ?>					
