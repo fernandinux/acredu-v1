@@ -16,7 +16,7 @@
             <div class="p-1 m-5 text-center bg-light">
                 <h3 class="my-3">Cursos</h3>
                 <p class="mb-3" style="max-width:200px;">Revisa los cursos que has creado</p>
-                <a class="btn p-2" style="background:green;" href="" role="button">Revisar</a>
+                <a class="btn p-2" style="background:green;" href="/dashboard/" role="button">Revisar</a>
             </div>
             <!-- Jumbotron -->
             <!-- Jumbotron -->
