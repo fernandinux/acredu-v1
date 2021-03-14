@@ -1,47 +1,20 @@
 <?php get_header();?>
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
-<div style="max-width:300px; margin:10px auto">
 
-    <form>
-        <!-- Name input -->
-        <div class="form-outline mb-4">
-            <input type="text" id="form4Example1" class="form-control" />
-            <label class="form-label" for="form4Example1">Name</label>
+   <?php if (is_user_logged_in()) :
+     ?>
+        <div class="m-5 d-flex flex-wrap">
+            <!-- Jumbotron -->
+            <?php the_content(); ?>
+            <!-- Jumbotron -->
         </div>
 
-        <!-- Email input -->
-        <div class="form-outline mb-4">
-            <input type="email" id="form4Example2" class="form-control" />
-            <label class="form-label" for="form4Example2">Email address</label>
-        </div>
-
-        <!-- Message input -->
-        <div class="form-outline mb-4">
-            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-            <label class="form-label" for="form4Example3">Message</label>
-        </div>
-
-        <!-- Checkbox -->
-        <div class="form-check d-flex justify-content-center mb-4">
-            <input
-            class="form-check-input me-2"
-            type="checkbox"
-            value=""
-            id="form4Example4"
-            checked
-            />
-            <label class="form-check-label" for="form4Example4">
-            Send me a copy of this message
-            </label>
-        </div>
-
-        <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
-</form>
-
-</div>
-   
+     <?php else :?>
+        
+     <?php endif;?>
+	        
+    
 	
 
 <div class="verifooter">
