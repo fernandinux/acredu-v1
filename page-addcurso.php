@@ -11,7 +11,8 @@
                <?php  
                $memberID = get_current_user_id();
                $memberInfo = get_userdata($memberID);
-               echo $memberInfo;
+               $memberName = $memberInfo->first_name;
+               echo $memberName;
                ?> 
         </div>
 
