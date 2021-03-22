@@ -56,6 +56,7 @@ get_header();
 							// 		'number'     => 10,
 							// 	)
 							// );
+							the_content();
 							?>
 						<!-- </ul>
 					</div>.widget -->
@@ -65,6 +66,7 @@ get_header();
 			</div><!-- .page-content -->
 
 	</main><!-- #main -->
+	
 <div class="verifooter">
 	<?php
 // get_sidebar();
