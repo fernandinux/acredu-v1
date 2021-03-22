@@ -56,7 +56,7 @@ get_header();
 							// 		'number'     => 10,
 							// 	)
 							// );
-							the_content();
+							
 							?>
 						<!-- </ul>
 					</div>.widget -->
