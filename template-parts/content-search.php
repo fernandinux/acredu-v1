@@ -41,6 +41,6 @@
 			</p>
 			<div style="width:100%;text-align:center;width:100%;text-align:center;margin: 0px auto 1rem auto;"><?php the_field('fechainicio'); ?></div>
 			
-			<a href="htpps://acredu.org" class="btn mt-5" style="background:#03AA99"><i class="far fa-comment" style="font-size:18px;margin-right:5px"></i>Contactar al emisor</a>
+			<a href="https://bit.ly/2EIKmrc" class="btn mt-5" style="background:#03AA99"><i class="far fa-comment" style="font-size:18px;margin-right:5px"></i>Contactar al emisor</a>
 		</div><!-- .entry-header -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -34,7 +34,7 @@
 			
 			
 			
-			<a href="htpps://acredu.org" class="btn mt-5" style="background:#03AA99"><i class="fas fa-search" style="font-size:18px;margin-right:5px"></i>Nueva verificación</a>
+			<a href="htpps://acredu.org/verificador" class="btn mt-5" style="background:#03AA99"><i class="fas fa-search" style="font-size:18px;margin-right:5px"></i>Nueva verificación</a>
 		</div><!-- .entry-header -->
 </article>
 </section><!-- .no-results -->
