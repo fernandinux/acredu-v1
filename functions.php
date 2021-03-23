@@ -175,7 +175,7 @@ if( empty( $submission ) ) return;
 * llamar a la función get_post_data del plugin CF7.
 */
 $formulario = array();
-$formulario['posted_data'] = $submission->get_posted_data();
+$formulario['posted_data'] = $submission->get_posted_data(592);
 $upload= $_FILES['file-142']; 
 $upload2= $_FILES['file-lista'];
 // $ini='<h2>Fecha de emisión:</h2></br>';
@@ -187,7 +187,7 @@ $upload2= $_FILES['file-lista'];
                     'post_title' => $formulario['posted_data']['nombre-curso'],
                     'post_content' =>  $formulario['posted_data']['description-curso'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    'post_type' => $formulario['posted_data']['text-validate']  //Importante especificar que este post es del tipo "Postulante"
+                    'post_type' => 'cursoscolectivo' //Importante especificar que este post es del tipo "Postulante"
                     ) );
 
                     if( ! is_wp_error( $postulante_id ) ) {
