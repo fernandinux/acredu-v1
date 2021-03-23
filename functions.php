@@ -179,7 +179,7 @@ $formulario['posted_data'] = $submission->get_posted_data();
 $upload= $_FILES['file-142'];
 $postulante_id = wp_insert_post( array(
 'post_title' => $formulario['posted_data']['nombre-postulante'],
-'post_content' => 'publish' $formulario['posted_data']['cv-postulante'],
+'post_content' =>  $formulario['posted_data']['cv-postulante'],
 'post_status' => 'publish', // Indicamos que el postulante está publicado
 'post_type' => 'cursoscolectivo' // Importante especificar que este post es del tipo "Postulante"
 ) );
