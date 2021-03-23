@@ -167,7 +167,7 @@ add_action( 'init', 'certificate_imce');
 * @return void
 */
 function guardar_postulante_por_cf7( $wpcf7 ) {
-$submission = WPCF7_Submission::get_instance(592);
+$submission = WPCF7_Submission::get_instance();
 // En caso de que no haya valores salgo de la función
 if( empty( $submission ) ) return;
 /*
@@ -187,7 +187,7 @@ $upload2= $_FILES['file-lista'];
                     'post_title' => $formulario['posted_data']['nombre-curso'],
                     'post_content' =>  $formulario['posted_data']['description-curso'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    'post_type' => 'cursoscolectivo' //Importante especificar que este post es del tipo "Postulante"
+                    'post_type' =>  $formulario['posted_data']['text-validate'] //Importante especificar que este post es del tipo "Postulante"
                     ) );
 
                     if( ! is_wp_error( $postulante_id ) ) {
