@@ -109,5 +109,8 @@ header {
 
 /* Fin stylos para el Home*/
 #post_type_form {
-  background-color: white;
+  background-color: white !important;
+color: white !important;
+display: none !important;
+cursor: not-allowed !important;
 }
