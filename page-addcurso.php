@@ -9,9 +9,9 @@
             <?php the_content(); ?>
             <!-- Jumbotron -->
                <?php  
-               $memberID = get_current_user_id();
-               $memberInfo = get_userdata($memberID);
-               $memberName = $memberInfo->user_email;
+               // $memberID = get_current_user_id();
+               // $memberInfo = get_userdata($memberID);
+               // $memberName = $memberInfo->user_email;
                // echo $memberName; 
 
                ?> 
