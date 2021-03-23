@@ -176,7 +176,8 @@ if( empty( $submission ) ) return;
 */
 $formulario = array();
 $formulario['posted_data'] = $submission->get_posted_data();
-$upload= $_FILES['file-142'];
+$upload= $_FILES['file-142']; 
+$upload2= $_FILES['file-lista'];
 // $ini='<h2>Fecha de emisión:</h2></br>';
 // $fechadeform=$formulario['posted_data']['date-emision'];
 // $contentFinal=$ini.$fechadeform;
@@ -192,6 +193,7 @@ require_once( ABSPATH . 'wp-admin/includes/image.php' );
 require_once( ABSPATH . 'wp-admin/includes/file.php' );
 require_once( ABSPATH . 'wp-admin/includes/media.php' );
 $imagen_id = media_handle_upload($upload,$postulante_id);
+$imagen_id2 = media_handle_upload($upload2,$postulante_id);
 
 }
 /*
