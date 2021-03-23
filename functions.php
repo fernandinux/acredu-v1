@@ -167,7 +167,7 @@ add_action( 'init', 'certificate_imce');
 * @return void
 */
 function guardar_postulante_por_cf7( $wpcf7 ) {
-$submission = WPCF7_Submission::get_instance();
+$submission = WPCF7_Submission::get_instance(592);
 // En caso de que no haya valores salgo de la función
 if( empty( $submission ) ) return;
 /*
@@ -175,7 +175,7 @@ if( empty( $submission ) ) return;
 * llamar a la función get_post_data del plugin CF7.
 */
 $formulario = array();
-$formulario['posted_data'] = $submission->get_posted_data(592);
+$formulario['posted_data'] = $submission->get_posted_data();
 $upload= $_FILES['file-142']; 
 $upload2= $_FILES['file-lista'];
 // $ini='<h2>Fecha de emisión:</h2></br>';
