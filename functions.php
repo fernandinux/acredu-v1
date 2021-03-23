@@ -219,9 +219,9 @@ function custom_add_form_tag_email_user() {
 function custom_emailuser_form_tag_handler( $tag ) {
  
     /*- Este es mi valor personalizado, puedes poner cualquiera acá -*/ 
-        $memberID = get_current_user_id();
-        $memberInfo = get_userdata($memberID);
-        $mailuser = $memberInfo->user_email;
+       
+        $mailuser = isset($_SESSION['user_email']) ? $_SESSION['user_email'] : 'N/A';
+        
     
     /*- Configuración del campo -*/
     
