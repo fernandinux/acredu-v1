@@ -181,35 +181,41 @@ $upload2= $_FILES['file-lista'];
 // $ini='<h2>Fecha de emisión:</h2></br>';
 // $fechadeform=$formulario['posted_data']['date-emision'];
 // $contentFinal=$ini.$fechadeform;
-$postulante_id = wp_insert_post( array(
-'post_title' => $formulario['posted_data']['nombre-curso'],
-'post_content' =>  $formulario['posted_data']['description-curso'],
-'post_status' => 'publish', // Indicamos que el postulante está publicado
-'post_type' => 'cursoscolectivo' // Importante especificar que este post es del tipo "Postulante"
-) );
+if ($formulario['posted_data']['text-validate']=='curso'){
+                $postulante_id = wp_insert_post( array(
+                    'post_title' => $formulario['posted_data']['nombre-curso'],
+                    'post_content' =>  $formulario['posted_data']['description-curso'],
+                    'post_status' => 'publish', // Indicamos que el postulante está publicado
+                    'post_type' => 'cursoscolectivo' // Importante especificar que este post es del tipo "Postulante"
+                    ) );
 
-if( ! is_wp_error( $postulante_id ) ) {
-require_once( ABSPATH . 'wp-admin/includes/image.php' );
-require_once( ABSPATH . 'wp-admin/includes/file.php' );
-require_once( ABSPATH . 'wp-admin/includes/media.php' );
-$imagen_id = media_handle_upload($upload,$postulante_id);
-$imagen_id2 = media_handle_upload($upload2,$postulante_id);
+                    if( ! is_wp_error( $postulante_id ) ) {
+                    require_once( ABSPATH . 'wp-admin/includes/image.php' );
+                    require_once( ABSPATH . 'wp-admin/includes/file.php' );
+                    require_once( ABSPATH . 'wp-admin/includes/media.php' );
+                    $imagen_id = media_handle_upload($upload,$postulante_id);
+                    $imagen_id2 = media_handle_upload($upload2,$postulante_id);
+
+                    }
+                    /*
+                    * Si no hubo ningún error guardando el postulante
+                    * podemos guardar su email en un campo post_meta.
+                    */
+                    if( ! is_wp_error( $postulante_id ) ) {
+                    update_field( 'fechaemision', $formulario['posted_data']['date-emision'], $postulante_id );
+                    update_field( 'urlvideo', $formulario['posted_data']['url-video'], $postulante_id );
+                    update_field( 'urlboton', $formulario['posted_data']['url-boton'], $postulante_id );
+                                $memberID = get_current_user_id();
+                                $memberInfo = get_userdata($memberID);
+                                $memberName = $memberInfo->user_email;
+                    add_post_meta( $postulante_id, 'mgp_email', $memberName);
+                    update_post_meta( $postulante_id, '_thumbnail_id', 773 );
+                    }
+
 
 }
-/*
-* Si no hubo ningún error guardando el postulante
-* podemos guardar su email en un campo post_meta.
-*/
-if( ! is_wp_error( $postulante_id ) ) {
-update_field( 'fechaemision', $formulario['posted_data']['date-emision'], $postulante_id );
-update_field( 'urlvideo', $formulario['posted_data']['url-video'], $postulante_id );
-update_field( 'urlboton', $formulario['posted_data']['url-boton'], $postulante_id );
-            $memberID = get_current_user_id();
-               $memberInfo = get_userdata($memberID);
-               $memberName = $memberInfo->user_email;
-add_post_meta( $postulante_id, 'mgp_email', $memberName);
-update_post_meta( $postulante_id, '_thumbnail_id', 773 );
-}
+
+                
 }
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
 
