@@ -20,7 +20,8 @@
                                 
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
-                                <div class="card-text fs-6">
+                                <div class="card-text fs-6 text-truncate" style="max-height: 150px">
+                                
                                 <?php the_content(); ?>
                                 </div>
                                 <a href="#!" class="btn" style="background:#11af88">Agregar Lista</a>
