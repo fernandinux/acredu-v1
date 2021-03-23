@@ -20,11 +20,11 @@
                                 
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
-                                <div class="card-text fs-6 text-truncate" style="max-height: 150px">
+                                <div class="card-text fs-6 text-truncate" >
                                 
                                 <?php the_content(); ?>
                                 </div>
-                                <a href="#!" class="btn" style="background:#11af88">Agregar Lista</a>
+                                <a href="https://app.acredu.org/add-lista/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
                             </div>                               
                     <!-- <img
                         src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
