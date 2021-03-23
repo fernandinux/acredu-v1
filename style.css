@@ -108,3 +108,6 @@ header {
 }
 
 /* Fin stylos para el Home*/
+#post_type_form {
+  background-color: white;
+}
