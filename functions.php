@@ -181,13 +181,13 @@ $upload2= $_FILES['file-lista'];
 // $ini='<h2>Fecha de emisión:</h2></br>';
 // $fechadeform=$formulario['posted_data']['date-emision'];
 // $contentFinal=$ini.$fechadeform;
-$valido= $formulario['posted_data']['text-validate'];
-if ($valido==="curso"){
+
+
                 $postulante_id = wp_insert_post( array(
                     'post_title' => $formulario['posted_data']['nombre-curso'],
                     'post_content' =>  $formulario['posted_data']['description-curso'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    'post_type' => 'cursoscolectivo' // Importante especificar que este post es del tipo "Postulante"
+                    'post_type' => $formulario['posted_data']['text-validate'] // Importante especificar que este post es del tipo "Postulante"
                     ) );
 
                     if( ! is_wp_error( $postulante_id ) ) {
@@ -214,7 +214,7 @@ if ($valido==="curso"){
                     }
 
 
-}
+
 
                 
 }
