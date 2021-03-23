@@ -207,7 +207,41 @@ update_post_meta( $postulante_id, '_thumbnail_id', 773 );
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
 
  
+/*-------------------------------------------------------------
+* Custom Tag Contact Form 7 tag mailguardo para usar el email ya guardado del user
+*--------------------------------------------------------------*/
 
+add_action( 'wpcf7_init', 'custom_add_form_tag_email_user' );
+
+function custom_add_form_tag_email_user() {
+    wpcf7_add_form_tag( 'emailuser', 'custom_emailuser_form_tag_handler', array( 'name-attr' => true ) ); 
+}
+function custom_emailuser_form_tag_handler( $tag ) {
+ 
+    /*- Este es mi valor personalizado, puedes poner cualquiera acá -*/ 
+        $memberID = get_current_user_id();
+        $memberInfo = get_userdata($memberID);
+        $mailuser = $memberInfo->user_email;
+    
+    /*- Configuración del campo -*/
+    
+       $atts = array(
+            'type' => 'hidden',
+            'name' => $tag->name,
+            'value' => $mailuser
+        );
+    
+    /*- Creamos el campo con los atributos anteriores -*/
+    
+       $input = sprintf(
+            '<input %s />',
+            wpcf7_format_atts( $atts ) );
+    
+    /*- Retornamos el nuevo campo personalizado-*/
+    
+       return $input;
+    
+    }
 
 
 ?>
