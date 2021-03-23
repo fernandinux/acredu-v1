@@ -12,7 +12,8 @@
                $memberID = get_current_user_id();
                $memberInfo = get_userdata($memberID);
                $memberName = $memberInfo->user_email;
-               echo $memberName; 
+               // echo $memberName; 
+
                ?> 
         </div>
 

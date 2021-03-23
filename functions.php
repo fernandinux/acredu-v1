@@ -181,7 +181,8 @@ $upload2= $_FILES['file-lista'];
 // $ini='<h2>Fecha de emisión:</h2></br>';
 // $fechadeform=$formulario['posted_data']['date-emision'];
 // $contentFinal=$ini.$fechadeform;
-if ($formulario['posted_data']['text-validate']=='curso'){
+$valido= $formulario['posted_data']['text-validate'];
+if ($valido==="curso"){
                 $postulante_id = wp_insert_post( array(
                     'post_title' => $formulario['posted_data']['nombre-curso'],
                     'post_content' =>  $formulario['posted_data']['description-curso'],
