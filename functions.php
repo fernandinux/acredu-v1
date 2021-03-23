@@ -187,7 +187,7 @@ $upload2= $_FILES['file-lista'];
                     'post_title' => $formulario['posted_data']['nombre-curso'],
                     'post_content' =>  $formulario['posted_data']['description-curso'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    'post_type' => 'cursoscolectivo' //$formulario['posted_data']['text-validate']  Importante especificar que este post es del tipo "Postulante"
+                    'post_type' => $formulario['posted_data']['text-validate']  //Importante especificar que este post es del tipo "Postulante"
                     ) );
 
                     if( ! is_wp_error( $postulante_id ) ) {
