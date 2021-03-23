@@ -24,7 +24,7 @@
                                 
                                 <?php the_content(); ?>
                                 </div>
-                                <a href="https://app.acredu.org/add-lista/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
+                                <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
                             </div>                               
                     <!-- <img
                         src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
