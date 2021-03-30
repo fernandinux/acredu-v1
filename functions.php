@@ -257,7 +257,7 @@ function view_conferinta() {
     </body>
     </html>';
     
-    include(dirname(__FILE__)."/mpdf/mpdf.php");
+    include(dirname(__FILE__)."/mpdf/src/mpdf.php");
     $mpdf=new mPDF('c', 'A4-L');
     $mpdf->WriteHTML($output);
     $mpdf->Output();
