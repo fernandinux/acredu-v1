@@ -221,7 +221,49 @@ $upload2= $_FILES['file-lista'];
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
 
  
+/*para el generador de pdf */
 
+add_action('init', 'congres_redirect');
+
+function congres_redirect() {
+  if(isset($_GET['print_id'])) {
+    view_conferinta();
+  }
+}
+
+function view_conferinta() {
+
+    $output = '<html>
+    <head><title>Page title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>
+    <style>
+    .printable {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    }
+    .printable td {
+    border:1px solid #ddd;
+    padding:5px;
+    }
+    </style>
+    <body>';
+    
+    $id_rez = wp_get_current_user();
+    
+    $output .='<div style="">Prenume: '.get_user_meta( $id_rez, 'first_name', true ).'</div>
+    <div style="">Nume: '.get_user_meta( $id_rez, 'last_name', true ).'</div>';
+    
+    $output .= '
+    </body>
+    </html>';
+    
+    include(dirname(__FILE__)."/mpdf/mpdf.php");
+    $mpdf=new mPDF('c', 'A4-L');
+    $mpdf->WriteHTML($output);
+    $mpdf->Output();
+    exit;
+
+    }
 
 
 ?>
