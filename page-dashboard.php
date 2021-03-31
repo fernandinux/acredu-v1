@@ -4,12 +4,12 @@
 
     
 
-    <div class="my-4 mx-auto w-25"> 
+    <div class="mt-4 mb-0 mx-auto w-25"> 
         <img src="https://app.acredu.org/wp-content/uploads/2021/03/logocolectivo23.png" alt="logo" class="img-fluid">
         </div> 
 
 
-    <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
 
         <?php query_posts(array('post_type' => 'cursoscolectivo','orderby' => 'DESC')); ?>
