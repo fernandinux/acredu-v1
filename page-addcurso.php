@@ -5,9 +5,7 @@
    <?php if (is_user_logged_in()) :
      ?>
         <div class="m-5 d-flex flex-wrap">
-        <div class="my-4 mx-auto"> 
-        <img src="https://app.acredu.org/wp-content/uploads/2021/03/logocolectivo23.png" alt="logo" class="w-75 img-fluid" >
-        </div>
+        
             <!-- Jumbotron -->
              <div class="text-center m-5"> 
                <a href="https://app.acredu.org/wp-content/uploads/2021/03/Plantilla-lista-de-beneficiarios.csv" role="button">

@@ -4,7 +4,9 @@
 
     
 
-
+    <div class="my-4 mx-auto w-25"> 
+        <img src="https://app.acredu.org/wp-content/uploads/2021/03/logocolectivo23.png" alt="logo" class="img-fluid">
+        </div> 
 
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
