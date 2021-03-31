@@ -4,7 +4,7 @@
 
     
 
-    <div class="mt-4 mb-0 mx-auto w-25"> 
+    <div class="mt-4 mb-0 mx-auto" style="width:100px; height:100px;"> 
         <img src="https://app.acredu.org/wp-content/uploads/2021/03/logocolectivo23.png" alt="logo" class="img-fluid">
         </div> 
 
