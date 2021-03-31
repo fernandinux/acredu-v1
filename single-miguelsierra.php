@@ -47,7 +47,7 @@
 						</a>
 					</div>
 					<div>
-						<a target="_blank" href="http://bit.ly/3qqCSLA">https://miguelsierracanto.com/
+						<a target="_blank" href="http://bit.ly/3qqCSLA">https://www.filosofiadelaacciondirectiva.mx
 						</a>
 	
 					</div>	
