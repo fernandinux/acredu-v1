@@ -4,6 +4,12 @@
 
    <?php if (is_user_logged_in()) :
      ?>
+      <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/dashboard">Cursos</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Crear Curso</li>
+  </ol>
+</nav>
         <div class="m-5 d-flex flex-wrap">
         
             <!-- Jumbotron -->

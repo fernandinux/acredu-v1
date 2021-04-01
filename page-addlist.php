@@ -1,7 +1,14 @@
 <?php get_header();?>
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
-<div style="max-width:300px; margin:10px auto">
+
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/dashboard">Cursos</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Lista-Promoción</li>
+  </ol>
+</nav>
+<div style="max-width:300px; margin:0px auto 10px auto">
         <div class="text-center my-5"> 
 
         <a href="https://app.acredu.org/wp-content/uploads/2021/03/Plantilla-lista-de-beneficiarios.csv" role="button">
