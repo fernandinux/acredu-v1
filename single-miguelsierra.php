@@ -32,7 +32,7 @@
 				<div class="row d-flex justify-content-center">
 					<a id="shareface" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a>
 					<a id="sharelink" target="_blank" onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnpshare');" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>/&title=Acredu&summary=Certificate_Digital_aCredu"><i class="fa fa-linkedin"></i></a>
-					<a id="sharepdf" target="_blank" href="https://app.acredu.org/wp-content/uploads/2021/01/<?php the_field('id'); ?>.pdf"><i class="fa fa-download"></i></a>
+					<a id="sharepdf" target="_blank" href="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>.pdf"><i class="fa fa-download"></i></a>
 				</div>
 			
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
@@ -60,7 +60,7 @@
 					<p class="my-0 text-center "> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
-				<a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=64519562&amp;issueYear=2020&amp;issueMonth=12&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
+				<a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=<?php the_field('id_linkedin'); ?>&amp;issueYear=<?php the_field('year_linkedin'); ?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
 					<img class="mb-2 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 				</a>
 				</div>
@@ -97,7 +97,7 @@
 			<!-- Inicio add Linkedin profile -->
 			<div class="button-linkedin-web zoom animated zoomIn slow pt-2">
 				<p class=" mb-0 mx-auto">Agrégalo con solo 2 clicks</p>
-				<a onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnp');" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=64519562&amp;issueYear=2020&amp;issueMonth=12&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
+				<a onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnp');" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=<?php the_field('id_linkedin'); ?>&amp;issueYear=<?php the_field('year_linkedin'); ?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
 				<img class="my-3 z-depth-4" src="https://download.linkedin.com/desktop/add2profile/buttons/es_ES.png " alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
 			</div>
 			<!-- Fin add linkedin profile -->
