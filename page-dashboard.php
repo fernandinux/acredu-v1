@@ -22,7 +22,7 @@
                                 
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
-                                <div class="card-text fs-6 text-truncate" >
+                                <div class="card-text fs-6 text-truncate" style="max-height: 100px">
                                 
                                 <?php the_content(); ?>
                                 </div>
