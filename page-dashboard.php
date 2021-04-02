@@ -14,11 +14,11 @@
     <?php  
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
-    $metadatauser= get_user_meta($memberID);
+    $metadatauser= get_user_meta( $user_id, 'pie_upload_21', true );
     
     $memberlogin = $memberInfo->user_login;
     $memberName = $memberInfo->user_email;
-    $membernicename = $metadatauser->upload_21;
+    
     $memberDisplayName = $memberInfo->display_name;
     $memberNickname = $memberInfo->nickname;
     $memberFirstName = $memberInfo->first_name;
@@ -29,7 +29,7 @@
     $memberLocale = $memberInfo->twitter;
     echo $memberID;
     echo $memberlogin;
-    echo $membernicename;
+    echo $metadatauser;
     echo $memberDisplayName;
     echo $memberNickname;
     echo $memberFirstName;
