@@ -15,7 +15,28 @@
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberName = $memberInfo->user_url;
+    $memberlogin = $memberInfo->user_login;
+    $membernicename = $memberInfo->user_nicename;
+    $memberDisplayName = $memberInfo->display_name;
+    $memberNickname = $memberInfo->nickname;
+    $memberFirstName = $memberInfo->first_name;
+    $memberLastName = $memberInfo->last_name;
+    $memberDescription = $memberInfo->description;
+    $memberShowAdmin = $memberInfo->show_admin_bar_front;
+    $memberRole = $memberInfo->role;
+    $memberLocale = $memberInfo->locale;
     echo $memberName;
+    echo $memberlogin;
+    echo $membernicename;
+    echo $memberDisplayName;
+    echo $memberNickname;
+    echo $memberFirstName;
+    echo $memberLastName;
+    echo $memberDescription;
+    echo $memberShowAdmin;
+    echo $memberRole;
+    echo $memberLocale;
+
     ?>
 
         <?php query_posts(array('post_type' => 'cursoscastudio','orderby' => 'DESC')); ?>
