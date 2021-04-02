@@ -3,7 +3,7 @@
 <?php  
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
-    $metadatauser= get_user_meta( $user_id, 'pie_upload_21', true );
+    $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
     $memberlogin = $memberInfo->user_login;
     $memberName = $memberInfo->user_email;
@@ -18,7 +18,7 @@
     $memberLocale = $memberInfo->twitter;
     echo $memberID;
     echo $memberlogin;
-    echo $metadatauser;
+    echo $metadataImageProfile;
     echo $memberDisplayName;
     echo $memberNickname;
     echo $memberFirstName;
@@ -34,7 +34,7 @@
 
     
     <div class="mt-4 mb-0 mx-auto" style="width:100px; height:100px;"> 
-        <img src="<?php get_user_meta( $user_id, 'pie_upload_21', true );?>" alt="logo" class="img-fluid">
+        <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid">
     </div> 
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
