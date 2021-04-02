@@ -1,8 +1,18 @@
 <?php get_header();?>
 
-<?php  
-     $memberID = get_current_user_id();
+<?php 
+    $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
+    $memberLastName = $memberInfo->last_name;
+
+    if ($memberLastName=='COLECTIVO2021'){
+        $posType = 'cursoscolectivo';
+        echo "YEAH";
+    }
+    elseif(){}
+    else {}
+
+     
     $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
     $memberlogin = $memberInfo->user_login;
@@ -11,9 +21,9 @@
     $memberDisplayName = $memberInfo->display_name;
     $memberNickname = $memberInfo->nickname;
     $memberFirstName = $memberInfo->first_name;
-    $memberLastName = $memberInfo->last_name;
+    
     $memberDescription = $memberInfo->description;
-    $posType = 'cursoscolectivo';
+    
     $memberRole = $memberInfo->facebook;
     $memberLocale = $memberInfo->twitter;
     echo $memberID;

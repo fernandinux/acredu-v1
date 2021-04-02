@@ -172,7 +172,122 @@ function cursos_castudio(){
     );
     register_post_type( 'cursoscastudio', $args );
 }
+function cursos_wiad(){
+    $labels = array (
+        'name' => 'WIAD-Cursos',
+        'singular_name' => 'WIAD-Curso',
+        'menu_name' => 'WIAD',
+    );
+    $args = array(
+            'label' => 'WIAD-Cursos',
+            'descripcion' => 'Cursos de usuarios WIAD',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 11,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'cursoswiad', $args );
+}
+function cursos_usach(){
+    $labels = array (
+        'name' => 'USACH-Cursos',
+        'singular_name' => 'USACH-Curso',
+        'menu_name' => 'USACH',
+    );
+    $args = array(
+            'label' => 'USACH-Cursos',
+            'descripcion' => 'Cursos de usuarios USACH',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 12,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'cursosusach', $args );
+}
+function cursos_imce(){
+    $labels = array (
+        'name' => 'IMCE-Cursos',
+        'singular_name' => 'IMCE-Curso',
+        'menu_name' => 'IMCE',
+    );
+    $args = array(
+            'label' => 'IMCE-Cursos',
+            'descripcion' => 'Cursos de usuarios IMCE',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 13,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'cursosimce', $args );
+}
+function cursos_miguels(){
+    $labels = array (
+        'name' => 'MIGUELS-Cursos',
+        'singular_name' => 'MIGUELS-Curso',
+        'menu_name' => 'MIGUELS',
+    );
+    $args = array(
+            'label' => 'MIGUELS-Cursos',
+            'descripcion' => 'Cursos de usuarios MIGUELS',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 14,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'cursosmiguels', $args );
+}
+function cursos_proyetech(){
+    $labels = array (
+        'name' => 'PROYECTECH-Cursos',
+        'singular_name' => 'PROYECTECH-Curso',
+        'menu_name' => 'PROYECTECH',
+    );
+    $args = array(
+            'label' => 'PROYECTECH-Cursos',
+            'descripcion' => 'Cursos de usuarios PROYECTECH',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 15,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+    );
+    register_post_type( 'cursosproyetech', $args );
+}
 
+add_action( 'init', 'cursos_proyetech');
+add_action( 'init', 'cursos_miguels');
+add_action( 'init', 'cursos_imce');
+add_action( 'init', 'cursos_usach');
+add_action( 'init', 'cursos_wiad');
 add_action( 'init', 'cursos_castudio');
 add_action( 'init', 'cursos_colectivo');
 add_action( 'init', 'certificate_castudio');
