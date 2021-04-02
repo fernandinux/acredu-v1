@@ -13,7 +13,7 @@
     $memberFirstName = $memberInfo->first_name;
     $memberLastName = $memberInfo->last_name;
     $memberDescription = $memberInfo->description;
-    $memberShowAdmin = $memberInfo->show_admin_bar_front;
+    $posType = 'cursoscastudio';
     $memberRole = $memberInfo->facebook;
     $memberLocale = $memberInfo->twitter;
     echo $memberID;
@@ -24,7 +24,7 @@
     echo $memberFirstName;
     echo $memberLastName;
     echo $memberDescription;
-    echo $memberShowAdmin;
+    echo $posType;
     echo $memberRole;
     echo $memberLocale;
 
@@ -33,7 +33,8 @@
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
 
     
-    <div style="width:100px; height:100px;" class="p-2 d-flex align-items-center rounded-circle bg-dark mt-4 mb-0 mx-auto"> 
+    <div style="width:100px; height:100px;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;" 
+    class="p-2 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
@@ -41,7 +42,7 @@
         
    
 
-        <?php query_posts(array('post_type' => 'cursoscastudio','orderby' => 'DESC')); ?>
+        <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC')); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="col my-5" style="max-width:300px">
