@@ -1,17 +1,6 @@
 <?php get_header();?>
 
-    <?php get_template_part( 'template-parts/content', 'encabezado' );?>
-
-    
-
-    <div class="mt-4 mb-0 mx-auto" style="width:100px; height:100px;"> 
-        <img src="https://app.acredu.org/wp-content/uploads/2021/03/logocolectivo23.png" alt="logo" class="img-fluid">
-        </div> 
-
-
-    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
-        
-    <?php  
+<?php  
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $metadatauser= get_user_meta( $user_id, 'pie_upload_21', true );
@@ -40,6 +29,17 @@
     echo $memberLocale;
 
     ?>
+
+    <?php get_template_part( 'template-parts/content', 'encabezado' );?>
+
+    
+    <div class="mt-4 mb-0 mx-auto" style="width:100px; height:100px;"> 
+        <img src="<?php get_user_meta( $user_id, 'pie_upload_21', true );?>" alt="logo" class="img-fluid">
+    </div> 
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
+        
+   
 
         <?php query_posts(array('post_type' => 'cursoscastudio','orderby' => 'DESC')); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
