@@ -13,7 +13,7 @@
     $memberFirstName = $memberInfo->first_name;
     $memberLastName = $memberInfo->last_name;
     $memberDescription = $memberInfo->description;
-    $posType = 'cursoscastudio';
+    $posType = 'cursoscolectivo23';
     $memberRole = $memberInfo->facebook;
     $memberLocale = $memberInfo->twitter;
     echo $memberID;
