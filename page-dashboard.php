@@ -14,8 +14,8 @@
     <?php  
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
-    // $memberName = $memberInfo->user_email;
-    echo $memberInfo;
+    $memberName = $memberInfo->user_email;
+    echo $memberName;
     ?>
 
         <?php query_posts(array('post_type' => 'cursoscastudio','orderby' => 'DESC')); ?>
