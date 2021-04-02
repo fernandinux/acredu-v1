@@ -14,10 +14,11 @@
     <?php  
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
+    $metadatauser= get_user_meta($memberID);
     
     $memberlogin = $memberInfo->user_login;
     $memberName = $memberInfo->user_email;
-    $membernicename = $memberInfo->field_21;
+    $membernicename = $metadatauser->pie_upload_21;
     $memberDisplayName = $memberInfo->display_name;
     $memberNickname = $memberInfo->nickname;
     $memberFirstName = $memberInfo->first_name;
