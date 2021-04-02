@@ -12,7 +12,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
 
-        <?php query_posts(array('post_type' => 'cursoscolectivo','orderby' => 'DESC')); ?>
+        <?php query_posts(array('post_type' => 'cursoscastudio','orderby' => 'DESC')); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="col my-5" style="max-width:300px">
