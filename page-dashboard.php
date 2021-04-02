@@ -18,7 +18,7 @@
     
     $memberlogin = $memberInfo->user_login;
     $memberName = $memberInfo->user_email;
-    $membernicename = $metadatauser->pie_upload_21;
+    $membernicename = $metadatauser->upload_21;
     $memberDisplayName = $memberInfo->display_name;
     $memberNickname = $memberInfo->nickname;
     $memberFirstName = $memberInfo->first_name;
