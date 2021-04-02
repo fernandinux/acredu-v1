@@ -14,8 +14,9 @@
     <?php  
      $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
-    $memberName = $memberInfo->user_url;
+    
     $memberlogin = $memberInfo->user_login;
+    $memberName = $memberInfo->user_url;
     $membernicename = $memberInfo->user_nicename;
     $memberDisplayName = $memberInfo->display_name;
     $memberNickname = $memberInfo->nickname;
