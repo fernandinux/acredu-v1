@@ -33,8 +33,8 @@
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
 
     
-    <div class="mt-4 mb-0 mx-auto" style="width:100px; height:100px;"> 
-        <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid">
+    <div style="width:100px; height:100px;" class="p-2 d-flex align-items-center rounded-circle bg-dark mt-4 mb-0 mx-auto"> 
+        <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
