@@ -24,8 +24,8 @@
     $memberLastName = $memberInfo->last_name;
     $memberDescription = $memberInfo->description;
     $memberShowAdmin = $memberInfo->show_admin_bar_front;
-    $memberRole = $memberInfo->user_facebook;
-    $memberLocale = $memberInfo->user_twitter;
+    $memberRole = $memberInfo->facebook;
+    $memberLocale = $memberInfo->twitter;
     echo $memberName;
     echo $memberlogin;
     echo $membernicename;
