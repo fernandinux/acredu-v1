@@ -26,7 +26,7 @@
     $memberShowAdmin = $memberInfo->show_admin_bar_front;
     $memberRole = $memberInfo->facebook;
     $memberLocale = $memberInfo->twitter;
-    echo $memberName;
+    echo $memberID;
     echo $memberlogin;
     echo $membernicename;
     echo $memberDisplayName;
