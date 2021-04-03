@@ -4,11 +4,11 @@
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
-    // $colectivo = 'COLECTIVO2021';
-    // if ($memberLastName===$colectivo){
+    $colectivo = 'COLECTIVO2021';
+    if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     echo "YEAH";
-    // }
+    }
     // // elseif(){}
     // // else {}
     // endif; 
