@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <?php
-    $postidentificador = get_query_var('p');
+    $postidentificador = get_query_var('z');
     echo $postidentificador;
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
