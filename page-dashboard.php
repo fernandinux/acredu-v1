@@ -4,14 +4,14 @@
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
-    $colectivo = 'COLECTIVO2021';
-    if ($memberLastName===$colectivo){
-        $posType = 'cursoscolectivo';
-        echo "YEAH";
-    }
-    // elseif(){}
-    // else {}
-    endif; 
+    // $colectivo = 'COLECTIVO2021';
+    // if ($memberLastName===$colectivo){
+    //     $posType = 'cursoscolectivo';
+    //     echo "YEAH";
+    // }
+    // // elseif(){}
+    // // else {}
+    // endif; 
      
     $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
