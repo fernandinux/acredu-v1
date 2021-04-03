@@ -80,7 +80,7 @@
                     
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
-                            <a href="https://app.acredu.org/detailsCurso/?p={POST_ID}>
+                            <a href="https://app.acredu.org/detailsCurso/?p={POST_ID}">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-75' )); ?>                                                          
                             </a>   
                             <div class="card-body">
