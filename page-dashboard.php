@@ -5,11 +5,20 @@
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
     $colectivo = 'COLECTIVO2021';
+    $castudio = 'CASTUDIO2021';
+    $proyetech = 'PROYETECH2021';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
-    //     echo "YEAH";
+    //     las variables para cuadno sea colectivo
     }
-    // // elseif(){}
+    if($memberLastName==$castudio){
+        $posType = 'cursoscastudio';
+   //     las variables para cuadno sea castudio
+   }
+   if($memberLastName==$proyetech){
+    $posType = 'cursosproyetech';
+//     las variables para cuadno sea proyetech
+}
     // // else {}
     // endif; 
      
