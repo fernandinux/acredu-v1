@@ -38,28 +38,28 @@
      
     $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
-    $memberlogin = $memberInfo->user_login;
-    $memberName = $memberInfo->user_email;
+    // $memberlogin = $memberInfo->user_login;
+    // $memberName = $memberInfo->user_email;
     
-    $memberDisplayName = $memberInfo->display_name;
-    $memberNickname = $memberInfo->nickname;
-    $memberFirstName = $memberInfo->first_name;
+    // $memberDisplayName = $memberInfo->display_name;
+    // $memberNickname = $memberInfo->nickname;
+    // $memberFirstName = $memberInfo->first_name;
     
-    $memberDescription = $memberInfo->description;
+    // $memberDescription = $memberInfo->description;
     
-    $memberRole = $memberInfo->facebook;
-    $memberLocale = $memberInfo->twitter;
-    echo $memberID;
-    echo $memberlogin;
-    echo $metadataImageProfile;
-    echo $memberDisplayName;
-    echo $memberNickname;
-    echo $memberFirstName;
-    echo $memberLastName;
-    echo $memberDescription;
-    echo $posType;
-    echo $memberRole;
-    echo $memberLocale;
+    // $memberRole = $memberInfo->facebook;
+    // $memberLocale = $memberInfo->twitter;
+    // echo $memberID;
+    // echo $memberlogin;
+    // echo $metadataImageProfile;
+    // echo $memberDisplayName;
+    // echo $memberNickname;
+    // echo $memberFirstName;
+    // echo $memberLastName;
+    // echo $memberDescription;
+    // echo $posType;
+    // echo $memberRole;
+    // echo $memberLocale;
 
     ?>
 
