@@ -6,7 +6,7 @@
     $memberLastName = $memberInfo->last_name;
     // $colectivo = 'COLECTIVO2021';
     // if ($memberLastName===$colectivo){
-    //     $posType = 'cursoscolectivo';
+         $posType = 'cursoscolectivo';
     //     echo "YEAH";
     // }
     // // elseif(){}
