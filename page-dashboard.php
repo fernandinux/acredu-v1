@@ -9,9 +9,9 @@
         $posType = 'cursoscolectivo';
         echo "YEAH";
     }
-    elseif(){}
-    else {}
-
+    // elseif(){}
+    // else {}
+    endif; 
      
     $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
