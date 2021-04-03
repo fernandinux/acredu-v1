@@ -10,7 +10,7 @@
     <li class="breadcrumb-item active" aria-current="page">Crear Curso</li>
   </ol>
 </nav>
-        <div class="m-5 d-flex flex-wrap">
+        <div class="d-flex flex-wrap" style="margin: 2px 5px 15px 5px">
         
             <!-- Jumbotron -->
              <div class="text-center m-5"> 
@@ -19,7 +19,7 @@
               <br>
                   <div class="btn  waves-effect waves-light" style="background-color: #1BB27C">
                <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Descargar plantilla csv </div></a>
-
+               <br>
                <a  target="_blank" href="https://docs.google.com/spreadsheets/d/1lYlMDX3WLIlWx3TyGNphuzjVpccIiB-ZBDGleFr-fIA/edit?usp=sharing" role="button">
                   <div class="btn  waves-effect waves-light" style="background-color: #1BB27C">
                <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Plantilla en google sheet </div></a>
