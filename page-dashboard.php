@@ -7,6 +7,10 @@
     $colectivo = 'COLECTIVO2021';
     $castudio = 'CASTUDIO2021';
     $proyetech = 'PROYETECH2021';
+    $miguels = 'MIGUEL2021';
+    $imce = 'IMCE2021';
+    $usach = 'USACH2021';
+    $wiad = 'WIAD2021';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
@@ -17,10 +21,20 @@
    }
    if($memberLastName==$proyetech){
     $posType = 'cursosproyetech';
-//     las variables para cuadno sea proyetech
-}
-    // // else {}
-    // endif; 
+    }
+    if($memberLastName==$miguels){
+        $posType = 'cursosmiguels';
+        }
+        if($memberLastName==$imce){
+            $posType = 'cursosimce';
+            }
+            if($memberLastName==$usach){
+                $posType = 'cursosusach';
+                }
+                if($memberLastName==$wiad){
+                    $posType = 'cursoswiad';
+                    }
+    
      
     $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
