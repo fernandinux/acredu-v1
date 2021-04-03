@@ -6,11 +6,11 @@
     $memberLastName = $memberInfo->last_name;
     $colectivo = 'COLECTIVO2021';
     $castudio = 'CASTUDIO2021';
-    $proyetech = 'PROYETECH2021';
-    $miguels = 'MIGUEL2021';
-    $imce = 'IMCE2021';
-    $usach = 'USACH2021';
-    $wiad = 'WIAD2021';
+    $proyetech = 'PROYETECH';
+    $miguels = 'MIGUELS';
+    $imce = 'IMCE';
+    $usach = 'USACH';
+    $wiad = 'WIAD';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
