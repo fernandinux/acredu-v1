@@ -1,6 +1,8 @@
 <?php get_header();?>
 
-<?php 
+<?php
+    $postidentificador = get_query_var('p');
+    echo $postidentificador;
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
@@ -80,9 +82,9 @@
                     
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
-                            <a href="https://app.acredu.org/detailsCurso/?p={POST_ID}>
+
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-75' )); ?>                                                          
-                            </a>   
+                                
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
                                 <div class="card-text fs-6 text-truncate" style="max-height: 100px">
