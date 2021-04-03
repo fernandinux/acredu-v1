@@ -90,6 +90,13 @@
                                 <?php the_content(); ?>
                                 </div>
                                 <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
+
+                                <?php if( !(get_post_status() == 'trash') ) : ?>
+ 
+                                <a onclick="return confirm('Are you sure you wish to delete post: <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Delete</a>
+
+                                <?php endif; ?>
+
                             </div>                               
                     <!-- <img
                         src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
