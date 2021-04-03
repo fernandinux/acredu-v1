@@ -93,7 +93,7 @@
 
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
  
-                                <a onclick="return confirm('Are you sure you wish to delete post: <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Delete</a>
+                                <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
 
                                 <?php endif; ?>
 
