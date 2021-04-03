@@ -10,7 +10,7 @@
     <li class="breadcrumb-item active" aria-current="page">Crear Curso</li>
   </ol>
 </nav>
-        <div class="d-flex flex-wrap" style="margin: 2px 5px 15px 5px">
+        <div class="d-flex flex-wrap" style="margin: 2px 5px 150px 5px">
         
             <!-- Jumbotron -->
              <div class="text-center m-5"> 
