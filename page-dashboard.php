@@ -4,8 +4,8 @@
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
-
-    if ($memberLastName=='COLECTIVO2021'){
+    $colectivo = 'COLECTIVO2021';
+    if ($memberLastName===$colectivo){
         $posType = 'cursoscolectivo';
         echo "YEAH";
     }
