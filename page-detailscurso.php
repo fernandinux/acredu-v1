@@ -2,17 +2,18 @@
 
 <?php
     $postidentificador = get_query_var('z');
+    echo 'aqui hola'
     echo $postidentificador;
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
-    $colectivo = 'COLECTIVO2021';
-    $castudio = 'CASTUDIO2021';
-    $proyetech = 'PROYETECH2021';
-    $miguels = 'MIGUEL2021';
-    $imce = 'IMCE2021';
-    $usach = 'USACH2021';
-    $wiad = 'WIAD2021';
+    $colectivo = 'COLECTIVOXY';
+    $castudio = 'CASTUDIOXY';
+    $proyetech = 'PROYETECHXY';
+    $miguels = 'MIGUELXY';
+    $imce = 'IMCEXY';
+    $usach = 'USACHXY';
+    $wiad = 'WIADXY';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
@@ -83,7 +84,7 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
 
-                            <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-75' )); ?>                                                          
+                            <!-- <?php //the_post_thumbnail('medium', array( 'class' => 'card-img-top h-75' )); ?>                                                           -->
                                 
                             <div class="card-body">
                                 <h5 class="card-title"><?php the_title(); ?></h5>
