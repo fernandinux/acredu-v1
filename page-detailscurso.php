@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <?php
-    $postidentificador = get_query_var('z');
+    $postidentificador = get_query_var('p');
     $elhola= 'aqui hola';
     echo $elhola;
     echo $postidentificador;
