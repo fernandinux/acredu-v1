@@ -2,7 +2,8 @@
 
 <?php
     $postidentificador = get_query_var('z');
-    echo 'aqui hola'
+  
+    echo 'aqui hola';
     echo $postidentificador;
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
