@@ -4,13 +4,13 @@
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
-    $colectivo = 'COLECTIVO2021';
-    $castudio = 'CASTUDIO2021';
-    $proyetech = 'PROYETECH';
-    $miguels = 'MIGUELS';
-    $imce = 'IMCE';
-    $usach = 'USACH';
-    $wiad = 'WIAD';
+    $colectivo = 'COLECTIVOXXIII';
+    $castudio = 'CASTUDIOXY';
+    $proyetech = 'PROYETECHXY';
+    $miguels = 'MIGUELSXY';
+    $imce = 'IMCEXY';
+    $usach = 'USACHXY';
+    $wiad = 'WIADXY';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
@@ -72,8 +72,8 @@
     </div> 
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
-        
-   
+        AQUI
+   <?php echo $posType;?>
 
         <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC')); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
