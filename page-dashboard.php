@@ -72,8 +72,7 @@
     </div> 
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
-        AQUI
-   <?php echo $posType;?>
+        
 
         <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC')); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
