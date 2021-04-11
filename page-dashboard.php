@@ -88,7 +88,7 @@
                                 
                                 <?php the_content(); ?>
                                 </div>
-                                <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
+                               
 
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
  
@@ -117,7 +117,7 @@
             <div class="card h-200 text-center py-5">
                 <a href="https://app.acredu.org/addcurso/?text-validate=<?php echo $posType ?>" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
                 <div class="card-body">
-                    <h5 class="card-title">Agregar Nuevo Curso</h5>                   
+                    <h5 class="card-title">Agregar Lista</h5>                   
                 </div>
             </div>
         </div>
