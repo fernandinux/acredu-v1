@@ -8,7 +8,7 @@
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
-    $colectivo = 'COLECTIVOXY';
+    $colectivo = 'COLECTIVOXXIII';
     $castudio = 'CASTUDIOXY';
     $proyetech = 'PROYETECHXY';
     $miguels = 'MIGUELXY';
@@ -92,6 +92,7 @@
                                 <div class="card-text fs-6 text-truncate" style="max-height: 100px">
                                 
                                 <?php the_content(); ?>
+                                
                                 </div>
                                 <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
 
