@@ -47,6 +47,7 @@ function certificate_proyetech(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'proyetech', $args );
 }
@@ -74,6 +75,7 @@ function certificate_imce(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'imce', $args );
 }
@@ -98,6 +100,7 @@ function certificate_miguelsierra(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'miguelsierra', $args );
 }
@@ -122,6 +125,7 @@ function certificate_castudio(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'castudio', $args );
 }
@@ -146,6 +150,7 @@ function cursos_colectivo(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursoscolectivo', $args );
 }
@@ -169,6 +174,7 @@ function cursos_castudio(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursoscastudio', $args );
 }
@@ -191,6 +197,7 @@ function cursos_wiad(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursoswiad', $args );
 }
@@ -213,6 +220,7 @@ function cursos_usach(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursosusach', $args );
 }
@@ -235,6 +243,7 @@ function cursos_imce(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursosimce', $args );
 }
@@ -257,6 +266,7 @@ function cursos_miguels(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursosmiguels', $args );
 }
@@ -279,8 +289,34 @@ function cursos_proyetech(){
             'publicly_queryable' => true,
             'rewrite' => true,
             'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'cursosproyetech', $args );
+}
+
+function certificate_colectivo(){
+
+    $labels = array (
+        'name' => 'COLECTIVO-Certs',
+        'singular_name' => 'COLECTIVO-Certs',
+        'menu_name' => 'COLECTIVO',
+    );
+    $args = array(
+            'label' => 'COLECTIVO-Certs',
+            'descripcion' => 'Certificados de usuarios COLECTIVO',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 16,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'colectivo23', $args );
 }
 
 add_action( 'init', 'cursos_proyetech');
@@ -290,6 +326,7 @@ add_action( 'init', 'cursos_usach');
 add_action( 'init', 'cursos_wiad');
 add_action( 'init', 'cursos_castudio');
 add_action( 'init', 'cursos_colectivo');
+add_action( 'init', 'certificate_colectivo');
 add_action( 'init', 'certificate_castudio');
 add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
