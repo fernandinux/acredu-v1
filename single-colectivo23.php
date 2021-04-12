@@ -130,7 +130,7 @@
 
 
                     
-					<div style="text-align:justify;">
+					<div style="text-align:justify">
 						<?php the_field('descripcion_event1'); ?>
 					</div>   
 					<p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
@@ -152,7 +152,7 @@
 			<!-- Fin add linkedin profile -->
 			
             <div style="margin: 20px auto;">
-            <a href="http://bit.ly/3dPOqVQ" style="cursor: pointer;text-decoration: none;">
+            <a href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
                     <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
             </a>
                 
@@ -160,7 +160,7 @@
 			
 				
 			<div style="text-align:justify;">
-				<h4 class="my-0 text-center "><b><?php the_field('empresa_emisora'); ?></b></h4>
+				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
 				<?php the_field('descripcion_inst'); ?>
 				
 			</div>
