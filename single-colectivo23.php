@@ -24,11 +24,11 @@
 			<?php get_template_part( 'template-parts/content', 'namsharedown' );?>  
 			
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
-			<div class="d-md-flex justify-content-sm-center">
+			<div class="d-md-flex justify-content-sm-between">
 			
 				
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
-					<div>
+					<div class="text-center">
 						<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
 							<img alt="Colectivo23" src="https://app.acredu.org/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
@@ -54,13 +54,8 @@
 				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
 						<div style="text-align:justify;">
 						<?php the_content(); ?>
-						</div>								
-					
-					<br/>  
-					
-					
-					<br/>
-                    <br/>               
+						</div>				
+					             
                      <!-- <div class="video">
                         <iframe id="videoacstudio" width="100%" height="100%" 
                         src="http://bit.ly/3kJdJdL" 
@@ -70,88 +65,80 @@
                     	</iframe>
                     </div> -->
 				
-				<?php
-					if(get_field('name_event') == "Certificado de Participación"):  ?>
-						<!--Carousel Wrapper-->
-						<div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
-							<!--Indicators-->
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="1"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="2"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="3"></li>
-							
-							</ol>
-								<!--/.Indicators-->
-								<!--Slides-->
-							<div class="carousel-inner" role="listbox"> 
-								<!--First slide-->
-								<div class="carousel-item active">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio2-scaled.jpg"
-									alt="First slide">
-								</div>
-								<!--/First slide-->
-								<!--Second slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio3.png"
-									alt="Second slide">
-								</div>
-								<!--/Second slide-->
-								<!--Third slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio1-scaled.jpg"
-									alt="Third slide">
-								</div>
-								<!--/Third slide-->
-								<!--4 slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio4.jpg"
-									alt="Third slide">
-								</div>
-								<!--/4 slide-->
+					<?php
+						if(get_field('name_event') == "Certificado de Participación"):  ?>
+							<!--Carousel Wrapper-->
+							<div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
+								<!--Indicators-->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-1z" data-slide-to="1"></li>
+									<li data-target="#carousel-example-1z" data-slide-to="2"></li>
+									<li data-target="#carousel-example-1z" data-slide-to="3"></li>
 								
-					
-
-							</div>
-							<!--/.Slides-->
-							<!--Controls-->
-							<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-							</a>
-							<!--/.Controls-->
-						</div>
-						<!--/.Carousel Wrapper-->
-				<?php	else:  ?>
-						<!--Carousel Wrapper-->
+								</ol>
+									<!--/.Indicators-->
+									<!--Slides-->
+								<div class="carousel-inner" role="listbox"> 
+									<!--First slide-->
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio2-scaled.jpg"
+										alt="First slide">
+									</div>
+									<!--/First slide-->
+									<!--Second slide-->
+									<div class="carousel-item">
+										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio3.png"
+										alt="Second slide">
+									</div>
+									<!--/Second slide-->
+									<!--Third slide-->
+									<div class="carousel-item">
+										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio1-scaled.jpg"
+										alt="Third slide">
+									</div>
+									<!--/Third slide-->
+									<!--4 slide-->
+									<div class="carousel-item">
+										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio4.jpg"
+										alt="Third slide">
+									</div>
+									<!--/4 slide-->
+									
 						
-						<!--/.Carousel Wrapper-->
-				<?php	endif;
-				?>
+
+								</div>
+								<!--/.Slides-->
+								<!--Controls-->
+								<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+								</a>
+								<!--/.Controls-->
+							</div>
+							<!--/.Carousel Wrapper-->
+					<?php	else:  ?>
+							<!--Carousel Wrapper-->
+							
+							<!--/.Carousel Wrapper-->
+					<?php	endif;
+					?>
 
 
                     
-            <div style="text-align:justify;">
-				<?php the_field('descripcion_event1'); ?>
-			</div>
-            
-            
-            	<!-- <p class="mt-5 text-center">Para conocer nuestro plan de estudio completo haz click al siguiente enlace:</p>
-					<div class="text-center">	
-						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3bMFoWP"  class="btn btn-primary">
-							Plan de Estudio Aquí
-						</a>  
-                    </div> -->
-                <p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
-                <div class="text-center">	
-                    <a target="_blank" id="brochureproyetech" href="https://bit.ly/3s9KWRq" class="btn btn-primary">
-                        Aquí
-                    </a>  
-                </div>
+					<div style="text-align:justify;">
+						<?php the_field('descripcion_event1'); ?>
+					</div>   
+					<p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
+						<div class="text-center">	
+							<a target="_blank" id="brochureproyetech" href="https://bit.ly/3s9KWRq" class="btn btn-primary">
+								Aquí
+							</a>  
+						</div>
 					
 				</div>
 				
