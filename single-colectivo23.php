@@ -47,20 +47,7 @@
 					<p class="my-0 text-center "><b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
-                    <!-- <a target="_blank" href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event'); ?>&amp;organizationId=<?php the_field('id_linkedin'); ?>&amp;issueYear=<?php the_field('year_linkedin'); ?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
-                        <img class="mb-2 z-depth-4" src="https://app.acredu.org/wp-content/uploads/2021/04/es_ES.png" alt="Agregar certificado LinkedIn" data-pagespeed-url-hash="3180379771" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                    </a>
-
-                    <p>
-                    Credential ID: <?php //the_field('id'); ?>  
-                    </p>
-                    <div class="mb-5">
-                        <div class="text-center"><p class="mb-0">Emitido en:</p>
-                        <p class="text-blue-proyetech"><?php //the_field('fechainicio'); ?></p>
-                        </div>
-                    </div> -->
                     <?php get_template_part( 'template-parts/content', 'buttonlinkedin' );?>
-
 				</div>
 			</div>
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
