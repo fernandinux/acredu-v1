@@ -10,7 +10,7 @@
         >
     </a>
     <p>
-        Credential ID:: <?php the_field('id'); ?>  
+        Credential ID: <?php the_field('id'); ?>  
     </p>
     <div class="mb-5">
         <div class="text-center">
