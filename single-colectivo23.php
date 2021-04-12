@@ -228,7 +228,7 @@
                 <p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
                 <div class="text-center">	
                     <a target="_blank" id="brochureproyetech" href="https://bit.ly/3pWWZ3y" class="btn btn-primary">
-                        Aquí
+                        Aquíi
                     </a>  
                 </div>
 					
