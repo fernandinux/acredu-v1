@@ -29,12 +29,12 @@
 				
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div>
-						<a target="_blank" id="logousach" href="https://bit.ly/3kyDz3V" class="">
-							<img alt="CAstudio" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+						<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
+							<img alt="Colectivo23" src="https://app.acredu.org/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
-						<a target="_blank" href="https://bit.ly/3kyDz3V">https://www.colectivo23.com
+						<a target="_blank" href="https://bit.ly/3a3UXJM">https://www.colectivo23.com
 						</a>
 	
 					</div>	
@@ -128,79 +128,7 @@
 						<!--/.Carousel Wrapper-->
 				<?php	else:  ?>
 						<!--Carousel Wrapper-->
-						<div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
-							<!--Indicators-->
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="1"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="2"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="3"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="4"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="5"></li>
-								<li data-target="#carousel-example-1z" data-slide-to="6"></li>
-							
-							</ol>
-								<!--/.Indicators-->
-								<!--Slides-->
-							<div class="carousel-inner" role="listbox"> 
-								<!--First slide-->
-								<div class="carousel-item active">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide1.jpg"
-									alt="First slide">
-								</div>
-								<!--/First slide-->
-								<!--Second slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide2.jpg"
-									alt="Second slide">
-								</div>
-								<!--/Second slide-->
-								<!--Third slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide3.jpg"
-									alt="Third slide">
-								</div>
-								<!--/Third slide-->
-								<!--4 slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide4.jpg"
-									alt="Third slide">
-								</div>
-								<!--/4 slide-->
-								<!--5 slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide5.jpg"
-									alt="Third slide">
-								</div>
-								<!--/5 slide-->
-								<!--6 slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide6.jpg"
-									alt="Third slide">
-								</div>
-								<!--/6 slide-->
-								<!--7 slide-->
-								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide7.jpg"
-									alt="Third slide">
-								</div>
-								<!--/7 slide-->
-								
-					
-
-							</div>
-							<!--/.Slides-->
-							<!--Controls-->
-							<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-							</a>
-							<!--/.Controls-->
-						</div>
+						
 						<!--/.Carousel Wrapper-->
 				<?php	endif;
 				?>
@@ -212,15 +140,15 @@
 			</div>
             
             
-            	<p class="mt-5 text-center">Para conocer nuestro plan de estudio completo haz click al siguiente enlace:</p>
+            	<!-- <p class="mt-5 text-center">Para conocer nuestro plan de estudio completo haz click al siguiente enlace:</p>
 					<div class="text-center">	
 						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3bMFoWP"  class="btn btn-primary">
 							Plan de Estudio Aquí
 						</a>  
-                    </div>
+                    </div> -->
                 <p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
                 <div class="text-center">	
-                    <a target="_blank" id="brochureproyetech" href="https://bit.ly/3pWWZ3y" class="btn btn-primary">
+                    <a target="_blank" id="brochureproyetech" href="https://bit.ly/3s9KWRq" class="btn btn-primary">
                         Aquí
                     </a>  
                 </div>
@@ -244,7 +172,8 @@
             </div>			
 			
 				
-			<div style="text-align:justify;"> 
+			<div style="text-align:justify;">
+				<h4 class="my-0 text-center "><b><?php the_field('empresa_emisora'); ?></b></h4>
 				<?php the_field('descripcion_inst'); ?>
 				
 			</div>
