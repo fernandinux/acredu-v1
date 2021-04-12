@@ -10,7 +10,9 @@
                     
                     <img class="my-3 z-depth-4" 
                         src="https://bit.ly/2Qe6a3l" 
-                        alt="Agregar certificado LinkedIn" 
+                        alt="Agregar certificado LinkedIn"
+                        data-pagespeed-url-hash="3180379771" 
+                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                     >
                 </a>
                 <p>

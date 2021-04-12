@@ -18,7 +18,7 @@
     <meta property="og:description" content="Certificado digital de aCredu para <?php the_field('empresa_emisora'); ?>" />
     <meta property="og:image" content="<?php the_post_thumbnail_url('full'); ?>" />
     <meta name="theme-color" content="#013155" />
-<link rel="canonical" href="https://acredu.org/" />
+    <link rel="canonical" href="https://acredu.org/" />
     <!-- <title>
          <?php /* bloginfo( 'name');*/ ?>
     </title> -->
