@@ -152,15 +152,16 @@
 			<!-- Fin add linkedin profile -->
 			
             <div style="margin: 20px auto;">
-            <a href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
-                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
-            </a>
+				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
+				<a target="_blank" href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
+						<img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
+				</a>
                 
             </div>			
 			
 				
 			<div style="text-align:justify;">
-				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
+				
 				<?php the_field('descripcion_inst'); ?>
 				
 			</div>
