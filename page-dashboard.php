@@ -89,7 +89,7 @@
                                 <?php the_content(); ?>
                                 </div>
                                
-
+                                <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
  
                                 <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
