@@ -42,7 +42,7 @@
 														
 				</div>
 				<div class="col-md-5 col-sm-12 text-lg-left my-4">
-				<p class="my-0 text-blue-proyetech">Credencial emitida a:</p>
+				<p class="my-0 text-center">Credencial emitida a:</p>
 					<h3 class="my-2 text-center"><?php the_title(); ?></h3>
 					<p class="my-0 text-center "><b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
