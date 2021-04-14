@@ -19,7 +19,7 @@
 	<?php get_template_part( 'template-parts/content', 'certificate' );?>
 
 
-	<div class="row text-blue-proyetech pt-3 align-middle">
+	<div class="row pt-3 align-middle">
 		<div class="col-md-8">
 			<?php get_template_part( 'template-parts/content', 'namsharedown' );?>  
 			
