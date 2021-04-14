@@ -16,29 +16,12 @@
                     </div> -->
                     <!-- Inicio single -->
                     
-	<div class="row">		
-		<div class="col-md-12 py-5 cloudy-knoxville-gradient">
-							
-        	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
-			<div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin: 20px auto 0px auto;">
-            <small>¿Algo salió mal con tu certificado?, escribenos:</small>
-            <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>			
-		</div>
-	</div>
+		<?php get_template_part( 'template-parts/content', 'certificate' );?>		
 
 
 	<div class="row text-blue-proyetech pt-3 align-middle">
-		<div class="col-md-8">
-			<div class="h2 text-center my-3"><?php the_field('name_event'); ?></div>
-			
-				<div class="row d-flex justify-content-center">
-					<a id="shareface" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"></i></a>
-					<a id="sharelink" target="_blank" onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnpshare');" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>/&title=Acredu&summary=Autorregulaci%C3%B3n%20y%20Funciones%20Ejecutivas:%20en%20el%20desarrollo%20de%20habilidades%20para%20toda%20la%20vida"><i class="fa fa-linkedin"></i></a>
-					<a id="sharepdf" target="_blank" href="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
-						$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
-						echo $stripped; ?>.pdf"><i class="fa fa-download"></i></a>
-				</div>
-			
+		<div class="col-md-8">			
+			<?php get_template_part( 'template-parts/content', 'namsharedown' );?> 
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
 			<div class="d-md-flex justify-content-sm-center">
 			
