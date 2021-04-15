@@ -1,7 +1,8 @@
 <?php get_header();?>
 
 <?php
-    $postidentificador = get_query_var('curso');
+    
+    $postidentificador=$_GET['curso'];
     $elhola= 'aqui hola';
     echo $elhola;
     echo $postidentificador;
