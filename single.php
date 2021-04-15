@@ -53,7 +53,7 @@
 														
 				</div>
 				<div class="col-md-5 col-sm-12 text-lg-left my-4">
-				<p class="my-0 text-white-50">Credencial emitida a:</p>
+				<p class="my-0 text-white-50">Credencial emitida a:tu papiiiiii</p>
 					<h3 class="my-2 text-center"><?php the_title(); ?></h3>
 					<p class="my-0 text-center text-white-50"> Programa de <b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
