@@ -20,15 +20,15 @@
 	<div class="row">		
 		<div class="col-md-12 py-3 cloudy-knoxville-gradient">
 							
-        	<?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid shadow mx-auto d-block animated zoomIn' )); ?>
+        	<?php the_post_thumbnail( array(180, 150), array( 'class' => 'img-fluid shadow d-block animated zoomIn' )); ?>
 						
 		</div>
 	</div>
 
 
-	<div class="row bg-dark text-white pt-3 align-middle">
-		<div class="col-md-8">
-			<div class="h2 text-center my-3"><?php the_content(); ?></div>
+	<div class="row">
+		
+			<div class="text-center my-3"><?php the_content(); ?></div>
 			
 			<!-- Empieza la tabla  -->
                 <div class="table-responsive">
@@ -66,12 +66,12 @@
                 </div>
 
 
-    <!-- Termina la tabla -->	
+    		<!-- Termina la tabla -->	
 				
 			
 			
 				
-		</div>
+		
 		
 	</div>
 	
