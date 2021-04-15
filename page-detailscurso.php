@@ -76,6 +76,45 @@
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
+    <!-- Empieza la tabla  -->
+                <div class="table-responsive">
+                    <table class="table table-hover table-sm table-light border-success">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Lorem</th>
+                                    <th scope="col">Ipsum</th>
+                                    <th scope="col">Dolor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Sit</td>
+                                    <td>Amet</td>
+                                    <td>Consectetur</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Adipisicing</td>
+                                    <td>Elit</td>
+                                    <td>Sint</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Hic</td>
+                                    <td>Fugiat</td>
+                                    <td>Temporibus</td>
+                                </tr>
+                            </tbody>
+
+                    </table>
+                </div>
+
+
+    <!-- Termina la tabla -->
+
+
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
    
