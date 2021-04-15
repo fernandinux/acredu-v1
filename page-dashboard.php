@@ -79,7 +79,7 @@
                     
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
-                            <a href="https://app.acredu.org/detailscurso/?curso=<?php the_title(); ?>">
+                            <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-100' )); ?>                                                          
                             </a>   
                             <div class="card-body">
@@ -89,7 +89,7 @@
                                 <?php the_content(); ?>
                                 </div>
                                
-                                <a href="<?php the_permalink(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
+                                <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
  
                                 <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
