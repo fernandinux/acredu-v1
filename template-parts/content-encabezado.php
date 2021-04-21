@@ -9,6 +9,10 @@
               <a class="nav-link btn btn-outline-success btn-sm" 
                   data-mdb-ripple-color="dark" 
                   style="color:#03aa99 ! important; border: 2px solid #03aa99 !important;" 
+                  href="https://app.acredu.org/solicitar-cambio-nombre">Soporte</a>
+              <a class="nav-link btn btn-outline-success btn-sm" 
+                  data-mdb-ripple-color="dark" 
+                  style="color:#03aa99 ! important; border: 2px solid #03aa99 !important;" 
                   href="https://app.acredu.org/?piereg_logout_url=true">Cerrar sesión</a>
        <?php }
        ?>
