@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="https://app.acredu.org/wp-content/themes/acredu-v1/styles2.css" rel="stylesheet" />
+        <link href="https://app.acredu.org/wp-content/themes/acredu-v1/css/styles2.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
