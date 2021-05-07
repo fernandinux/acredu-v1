@@ -319,6 +319,31 @@ function certificate_colectivo(){
     register_post_type( 'colectivo23', $args );
 }
 
+function certificate_giulianahuaman(){
+
+    $labels = array (
+        'name' => 'GIULIANAH-Certs',
+        'singular_name' => 'GIULIANAH-Certs',
+        'menu_name' => 'GIULIANAH',
+    );
+    $args = array(
+            'label' => 'GIULIANAH-Certs',
+            'descripcion' => 'Certificados de usuarios GIULIANAH',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 16,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'giulianahuaman', $args );
+}
+
 add_action( 'init', 'cursos_proyetech');
 add_action( 'init', 'cursos_miguels');
 add_action( 'init', 'cursos_imce');
@@ -331,6 +356,7 @@ add_action( 'init', 'certificate_castudio');
 add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
+add_action( 'init', 'certificate_giulianahuaman');
 
 
 /* PRUEBAS FORM post
