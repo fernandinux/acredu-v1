@@ -126,7 +126,8 @@
   
     </div>
 	
-
+<br>
+<br>
 <div class="verifooter">
     <?php get_footer(); ?>
 </div>
