@@ -52,7 +52,7 @@
 			</div>
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
 				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
-						<div style="text-align:justify;font-size:20px !important;">
+						<div style="text-align:justify;">
 						<?php the_content(); ?>
 						</div>				
 					             
