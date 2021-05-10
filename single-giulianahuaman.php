@@ -133,12 +133,12 @@
 					<div style="text-align:justify">
 						<?php the_field('descripcion_event1'); ?>
 					</div>   
-					<p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
+					<!-- <p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
 						<div class="text-center">	
 							<a target="_blank" id="brochureproyetech" href="https://bit.ly/3s9KWRq" class="btn btn-primary">
 								Aquí
 							</a>  
-						</div>
+						</div> -->
 					
 				</div>
 				
