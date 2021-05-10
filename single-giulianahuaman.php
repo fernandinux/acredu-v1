@@ -30,7 +30,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div class="text-center">
 						<a target="_blank" id="logousach" href="https://www.linkedin.com/company/giuliana-huaman/" class="">
-							<img alt="GiulianaHuaman" src="https://app.acredu.org/wp-content/uploads/2021/05/GiulianaHuaman-e1620609864566.jpeg" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="GiulianaHuaman" src="https://app.acredu.org/wp-content/uploads/2021/05/GiulianaHuaman-e1620609864566.jpeg" class=" img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
