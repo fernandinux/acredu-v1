@@ -34,6 +34,7 @@
 						</a>
 					</div>
 					<div>
+                    <br>
 						<a target="_blank" href="https://www.linkedin.com/company/giuliana-huaman/">https://www.linkedin.com/company/giuliana-huaman/
 						</a>
 	
