@@ -78,7 +78,7 @@
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="col my-5" style="max-width:300px">
-            <div class="card h-200">
+            <div class="card" style="width:200px">
                             <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
