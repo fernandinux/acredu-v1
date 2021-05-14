@@ -82,11 +82,11 @@
                             <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
-                            <div class="card-body" style="height:250px">
-                            <div style="height:200px">
-                                <p>Código de Curso:</p>
+                            <div class="card-body" style="height:300px">
+                            <div style="height:220px">
+                                <p style="font-size:10px">Código:</p>
                                 <p class="card-title"><?php the_title(); ?></p>                                
-                                <p>Nombre del Curso:</p>    
+                                <p style="font-size:10px">Curso:</p>    
                                 <p class="card-title"><?php the_field('nombrecurso'); ?></p>
                             </div>
                             
