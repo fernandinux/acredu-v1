@@ -86,7 +86,7 @@
                                 <h5 class="card-title"><?php the_title(); ?></h5>
                                 <div class="card-text fs-6 text-truncate" style="max-height: 100px">
                                 
-                                <?php the_content(); ?>
+                                <p><?php the_field('codigocurso'); ?></p>
                                 </div>
                                
                                 <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
