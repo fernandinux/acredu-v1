@@ -5,7 +5,7 @@
     <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/dashboard">Cursos</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Lista-Promoción</li>
+    <li class="breadcrumb-item active" aria-current="page">Nueva lista</li>
   </ol>
 </nav>
 <div style="max-width:300px; margin:0px auto 10px auto">

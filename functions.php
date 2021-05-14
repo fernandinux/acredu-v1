@@ -386,7 +386,7 @@ $upload2= $_FILES['file-lista'];
 
 
                 $postulante_id = wp_insert_post( array(
-                    'post_title' => $formulario['posted_data']['nombre-curso'],
+                    'post_title' => $formulario['posted_data']['codigo-curso'],
                     'post_content' =>  $formulario['posted_data']['description-curso'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
                     'post_type' =>  $formulario['posted_data']['text-validate'] //Importante especificar que este post es del tipo "Postulante"
@@ -408,6 +408,7 @@ $upload2= $_FILES['file-lista'];
                     update_field( 'fechaemision', $formulario['posted_data']['date-emision'], $postulante_id );
                     update_field( 'urlvideo', $formulario['posted_data']['url-video'], $postulante_id );
                     update_field( 'urlboton', $formulario['posted_data']['url-boton'], $postulante_id );
+                    update_field( 'nombrecurso', $formulario['posted_data']['nombre-curso'], $postulante_id );
                                 $memberID = get_current_user_id();
                                 $memberInfo = get_userdata($memberID);
                                 $memberName = $memberInfo->user_email;
