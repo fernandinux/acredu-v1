@@ -23,11 +23,11 @@
             <!-- <img src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg" class="img-fluid shadow d-block animated zoomIn wp-post-image" alt="" loading="lazy" srcset="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg 700w, https://app.acredu.org/wp-content/uploads/2021/03/addCertif-300x222.jpg 300w" sizes="(max-width: 180px) 100vw, 180px" data-pagespeed-url-hash="3451760859" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="180" height="133"> -->
         </div>
         <div class="w-50 p-5">
-        <p>Código de Curso:</p>
+        <p style="margin:0px;font-size:12px">Código de Curso:</p>
             <strong><?php the_title(); ?> </strong> 
-        <p>Nombre del Curso:</p>
+        <p style="margin:0px;font-size:12px">Nombre del Curso:</p>
                 <p><?php the_field('nombrecurso'); ?></p>
-        <p>Descripción del Curso:</p> 
+        <p style="margin:10px 0px;font-size:12px">Descripción del Curso:</p> 
             <?php the_content(); ?> 
         </div>
     </div>
@@ -71,25 +71,25 @@
                     <td>Temporibus</td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row">4</th>
                     <td></td>
                     <td></td>
                     <td></td><td></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row">5</th>
                     <td></td>
                     <td></td>
                     <td></td><td></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row">6</th>
                     <td></td>
                     <td></td>
                     <td></td><td></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row">7</th>
                     <td></td>
                     <td></td>
                     <td></td><td></td>
