@@ -22,6 +22,6 @@
    
 	
 
-<div class="verifooter">
+<div>
     <?php get_footer(); ?>
 </div>
