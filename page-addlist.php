@@ -8,7 +8,7 @@
     <li class="breadcrumb-item active" aria-current="page">Nueva lista</li>
   </ol>
 </nav>
-<div style="max-width:300px; margin:0px auto 10px auto">
+<div style="max-width:300px; margin:0px auto 50px auto">
         <div class="text-center my-5"> 
 
         <a href="https://app.acredu.org/wp-content/uploads/2021/03/Plantilla-lista-de-beneficiarios.csv" role="button">
