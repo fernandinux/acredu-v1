@@ -82,15 +82,18 @@
                             <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
-                            <div class="card-body">
-                            <p>Código de Curso:</p>
-                                <h5 class="card-title"><?php the_title(); ?></h5>
-                                <div class="card-text fs-6 text-truncate" style="max-height: 100px">
-                            <p>Nombre del Curso:</p>    
-                                <p><?php the_field('nombrecurso'); ?></p>
-                                </div>
+                            <div class="card-body" style="height:250px">
+                            <div style="height:200px">
+                                <p>Código de Curso:</p>
+                                <p class="card-title"><?php the_title(); ?></p>                                
+                                <p>Nombre del Curso:</p>    
+                                <p class="card-title"><?php the_field('nombrecurso'); ?></p>
+                            </div>
+                            
+                                
                                
-                                <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
+                                <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>"
+                                class="btn" style="background:#11af88; padding:5px;text-transform:capitalize">+ Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
  
                                 <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
