@@ -80,13 +80,14 @@
         <div class="col my-5" style="max-width:300px">
             <div class="card h-200">
                             <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-100' )); ?>                                                          
+                            <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
                             <div class="card-body">
+                            <p>Código de Curso:</p>
                                 <h5 class="card-title"><?php the_title(); ?></h5>
                                 <div class="card-text fs-6 text-truncate" style="max-height: 100px">
-                                
-                                <p><?php the_field('codigocurso'); ?></p>
+                            <p>Nombre del Curso:</p>    
+                                <p><?php the_field('nombrecurso'); ?></p>
                                 </div>
                                
                                 <a href="https://app.acredu.org/addlist/?nombre-curso-new=<?php the_title(); ?>" class="btn" style="background:#11af88">Agregar Lista</a>
