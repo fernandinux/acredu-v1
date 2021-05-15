@@ -13,7 +13,7 @@
         <div class="d-flex flex-wrap" style="margin: 2px 5px 150px 5px">
         
             <!-- Jumbotron -->
-             <div class="text-center m-5"> 
+             <!-- <div class="text-center m-5"> 
                <a href="https://app.acredu.org/wp-content/uploads/2021/03/Plantilla-lista-de-beneficiarios.csv" role="button">
                <img src="https://app.acredu.org/wp-content/uploads/2021/03/1200px-.csv_icon.svg_.png" alt="plantilla csv" style="width:100px" data-pagespeed-url-hash="3348433114" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" class="">
               <br>
@@ -24,7 +24,7 @@
                   <div class="btn  waves-effect waves-light" style="background-color: #1BB27C">
                <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Plantilla en google sheet </div></a>
 
-            </div>
+            </div> -->
             
             <?php the_content(); ?>
             <!-- Jumbotron -->
