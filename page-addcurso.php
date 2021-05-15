@@ -25,8 +25,10 @@
                <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Plantilla en google sheet </div></a>
 
             </div> -->
-            
+            <div style="margin:50px auto">
             <?php the_content(); ?>
+            </div>
+            
             <!-- Jumbotron -->
                <?php  
                // $memberID = get_current_user_id();
