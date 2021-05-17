@@ -236,7 +236,7 @@
             
             	<p class="mt-5 text-center">Para conocer nuestro plan de estudio completo haz click al siguiente enlace:</p>
 					<div class="text-center">	
-						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3bMFoWP"  class="btn btn-primary">
+						<a target="_blank" id="brochureproyetech" href="https://bit.ly/3u1phvW"  class="btn btn-primary">
 							Plan de Estudio Aquí
 						</a>  
                     </div>
