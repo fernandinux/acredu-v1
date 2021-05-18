@@ -135,7 +135,7 @@
 					</div>   
 					<p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
 						<div class="text-center">	
-							<a target="_blank" id="brochureproyetech" href="https://bit.ly/3s9KWRq" class="btn btn-primary">
+							<a target="_blank" id="brochureproyetech" href="<?php the_field('button_link'); ?>" class="btn btn-primary">
 								Aquí
 							</a>  
 						</div>
