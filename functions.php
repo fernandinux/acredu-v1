@@ -344,6 +344,54 @@ function certificate_giulianahuaman(){
     register_post_type( 'giulianahuaman', $args );
 }
 
+function certificate_claudiapeve(){
+
+    $labels = array (
+        'name' => 'CLAUDIAPEVE-Certs',
+        'singular_name' => 'CLAUDIAPEVE-Certs',
+        'menu_name' => 'CLAUDIAPEVE',
+    );
+    $args = array(
+            'label' => 'CLAUDIAPEVE-Certs',
+            'descripcion' => 'Certificados de usuarios CLAUDIAPEVE',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 16,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'claudiapeve', $args );
+}
+function cursos_claudiapeve(){
+    $labels = array (
+        'name' => 'CLAUDIAPEVE-Cursos',
+        'singular_name' => 'CLAUDIAPEVE-Curso',
+        'menu_name' => 'CLAUDIAPEVE',
+    );
+    $args = array(
+            'label' => 'CLAUDIAPEVE-Cursos',
+            'descripcion' => 'Cursos de usuarios CLAUDIAPEVE',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 15,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'cursosclaudiapeve', $args );
+}
+
 add_action( 'init', 'cursos_proyetech');
 add_action( 'init', 'cursos_miguels');
 add_action( 'init', 'cursos_imce');
@@ -351,13 +399,14 @@ add_action( 'init', 'cursos_usach');
 add_action( 'init', 'cursos_wiad');
 add_action( 'init', 'cursos_castudio');
 add_action( 'init', 'cursos_colectivo');
+add_action( 'init', 'cursos_claudiapeve');
 add_action( 'init', 'certificate_colectivo');
 add_action( 'init', 'certificate_castudio');
 add_action( 'init', 'certificate_miguelsierra');
 add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
 add_action( 'init', 'certificate_giulianahuaman');
-
+add_action( 'init', 'certificate_claudiapeve');
 
 /* PRUEBAS FORM post
 <?php
