@@ -71,7 +71,7 @@
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
-    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
+    <div class="flex-row-reverse row row-cols-1 row-cols-md-3 g-4 p-3">
         
 
         <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
