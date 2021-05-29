@@ -11,6 +11,7 @@
     $imce = 'IMCEXY';
     $usach = 'USACHXY';
     $wiad = 'WIADXY';
+    $claudiapeve = 'CLAUDIAPEVE';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
@@ -34,7 +35,9 @@
                 if($memberLastName==$wiad){
                     $posType = 'cursoswiad';
                     }
-    
+                    if($memberLastName==$claudiapeve){
+                    $posType = 'claudiapeve';
+                    }
      
     $metadataImageProfile= get_user_meta( $user_id, 'pie_upload_21', true );
     
@@ -84,7 +87,7 @@
             </div>
         </div>
         <!-- card -->
-        
+
         <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
