@@ -71,9 +71,20 @@
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
-    <div class="flex-row-reverse row row-cols-1 row-cols-md-3 g-4 p-3">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
-
+        <!-- card -->
+        
+        <div class="col my-5" style="max-width:300px">
+            <div class="card h-200 text-center py-5">
+                <a href="https://app.acredu.org/addcurso/?text-validate=<?php echo $posType ?>" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
+                <div class="card-body">
+                    <h5 class="card-title">Agregar Curso</h5>                   
+                </div>
+            </div>
+        </div>
+        <!-- card -->
+        
         <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
@@ -115,17 +126,7 @@
 
 
         
-        <!-- card -->
         
-        <div class="col my-5" style="max-width:300px">
-            <div class="card h-200 text-center py-5">
-                <a href="https://app.acredu.org/addcurso/?text-validate=<?php echo $posType ?>" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
-                <div class="card-body">
-                    <h5 class="card-title">Agregar Curso</h5>                   
-                </div>
-            </div>
-        </div>
-        <!-- card -->
         
   
     </div>
