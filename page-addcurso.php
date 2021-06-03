@@ -26,7 +26,7 @@
 
             </div> -->
             <div style="margin:50px auto">
-               <img src="https://app.acredu.org/wp-content/uploads/2021/05/imagen_Creacion_Curso-e1621117543803.jpg" style="width:100%"/>
+               <img src="/wp-content/uploads/2021/06/creacion-de-lista.png" style="width:100%"/>
             </div>
             <div style="margin:50px auto">
             <?php the_content(); ?>
