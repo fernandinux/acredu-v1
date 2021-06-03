@@ -25,7 +25,7 @@
                <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Plantilla en google sheet </div></a>
 
             </div> -->
-            <div style="margin:50px auto">
+            <div style="margin:50px auto; width:45%;">
                <img src="/wp-content/uploads/2021/06/creacion-de-lista.png" style="width:100%"/>
             </div>
             <div style="margin:50px auto">
