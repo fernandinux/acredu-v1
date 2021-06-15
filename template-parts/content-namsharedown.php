@@ -12,7 +12,7 @@
         <i class="fa fa-linkedin"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Compartir</span></i>
     </a>
     <a id="sharepdf" target="_blank" 
-        href="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>.pdf">
+        href="/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>.pdf">
         <i class="fa fa-download"><span style="font-size:15px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Descargar pdf</span></i>
     </a>
 </div>
