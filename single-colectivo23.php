@@ -30,7 +30,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div class="text-center">
 						<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
-							<img alt="Colectivo23" src="https://app.acredu.org/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="Colectivo23" src="/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
