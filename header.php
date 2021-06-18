@@ -15,8 +15,10 @@
    <!-- og para compartir -->
     <meta property="og:url" content="<?php the_permalink(); ?>" />
     <meta property="og:title" content="<?php the_field('name_event'); ?>" />
-    <meta property="og:description" content="Certificado digital de aCredu para <?php the_field('empresa_emisora'); ?>" />
+    <meta property="og:description" content="Certificado digital de aCredu para <?php the_field('empresa_emisora'); ?>"/>
     <meta property="og:image" content="<?php the_post_thumbnail_url('full'); ?>" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="theme-color" content="#013155" />
     <link rel="canonical" href="https://acredu.org/" />
     <!-- <title>
