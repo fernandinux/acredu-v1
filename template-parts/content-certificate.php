@@ -1,7 +1,7 @@
 <div class="row">		
 		<div class="col-md-12 pt-5 cloudy-knoxville-gradient">
 
-			<img src="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>.jpg" 
+			<img src="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>-pdf.jpg" 
 			class="img-fluid shadow-lg mx-auto d-block animated zoomIn thumb-of-pdf wp-post-image" 
 			alt="certificado de  para <?php the_title(); ?>" 
 			loading="lazy" width="768" height="594">
