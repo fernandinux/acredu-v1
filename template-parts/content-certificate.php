@@ -3,7 +3,7 @@
 
 			<img src="https://acredu.app/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>-pdf.jpg" 
 			class="img-fluid shadow-lg mx-auto d-block animated zoomIn thumb-of-pdf wp-post-image" 
-			alt="certificado de  para <?php the_title(); ?>" 
+			alt="certificado de <?php the_field('empresa_emisora'); ?> para <?php the_title(); ?>" 
 			loading="lazy" width="768" height="594">
 
         	<?php /*the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); */?>
