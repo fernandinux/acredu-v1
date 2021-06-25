@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class='container-fluid'>
+<main class='container-fluid px-0'>
     <?php if(have_posts()){
             while(have_posts()){
                 the_post();
@@ -15,16 +15,21 @@
                             </div>
                     </div> -->
                     <!-- Inicio single -->
-    <div class="shadow-lg col-sm-12 text-lg-left mt-5">
+    <div class="col-sm-12 pt-2">
 		<p class="my-0">
 		<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
-			<img alt="Colectivo23" src="https://acredu.app/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+			<img alt="Colectivo23" 
+			src="https://acredu.app/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" 
+			class="img-fluid mx-auto"
+			style="width:50px"
+			data-pagespeed-url-hash="2790086286" 
+			onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 		</a>
 		Credencial emitida a: <span class="my-2"><?php the_title(); ?></span></p>
 
 	</div>
 	<hr style="height:1px;border-width:0;color:black;background-color:gray"> 
-	<div class="row">
+	<div class="row px-5">
 		<div class="col-md-4">
 			<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid mx-auto d-block animated zoomIn' )); ?>
 			 <a target="_blank"
@@ -39,12 +44,9 @@
 			<p>
 				Credential ID: <?php the_field('id'); ?>  
 			</p>
-    		<div class="mb-5">
-        		<div class="text-center">
-            		<p class="mb-0">Emitido en:</p>
-            		<p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p>
-        		</div>
-    		</div>
+    		<p class="mb-0">Emitido en: <span class="text-blue-proyetech"><?php the_field('fechainicio'); ?></span></p>
+            		
+        		
 		</div>
 		<div class="col-md-8">
 			<div class="h2 text-center my-3"><?php the_field('name_event'); ?></div>
