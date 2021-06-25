@@ -15,27 +15,62 @@
                             </div>
                     </div> -->
                     <!-- Inicio single -->
-                    
-	<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); ?>
+    <div class="shadow-lg col-sm-12 text-lg-left mt-5">
+		<p class="my-0">
+		<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
+			<img alt="Colectivo23" src="https://acredu.app/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+		</a>
+		Credencial emitida a: <span class="my-2"><?php the_title(); ?></span></p>
+
+	</div>
+	<hr style="height:1px;border-width:0;color:black;background-color:gray"> 
+	<div class="row">
+		<div class="col-md-4">
+			<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid mx-auto d-block animated zoomIn' )); ?>
+			 <a target="_blank"
+    			href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event');?>&amp;organizationId=<?php the_field('id_linkedin');?>&amp;issueYear=<?php the_field('year_linkedin');?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
+            <img class="my-3 z-depth-4" 
+            src="https://bit.ly/2Qe6a3l" 
+            alt="Agregar certificado LinkedIn"
+            data-pagespeed-url-hash="3180379771" 
+            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+        		>
+    		</a>
+			<p>
+				Credential ID: <?php the_field('id'); ?>  
+			</p>
+    		<div class="mb-5">
+        		<div class="text-center">
+            		<p class="mb-0">Emitido en:</p>
+            		<p class="text-blue-proyetech"><?php the_field('fechainicio'); ?></p>
+        		</div>
+    		</div>
+		</div>
+		<div class="col-md-8">
+			<div class="h2 text-center my-3"><?php the_field('name_event'); ?></div>
+			<div class="text-center">
+            	<p class="mb-0">Emitido por: <a target="_blank" href="https://bit.ly/3a3UXJM">Colectivo23</a></p>
+            	<div style="text-align:justify;font-size:20px !important;"><?php the_content(); ?></div>		
+        	</div>
+
+		</div>
+	</div>
+
+	
 
 
 	<div class="row pt-3 align-middle">
 		<div class="col-md-8">
 			<?php get_template_part( 'template-parts/content', 'namsharedown' );?>  
 			
-			<hr style="height:1px;border-width:0;color:black;background-color:gray">
+			
 			<div class="d-md-flex justify-content-sm-between">
 			
 				
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
-					<div class="text-center">
-						<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
-							<img alt="Colectivo23" src="https://acredu.app/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-						</a>
-					</div>
+					
 					<div>
-						<a target="_blank" href="https://bit.ly/3a3UXJM">https://www.colectivo23.com
-						</a>
+						
 	
 					</div>	
 
@@ -43,7 +78,7 @@
 				</div>
 				<div class="col-md-5 col-sm-12 text-lg-left my-4">
 				<p class="my-0 text-center">Credencial emitida a:</p>
-					<h3 class="my-2 text-center"><?php the_title(); ?></h3>
+					<h3 class="my-2 text-center"></h3>
 					<p class="my-0 text-center "><b><?php the_field('perfilrol'); ?></b></p>										
 				</div>
 				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
@@ -52,9 +87,7 @@
 			</div>
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
 				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
-						<div style="text-align:justify;font-size:20px !important;">
-						<?php the_content(); ?>
-						</div>				
+									
 					             
                      <!-- <div class="video">
                         <iframe id="videoacstudio" width="100%" height="100%" 
