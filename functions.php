@@ -391,6 +391,29 @@ function cursos_claudiapeve(){
     );
     register_post_type( 'cursosclaudiapeve', $args );
 }
+function badge_colectivo23(){
+    $labels = array (
+        'name' => 'colectivo23-badge',
+        'singular_name' => 'colectivo23-badge',
+        'menu_name' => 'colectivo23b',
+    );
+    $args = array(
+            'label' => 'colectivo23-badge',
+            'descripcion' => 'Badges colectivo23',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 15,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'badgecolectivo23', $args );
+}
 
 add_action( 'init', 'cursos_proyetech');
 add_action( 'init', 'cursos_miguels');
@@ -407,6 +430,7 @@ add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
 add_action( 'init', 'certificate_giulianahuaman');
 add_action( 'init', 'certificate_claudiapeve');
+add_action( 'init', 'badge_colectivo23');
 
 /* PRUEBAS FORM post
 <?php

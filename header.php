@@ -16,7 +16,8 @@
     <meta property="og:url" content="<?php the_permalink(); ?>" />
     <meta property="og:title" content="Certificación en <?php the_field('name_event'); ?> • <?php the_title(); ?> • <?php the_field('empresa_emisora'); ?>" />
     <meta property="og:description" content="Certificado digital de aCredu para <?php the_field('empresa_emisora'); ?>"/>
-    <meta property="og:image" content="<?php the_post_thumbnail_url('full'); ?>" />
+    <meta property="og:image" content="https://acredu.app/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>-pdf.jpg"/>
+     <?php /*the_post_thumbnail_url('full'); */?> 
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="theme-color" content="#013155" />
