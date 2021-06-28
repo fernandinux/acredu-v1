@@ -21,7 +21,7 @@
 
 			<img src="https://acredu.app/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
 				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
-				echo $stripped; ?> -pdf.jpg" 
+				echo $stripped; ?>-pdf.jpg" 
 			class="img-fluid shadow-lg mx-auto d-block animated zoomIn thumb-of-pdf wp-post-image" 
 			alt="certificado de <?php the_field('empresa_emisora'); ?> para <?php the_title(); ?>" 
 			loading="lazy" width="768" height="594">
