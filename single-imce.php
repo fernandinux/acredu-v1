@@ -16,7 +16,23 @@
                     </div> -->
                     <!-- Inicio single -->
                     
-		<?php get_template_part( 'template-parts/content', 'certificate' );?>		
+	<div class="row">		
+		<div class="col-md-12 pt-5 cloudy-knoxville-gradient">
+
+			<img src="https://acredu.app/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
+				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
+				echo $stripped; ?> -pdf.jpg" 
+			class="img-fluid shadow-lg mx-auto d-block animated zoomIn thumb-of-pdf wp-post-image" 
+			alt="certificado de <?php the_field('empresa_emisora'); ?> para <?php the_title(); ?>" 
+			loading="lazy" width="768" height="594">
+
+        	<?php /*the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid shadow-lg mx-auto d-block animated zoomIn' )); */?>
+			<div style="display: flex;flex-direction: row;justify-content: center;align-items: center;margin: 20px auto 0px auto;">
+            <small>¿Algo salió mal con tu certificado?, escríbenos:</small>
+            <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>			
+		</div>
+        
+	</div>	
 
 
 	<div class="row text-blue-proyetech pt-3 align-middle">
