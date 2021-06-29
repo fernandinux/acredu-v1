@@ -1,5 +1,5 @@
 <?php get_header(); ?>
- <?php get_template_part( 'template-parts/content', 'encabezado' );?>
+ 
 <main class='container-fluid px-0'>
     <?php if(have_posts()){
             while(have_posts()){
@@ -16,7 +16,7 @@
                     </div> -->
                     <!-- Inicio single -->
  
-
+<?php get_template_part( 'template-parts/content', 'encabezado' );?>
 
 </main>
 
