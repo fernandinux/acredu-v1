@@ -36,7 +36,7 @@
 					<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid my-2 mx-auto d-block animated zoomIn')); ?>
                     <!-- <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/> -->
                     <hr>
-					<div class="m-2 d-flex align-items-center"style="height: 60px;">
+					<div class="mx-4 my-2 d-flex align-items-center"style="height: 60px;">
 						
                         <img src="<?php the_field('logoinstitucion'); ?>" class="img-fluid" style="width: 50px;"/>
                         <div class="ml-2">
@@ -85,8 +85,12 @@
 							Criterio:
 						</strong>                        
                     </p>
-                    <?php the_field('criterio'); ?>
-					<a href="<?php the_field('buttonlink'); ?>"><p>Más información sobre como conseguir esta insignia</p><i class="fas fa-external-link-alt"></i></a>
+					<?php the_field('criterio'); ?>
+					<br>
+					<div>
+						<a href="<?php the_field('buttonlink'); ?>"><p>Más información sobre como conseguir esta insignia</p><span><i class="fas fa-external-link-alt"></i></span></a>
+					</div>
+					
                 </div>
                 <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
                     <p class="px-4  fs-5">
