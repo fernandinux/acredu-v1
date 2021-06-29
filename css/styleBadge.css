@@ -27,9 +27,8 @@
     margin-left: 22rem;
     margin-top: 30rem;
   }
-  .badgefooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  .badgebutton {
+    margin-left: 23rem;
+    margin-top: 8rem;
   }
 }

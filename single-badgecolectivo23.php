@@ -101,7 +101,7 @@
                     </p>
                     <?php the_field('id'); ?>
 				</div>
-				<a href="" style="margin-left: 23rem;margin-top: 8rem;">
+				<a href="" id="badgebutton">
 				<div class="d-flex align-items-center">
 				<p style="margin: 0px 10px;font-size: 20px;">Más información sobre como conseguir esta insignia</p><i class="fas fa-external-link-alt" style="color:#237ddd;font-size: 20px;" aria-hidden="true"></i>
 				</div>
