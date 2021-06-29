@@ -19,11 +19,11 @@
             <div class="d-flex flex-column">
                 <div class="pt-5 pb-4 mx-0 row" id="bdgtitle" style="background-color: #f2f2f2;width: 100%;">
                     <div class="col-md-8 px-4">
-                        <h1 >Insignia de BIM Coordinator</h1>
+                        <h1><?php the_field('nombrecurso'); ?></h1>
                         <p class="m-0" style="font-size: 15px;">Este distintivo fue expedido a 
                             <span style="font-weight: bold;"><?php the_title(); ?></span> el 
-                            <span style="font-weight: bold;">12 de abril de 2021.</span></p>
-                        <p class="m-0" style="font-size: 15px;">Expira el 13 de abril de 2023</p>
+                            <span style="font-weight: bold;"><?php the_field('fechaexpedicion'); ?></span></p>
+                        <p class="m-0" style="font-size: 15px;">Expira el <?php the_field('fechaexpiracion'); ?></p>
                     </div>
                     
 
@@ -32,14 +32,16 @@
                     </div>
                     
                 </div>
-                <div class="shadow-5" id="bdgimage" style="width: 288px;background-color: white;margin-left: 2rem;">
-                    <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/>
+				<div class="shadow-lg" id="bdgimage" style="width: 288px;background-color: white;margin-left: 2rem;">
+					<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid my-2 mx-auto d-block animated zoomIn')); ?>
+                    <!-- <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/> -->
                     <hr>
-                    <div class="m-2 d-flex align-items-center"style="height: 60px;">
-                        <img src="badge.png" class="img-fluid" style="width: 50px;"/>
+					<div class="m-2 d-flex align-items-center"style="height: 60px;">
+						<?php the_field('logoinstitucion'); ?>
+                        <!-- <img src="badge.png" class="img-fluid" style="width: 50px;"/> -->
                         <div class="ml-2">
                             <p class="m-0 fw-bold" style="font-size: 15px;">Emitido por:</p>
-                            <a href="www.google.com"><p class="m-0 fs-5">CA Studio</p> </a>
+                            <a href="www.google.com"><p class="m-0 fs-5"><?php the_field('empresaemisora'); ?></p> </a>
                         </div>
                     </div>
                     <hr>
@@ -47,7 +49,7 @@
                         <p class="m-0" style="font-size: 15px;">Compartir:</p>
                         <div class="d-flex justify-content-around align-items-center">
                             <div class="fb-share-button" 
-                                data-href="https://www.your-domain.com/your-page.html" 
+                                data-href="<?php the_permalink(); ?>" 
                                 data-layout="button_count">
                             </div>
                             <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: es_ES</script>
@@ -60,7 +62,7 @@
                     <div style="text-align: center;">
                         <p class="m-0" style="font-size: 15px;">Agregalo a tu Linkedin:</p>
                         <a target="_blank"
-                                href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event');?>&amp;organizationId=<?php the_field('id_linkedin');?>&amp;issueYear=<?php the_field('year_linkedin');?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
+                                href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('nombrecurso');?>&amp;organizationId=<?php the_field('idlinkedin');?>&amp;issueYear=<?php the_field('yearlinkedin');?>&amp;issueMonth=<?php the_field('monthlinkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
                                 <img class="my-3 z-depth-4" style="width: 100px;margin: 0px auto;"
                                 src="https://bit.ly/3haPeVg" 
                                 alt="Agregar certificado LinkedIn"
@@ -74,21 +76,15 @@
                 <div id="bddescription" class="w-100 pt-5" style="background-color: #f2f2f2;width: 100%;">
                     <p class="px-4  fs-5 fw-bold" id="bddescriptiontitle" style="padding: 0px 20px;">Descripción:</p>
                     <div style="width: 80%;padding: 0px 20px;">
-                        <p>
-                            Esta credencial certifica que el portador curso satisfactoriamente nuestro plan de capacitación avanzado para implementar la metodología B.I.M. en proyectos de construcción.
-                        </p>
-                        
+                        <?php the_content(); ?>                        
                     </div>
                 </div>
                 <div id="bdcriterio" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
                     <p class="px-4  fs-5 fw-bold">
                         Criterio:
                     </p>
-                    <p>
-                        A su vez culminó con éxito el proyecto final “HARMONY TOWERS” aplicando los conocimientos de Modelado Arquitectónico, Modelado Estructural, Documentación y Cuantificación, Coordinación entre disciplinas e interoperabilidad.
-
-                        Durante el proceso de aprendizaje y en la entrega del proyecto final se evaluó el desempeño del participante mostrando excelentes resultados y total dominio de los siguiente temas:
-                    </p>
+                    <?php the_field('criterio'); ?>
+					<a href="<?php the_field('buttonlink'); ?>"><p>Más información sobre como conseguir esta insignia</p><i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
                     <p class="px-4  fs-5 fw-bold">
@@ -97,69 +93,11 @@
                     <p class="m-0">
                         Código ID de la credencial
                     </p>
-                    <p>
-                        3245688
-                    </p>
+                    <?php the_field('id'); ?>
                 </div>
             </div>
         
         
-
-<div id="bdevidencia" class="page-footer font-small elegant-color-dark pt-4">
-	
-
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">  
-
-    <!-- Grid row -->
-    <div class="row d-flex align-items-center">
-
-      <!-- Grid column -->
-      <div class="col-md-7 col-lg-8">
-
-        <!--Copyright-->
-        <p class="text-center text-md-left">
-          <a href="https://acredu.org">Powered by aCredu © 2021 </a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-5 col-lg-4 ml-lg-0">
-
-        <!-- Social buttons -->
-        <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a target="_blank" href="https://www.facebook.com/coralify">
-			  <img alt="aCredu facebook" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_facebook1.png" class="img-fluid align-middle w-50">
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href="https://www.youtube.com/channel/UCa23OQNMhf81BZV7_whVfKg">
-			  <img alt="aCredu youtube" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_youtube1.png" class="img-fluid align-middle w-50">
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a target="_blank" href=" https://www.linkedin.com/company/coralify">
-			  <img alt="aCredu linkedin" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_linkedin1.png" class="img-fluid align-middle w-50">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-
-</div>
 </main>
 </body>
 </html>
