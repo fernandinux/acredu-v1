@@ -2,7 +2,7 @@
 
 <!-- <hr style="height:1px;border-width:0;color:black;background-color:gray" class="my-0"> -->
 <!-- Footer -->
-<footer id="footerbadge" class="page-footer font-small elegant-color-dark pt-4">
+<footer id="xxx333" class="page-footer font-small elegant-color-dark pt-4">
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">  
