@@ -105,8 +105,8 @@
         
         
 </main>
-<div class="badgefooter">
-	<footer class="page-footer font-small elegant-color-dark pt-4">
+<div class="badgefooter page-footer font-small elegant-color-dark pt-4">
+	
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">  
@@ -158,7 +158,7 @@
   </div>
   <!-- Footer Links -->
 
-</footer>
+
 </div>
 </body>
 </html>
