@@ -37,8 +37,8 @@
                     <!-- <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/> -->
                     <hr>
 					<div class="m-2 d-flex align-items-center"style="height: 60px;">
-						<?php the_field('logoinstitucion'); ?>
-                        <!-- <img src="badge.png" class="img-fluid" style="width: 50px;"/> -->
+						
+                        <img src="<?php the_field('logoinstitucion'); ?>" class="img-fluid" style="width: 50px;"/>
                         <div class="ml-2">
                             <p class="m-0 fw-bold" style="font-size: 15px;">Emitido por:</p>
                             <a href="www.google.com"><p class="m-0 fs-5"><?php the_field('empresaemisora'); ?></p> </a>
@@ -80,15 +80,19 @@
                     </div>
                 </div>
                 <div id="bdcriterio" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
-                    <p class="px-4  fs-5 fw-bold">
-                        Criterio:
+                    <p class="px-4  fs-5">
+						<strong>
+							Criterio:
+						</strong>                        
                     </p>
                     <?php the_field('criterio'); ?>
 					<a href="<?php the_field('buttonlink'); ?>"><p>Más información sobre como conseguir esta insignia</p><i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
-                    <p class="px-4  fs-5 fw-bold">
-                        Evidencia:
+                    <p class="px-4  fs-5">
+						<strong>
+							Evidencia:
+						</strong>                        
                     </p>
                     <p class="m-0">
                         Código ID de la credencial
