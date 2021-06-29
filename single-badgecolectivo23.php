@@ -104,7 +104,7 @@
             </div>
         
         
-</main>
+
 <div class="badgefooter page-footer font-small elegant-color-dark pt-4">
 	
 
@@ -160,6 +160,7 @@
 
 
 </div>
+</main>
 </body>
 </html>
 	
