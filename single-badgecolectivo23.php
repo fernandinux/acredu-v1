@@ -86,10 +86,8 @@
 						</strong>                        
                     </p>
 					<?php the_field('criterio'); ?>
-					<br>
-					<div>
-						<a href="<?php the_field('buttonlink'); ?>"><p>Más información sobre como conseguir esta insignia</p><span><i class="fas fa-external-link-alt"></i></span></a>
-					</div>
+					
+					
 					
                 </div>
                 <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
@@ -102,7 +100,12 @@
                         Código ID de la credencial
                     </p>
                     <?php the_field('id'); ?>
-                </div>
+				</div>
+				<a href="<?php the_field('buttonlink'); ?>">
+					<div class="d-flex align-items-center">
+							<p>Más información sobre como conseguir esta insignia</p><span><i class="fas fa-external-link-alt" style="color:blue;"></i></span>
+					</div>
+				</a>
             </div>
         
         
