@@ -14,7 +14,7 @@ fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
    
-        <div style="margin-top: 20px;">
+        
 
             <div class="d-flex flex-column">
                 <div class="pt-5 pb-4 mx-0 row" id="bdgtitle" style="background-color: #f2f2f2;width: 100%;">
@@ -103,7 +103,8 @@ fjs.parentNode.insertBefore(js, fjs);
                 </div>
             </div>
         
-        </div>
+        
 </main>
-
-<?php get_footer(); ?>
+<div class="verifooter">
+	<?php get_footer(); ?>
+</div>
