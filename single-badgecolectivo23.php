@@ -105,6 +105,6 @@ fjs.parentNode.insertBefore(js, fjs);
         
         
 </main>
-<div id="footerbadge">
+
 	<?php get_footer(); ?>
-</div>
+
