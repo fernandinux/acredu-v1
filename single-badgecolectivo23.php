@@ -21,7 +21,7 @@ fjs.parentNode.insertBefore(js, fjs);
                     <div class="col-md-8 px-4">
                         <h1 >Insignia de BIM Coordinator</h1>
                         <p class="m-0" style="font-size: 15px;">Este distintivo fue expedido a 
-                            <span style="font-weight: bold;">Yujun Liang</span> el 
+                            <span style="font-weight: bold;"><?php the_title(); ?></span> el 
                             <span style="font-weight: bold;">12 de abril de 2021.</span></p>
                         <p class="m-0" style="font-size: 15px;">Expira el 13 de abril de 2023</p>
                     </div>
@@ -105,6 +105,6 @@ fjs.parentNode.insertBefore(js, fjs);
         
         
 </main>
-<div class="verifooter">
+<div id="footerbadge">
 	<?php get_footer(); ?>
 </div>
