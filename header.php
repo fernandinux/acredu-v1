@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://acredu.app/wp-content/themes/acredu-v1/css/verificador.css">
     <link rel="stylesheet" href="https://acredu.app/wp-content/themes/acredu-v1/css/pieregister.css">
     <link rel="stylesheet"  href="https://acredu.app/wp-content/themes/acredu-v1/singlestyle.css" type="text/css" media="all">
-    <link rel="stylesheet"  href="/wp-content/themes/acredu-v1/css/styleBadge.css" type="text/css" media="all">
+    <link rel="stylesheet"  href="https://acredu.app/wp-content/themes/acredu-v1/css/styleBadge.css" type="text/css" media="all">
    <!-- og para compartir -->
     <meta property="og:url" content="<?php the_permalink(); ?>" />
     <meta property="og:title" content="Certificación en <?php the_field('name_event'); ?> • <?php the_title(); ?> • <?php the_field('empresa_emisora'); ?>" />
