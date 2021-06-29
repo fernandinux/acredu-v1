@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/35d6a5945d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/animations.css">
-    <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/styleacredu.css">
-    <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/verificador.css">
-    <link rel="stylesheet" href="https://app.acredu.org/wp-content/themes/acredu-v1/css/pieregister.css">
-    <link rel="stylesheet"  href="https://app.acredu.org/wp-content/themes/acredu-v1/singlestyle.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://acredu.app/wp-content/themes/acredu-v1/css/animations.css">
+    <link rel="stylesheet" href="https://acredu.app/wp-content/themes/acredu-v1/css/styleacredu.css">
+    <link rel="stylesheet" href="https://acredu.app/wp-content/themes/acredu-v1/css/verificador.css">
+    <link rel="stylesheet" href="https://acredu.app/wp-content/themes/acredu-v1/css/pieregister.css">
+    <link rel="stylesheet"  href="https://acredu.app/wp-content/themes/acredu-v1/singlestyle.css" type="text/css" media="all">
+    <link rel="stylesheet"  href="/wp-content/themes/acredu-v1/css/styleBadge.css" type="text/css" media="all">
    <!-- og para compartir -->
     <meta property="og:url" content="<?php the_permalink(); ?>" />
     <meta property="og:title" content="Certificación en <?php the_field('name_event'); ?> • <?php the_title(); ?> • <?php the_field('empresa_emisora'); ?>" />

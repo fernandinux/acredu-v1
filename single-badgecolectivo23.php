@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+ <?php get_template_part( 'template-parts/content', 'encabezado' );?>
 <main class='container-fluid px-0'>
     <?php if(have_posts()){
             while(have_posts()){
@@ -15,202 +15,109 @@
                             </div>
                     </div> -->
                     <!-- Inicio single -->
-    <div class="col-sm-12 pt-2">
-		<p class="my-0">
-		<a target="_blank" id="logousach" href="https://bit.ly/3a3UXJM" class="">
-			<img alt="Colectivo23" 
-			src="https://acredu.app/wp-content/uploads/piereg_users_files/19/file_3001065866_1.png" 
-			class="img-fluid mx-auto"
-			style="width:50px"
-			data-pagespeed-url-hash="2790086286" 
-			onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-		</a>
-		Credencial emitida a: <span class="my-2"><?php the_title(); ?></span></p>
+ 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-	</div>
-	<hr style="height:1px;border-width:0;color:black;background-color:gray"> 
-	<div class="row px-5">
-		<div class="col-md-4">
-			<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid mx-auto d-block animated zoomIn' )); ?>
-			 <a target="_blank"
-    			href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event');?>&amp;organizationId=<?php the_field('id_linkedin');?>&amp;issueYear=<?php the_field('year_linkedin');?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
-            <img class="my-3 z-depth-4" 
-            src="https://bit.ly/2Qe6a3l" 
-            alt="Agregar certificado LinkedIn"
-            data-pagespeed-url-hash="3180379771" 
-            onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-        		>
-    		</a>
-			<p>
-				Credential ID: <?php the_field('id'); ?>  
-			</p>
-    		<p class="mb-0">Emitido en: <span class="text-blue-proyetech"><?php the_field('fechainicio'); ?></span></p>
-            		
-        		
-		</div>
-		<div class="col-md-8">
-			<div class="h2 text-center my-3"><?php the_field('name_event'); ?></div>
-			<div class="text-center">
-            	<p class="mb-0">Emitido por: <a target="_blank" href="https://bit.ly/3a3UXJM">Colectivo23</a></p>
-            	<div style="text-align:justify;font-size:20px !important;"><?php the_content(); ?></div>		
-        	</div>
+   
+        <div style="margin-top: 20px;">
 
-		</div>
-	</div>
-
-	
-
-
-	<div class="row pt-3 align-middle">
-		<div class="col-md-8">
-			<?php get_template_part( 'template-parts/content', 'namsharedown' );?>  
-			
-			
-			<div class="d-md-flex justify-content-sm-between">
-			
-				
-				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
-					
-					<div>
-						
-	
-					</div>	
-
-														
-				</div>
-				<div class="col-md-5 col-sm-12 text-lg-left my-4">
-				<p class="my-0 text-center">Credencial emitida a:</p>
-					<h3 class="my-2 text-center"></h3>
-					<p class="my-0 text-center "><b><?php the_field('perfilrol'); ?></b></p>										
-				</div>
-				<div class="button-linkedin-mobile col-md-2 col-sm-12 text-lg-right text-center animated jackInTheBox zoom">
-                    <?php get_template_part( 'template-parts/content', 'buttonlinkedin' );?>
-				</div>
-			</div>
-			<hr style="height:1px;border-width:0;color:black;background-color:gray">
-				<div class="col-sm-12 col-lg-10 mx-auto my-5 ">
-									
-					             
-                     <!-- <div class="video">
-                        <iframe id="videoacstudio" width="100%" height="100%" 
-                        src="http://bit.ly/3kJdJdL" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    	</iframe>
-                    </div> -->
-				
-					<?php
-						if(get_field('name_event') == "Certificado de Participación"):  ?>
-							<!--Carousel Wrapper-->
-							<div id="carousel-example-1z" class="carousel slide carousel-fade mb-5" data-ride="carousel">
-								<!--Indicators-->
-								<ol class="carousel-indicators">
-									<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-1z" data-slide-to="1"></li>
-									<li data-target="#carousel-example-1z" data-slide-to="2"></li>
-									<li data-target="#carousel-example-1z" data-slide-to="3"></li>
-								
-								</ol>
-									<!--/.Indicators-->
-									<!--Slides-->
-								<div class="carousel-inner" role="listbox"> 
-									<!--First slide-->
-									<div class="carousel-item active">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio2-scaled.jpg"
-										alt="First slide">
-									</div>
-									<!--/First slide-->
-									<!--Second slide-->
-									<div class="carousel-item">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio3.png"
-										alt="Second slide">
-									</div>
-									<!--/Second slide-->
-									<!--Third slide-->
-									<div class="carousel-item">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio1-scaled.jpg"
-										alt="Third slide">
-									</div>
-									<!--/Third slide-->
-									<!--4 slide-->
-									<div class="carousel-item">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio4.jpg"
-										alt="Third slide">
-									</div>
-									<!--/4 slide-->
-									
-						
-
-								</div>
-								<!--/.Slides-->
-								<!--Controls-->
-								<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-								</a>
-								<!--/.Controls-->
-							</div>
-							<!--/.Carousel Wrapper-->
-					<?php	else:  ?>
-							<!--Carousel Wrapper-->
-							
-							<!--/.Carousel Wrapper-->
-					<?php	endif;
-					?>
-
-
+            <div class="d-flex flex-column">
+                <div class="pt-5 pb-4 mx-0 row" id="bdgtitle" style="background-color: #f2f2f2;width: 100%;">
+                    <div class="col-md-8 px-4">
+                        <h1 >Insignia de BIM Coordinator</h1>
+                        <p class="m-0" style="font-size: 15px;">Este distintivo fue expedido a 
+                            <span style="font-weight: bold;">Yujun Liang</span> el 
+                            <span style="font-weight: bold;">12 de abril de 2021.</span></p>
+                        <p class="m-0" style="font-size: 15px;">Expira el 13 de abril de 2023</p>
+                    </div>
                     
-					<div style="text-align:justify">
-						<?php the_field('descripcion_event1'); ?>
-					</div>   
-					<p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
-						<div class="text-center">	
-							<a target="_blank" id="brochureproyetech" href="<?php the_field('button_link'); ?>" class="btn btn-primary">
-								Aquí
-							</a>  
-						</div>
-					
-				</div>
-				
-		</div>
-		<div class="col-md-4 col-sm-12 text-center">
-			 
-			<!-- Inicio add Linkedin profile -->
-            <div class="button-linkedin-web zoom animated zoomIn slow pt-2">
-			    <?php get_template_part( 'template-parts/content', 'buttonlinkedin' );?>
-                </div> 
-			<!-- Fin add linkedin profile -->
-			
-            <div style="margin: 20px auto;">
-				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
-				<a target="_blank" href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
-						<img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
-				</a>
-                
-            </div>			
-			
-				
-			<div style="text-align:justify;">
-				
-				<?php the_field('descripcion_inst'); ?>
-				
-			</div>
-			
-			
-		</div>
-	</div>
-	
-  <!-- fin web -->
-                <?php 
-            }
-	} ?>
-	
-	
+
+                    <div class="col-md-4 px-4 pt-5">
+                        <a class="btn btn-dark">Descargar</a>
+                    </div>
+                    
+                </div>
+                <div class="shadow-5" id="bdgimage" style="width: 288px;background-color: white;margin-left: 2rem;">
+                    <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/>
+                    <hr>
+                    <div class="m-2 d-flex align-items-center"style="height: 60px;">
+                        <img src="badge.png" class="img-fluid" style="width: 50px;"/>
+                        <div class="ml-2">
+                            <p class="m-0 fw-bold" style="font-size: 15px;">Emitido por:</p>
+                            <a href="www.google.com"><p class="m-0 fs-5">CA Studio</p> </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="text-align: center;">
+                        <p class="m-0" style="font-size: 15px;">Compartir:</p>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <div class="fb-share-button" 
+                                data-href="https://www.your-domain.com/your-page.html" 
+                                data-layout="button_count">
+                            </div>
+                            <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: es_ES</script>
+                            <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                            
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div style="text-align: center;">
+                        <p class="m-0" style="font-size: 15px;">Agregalo a tu Linkedin:</p>
+                        <a target="_blank"
+                                href="https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&amp;name=<?php the_field('name_event');?>&amp;organizationId=<?php the_field('id_linkedin');?>&amp;issueYear=<?php the_field('year_linkedin');?>&amp;issueMonth=<?php the_field('month_linkedin'); ?>&amp;certUrl=<?php the_permalink(); ?>&amp;certId=<?php the_field('id'); ?>">
+                                <img class="my-3 z-depth-4" style="width: 100px;margin: 0px auto;"
+                                src="https://bit.ly/3haPeVg" 
+                                alt="Agregar certificado LinkedIn"
+                                data-pagespeed-url-hash="3180379771" 
+                                onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                            >
+                        </a>
+                    </div>
+
+                </div>
+                <div id="bddescription" class="w-100 pt-5" style="background-color: #f2f2f2;width: 100%;">
+                    <p class="px-4  fs-5 fw-bold" id="bddescriptiontitle" style="padding: 0px 20px;">Descripción:</p>
+                    <div style="width: 80%;padding: 0px 20px;">
+                        <p>
+                            Esta credencial certifica que el portador curso satisfactoriamente nuestro plan de capacitación avanzado para implementar la metodología B.I.M. en proyectos de construcción.
+                        </p>
+                        
+                    </div>
+                </div>
+                <div id="bdcriterio" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
+                    <p class="px-4  fs-5 fw-bold">
+                        Criterio:
+                    </p>
+                    <p>
+                        A su vez culminó con éxito el proyecto final “HARMONY TOWERS” aplicando los conocimientos de Modelado Arquitectónico, Modelado Estructural, Documentación y Cuantificación, Coordinación entre disciplinas e interoperabilidad.
+
+                        Durante el proceso de aprendizaje y en la entrega del proyecto final se evaluó el desempeño del participante mostrando excelentes resultados y total dominio de los siguiente temas:
+                    </p>
+                </div>
+                <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
+                    <p class="px-4  fs-5 fw-bold">
+                        Evidencia:
+                    </p>
+                    <p class="m-0">
+                        Código ID de la credencial
+                    </p>
+                    <p>
+                        3245688
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+
+
 </main>
 
 <?php get_footer(); ?>
