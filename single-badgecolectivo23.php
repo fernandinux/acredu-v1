@@ -105,7 +105,7 @@
         
         
 
-<div class="badgefooter page-footer font-small elegant-color-dark pt-4">
+<div id="bdevidencia" class="page-footer font-small elegant-color-dark pt-4">
 	
 
   <!-- Footer Links -->
