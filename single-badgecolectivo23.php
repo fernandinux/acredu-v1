@@ -68,7 +68,7 @@
                     
                 </div>
 				<div class="shadow-lg" id="bdgimage" style="width: 288px;background-color: white;margin: 0px auto;">
-					<div style="padding: 2rem;width:240px;height:240px;margin:auto;">
+					<div class="d-flex align-items-center" style="padding: 2rem;width:240px;height:240px;margin:auto;">
                         <?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid my-2 mx-auto d-block animated zoomIn')); ?>
                                 <!-- <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/> -->
                     </div>                   
