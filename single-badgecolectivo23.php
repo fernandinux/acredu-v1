@@ -140,7 +140,7 @@
         
         
 </main>
-  <div class="container text-center text-md-left" style="background-color:black">  
+  <div class="container text-center text-md-left" style="background-color:black;padding: 20px 20px 5px 20px;">  
 
     <!-- Grid row -->
     <div class="row d-flex align-items-center">
@@ -149,9 +149,11 @@
       <div class="col-md-7 col-lg-8">
 
         <!--Copyright-->
-        <p class="text-center text-md-left">
-          <a href="https://acredu.org">Powered by aCredu © 2021 </a>
-        </p>
+        
+          <a href="https://acredu.org" >
+          <p class="text-center text-md-left" style="color:white">
+          Powered by aCredu © 2021 </p></a>
+        
 
       </div>
       <!-- Grid column -->
