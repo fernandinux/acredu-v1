@@ -90,7 +90,7 @@
                                 data-layout="button_count">
                             </div>
                             <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: es_ES</script>
-                            <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                            <script type="IN/Share" data-url="<?php the_permalink(); ?>"></script>
                             
                         </div>
                         
