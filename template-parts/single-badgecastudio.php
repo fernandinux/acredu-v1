@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -32,7 +32,7 @@
  
 <?php get_template_part( 'template-parts/content', 'encabezado' );?>
 
-<main>
+<main class="container">
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
@@ -53,15 +53,21 @@
                             <span style="font-weight: bold;"><?php the_title(); ?></span> el 
                             <span style="font-weight: bold;"><?php the_field('fechaexpedicion'); ?></span></p>
                         <p class="m-0" style="font-size: 15px;">Expira el <?php the_field('fechaexpiracion'); ?></p>
+                         <div  class="w-100 pt-5" style="background-color: #f2f2f2;">
+                            <!-- <p class="px-4  fs-5 fw-bold" id="bddescriptiontitle" style="padding: 0px 20px;">Descripción:</p> -->
+                            <div style="width: 100%">
+                                <?php the_content(); ?>                        
+                            </div>
+                        </div>
                     </div>
                     
 
                     <div class="col-md-4 px-4 pt-5">
-                        <a class="btn btn-dark">Descargar</a>
+                        <a href="<?php the_post_thumbnail_url('full'); ?>" class="btn btn-dark">Descargar</a>
                     </div>
                     
                 </div>
-				<div class="shadow-lg" id="bdgimage" style="width: 288px;background-color: white;margin-left: 2rem;">
+				<div class="shadow-lg" id="bdgimage" style="width: 288px;background-color: white;margin: 0px auto;">
 					<?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid my-2 mx-auto d-block animated zoomIn')); ?>
                     <!-- <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/> -->
                     <hr>
@@ -102,13 +108,8 @@
                     </div>
 
                 </div>
-                <div id="bddescription" class="w-100 pt-5" style="background-color: #f2f2f2;width: 100%;">
-                    <p class="px-4  fs-5 fw-bold" id="bddescriptiontitle" style="padding: 0px 20px;">Descripción:</p>
-                    <div style="width: 80%;padding: 0px 20px;">
-                        <?php the_content(); ?>                        
-                    </div>
-                </div>
-                <div id="bdcriterio" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
+               
+                <div id="bdcriterio" style="padding: 0px 20px;margin-top: 4rem;">
                     <p class="px-4  fs-5">
 						<strong>
 							Criterio:
@@ -119,7 +120,7 @@
 					
 					
                 </div>
-                <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
+                <div id="bdevidencia" class="w-auto pt-5" style="padding: 1rem 20px;">
                     <p class="px-4  fs-5">
 						<strong>
 							Evidencia:
@@ -139,7 +140,55 @@
         
         
 </main>
+  <div class="text-center text-md-left" style="background-color:black;padding: 20px 20px 5px 20px;">  
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        
+          <a href="https://acredu.org" >
+          <p class="text-center text-md-left" style="color:white">
+          Powered by aCredu © 2021 </p></a>
+        
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.facebook.com/coralify">
+			  <img alt="aCredu facebook" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_facebook1.png" class="img-fluid align-middle w-50">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.youtube.com/channel/UCa23OQNMhf81BZV7_whVfKg">
+			  <img alt="aCredu youtube" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_youtube1.png" class="img-fluid align-middle w-50">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href=" https://www.linkedin.com/company/coralify">
+			  <img alt="aCredu linkedin" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_linkedin1.png" class="img-fluid align-middle w-50">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
 </body>
 </html>
-	
 
