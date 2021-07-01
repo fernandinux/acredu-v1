@@ -140,7 +140,7 @@
         
         
 </main>
-  <div class="container text-center text-md-left" style="background-color:black;padding: 20px 20px 5px 20px;">  
+  <div class="text-center text-md-left" style="background-color:black;padding: 20px 20px 5px 20px;">  
 
     <!-- Grid row -->
     <div class="row d-flex align-items-center">
