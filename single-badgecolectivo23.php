@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -63,7 +63,7 @@
                     
 
                     <div class="col-md-4 px-4 pt-5">
-                        <a class="btn btn-dark">Descargar</a>
+                        <a href="<?php the_post_thumbnail_url('full'); ?>" class="btn btn-dark">Descargar</a>
                     </div>
                     
                 </div>
@@ -138,7 +138,53 @@
 				</a>
             </div>
         
-        
+  <div class="container text-center text-md-left">  
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">
+          <a href="https://acredu.org">Powered by aCredu © 2021 </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.facebook.com/coralify">
+			  <img alt="aCredu facebook" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_facebook1.png" class="img-fluid align-middle w-50">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.youtube.com/channel/UCa23OQNMhf81BZV7_whVfKg">
+			  <img alt="aCredu youtube" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_youtube1.png" class="img-fluid align-middle w-50">
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href=" https://www.linkedin.com/company/coralify">
+			  <img alt="aCredu linkedin" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_linkedin1.png" class="img-fluid align-middle w-50">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
 </main>
 </body>
 </html>
