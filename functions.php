@@ -437,6 +437,29 @@ function badge_castudio(){
     );
     register_post_type( 'badgecastudio', $args );
 }
+function badge_proyetech(){
+    $labels = array (
+        'name' => 'proyetech-badge',
+        'singular_name' => 'proyetech-badge',
+        'menu_name' => 'proyetechb',
+    );
+    $args = array(
+            'label' => 'proyetech-badge',
+            'descripcion' => 'Badges proyetech',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 15,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'badgeproyetech', $args );
+}
 
 add_action( 'init', 'cursos_proyetech');
 add_action( 'init', 'cursos_miguels');
@@ -455,6 +478,7 @@ add_action( 'init', 'certificate_giulianahuaman');
 add_action( 'init', 'certificate_claudiapeve');
 add_action( 'init', 'badge_colectivo23');
 add_action( 'init', 'badge_castudio');
+add_action( 'init', 'badge_proyetech');
 
 /* PRUEBAS FORM post
 <?php
