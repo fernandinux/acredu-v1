@@ -71,7 +71,7 @@
 					<div style="padding: 2rem;">
             <?php the_post_thumbnail( 'medium_large', array( 'class' => 'img-fluid my-2 mx-auto d-block animated zoomIn')); ?>
                     <!-- <img class="img-fluid" src="badge.png" style="margin: 1rem auto;"/> -->
-          <div></div>
+          </div>
                     <hr>
 					<div class="mx-4 my-2 d-flex align-items-center"style="height: 60px;">
 						
