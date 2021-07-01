@@ -23,9 +23,9 @@
     <meta property="og:image:height" content="630" />
     <meta name="theme-color" content="#013155" />
     <link rel="canonical" href="https://acredu.co/" />
-    <!-- <title>
-         <?php /* bloginfo( 'name');*/ ?>
-    </title> -->
+    <title>
+         Insignia de <?php the_field('nombrecurso'); ?> • <?php the_title(); ?> • <?php the_field('empresaemisora'); ?>
+    </title>
     <?php wp_head(); ?>
 </head>
 <body>
