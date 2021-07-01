@@ -138,7 +138,9 @@
 				</a>
             </div>
         
-  <div class="container text-center text-md-left">  
+        
+</main>
+  <div class="container text-center text-md-left" style="background-color:black">  
 
     <!-- Grid row -->
     <div class="row d-flex align-items-center">
@@ -185,7 +187,6 @@
     <!-- Grid row -->
 
   </div>
-</main>
 </body>
 </html>
 	
