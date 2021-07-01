@@ -53,9 +53,9 @@
                             <span style="font-weight: bold;"><?php the_title(); ?></span> el 
                             <span style="font-weight: bold;"><?php the_field('fechaexpedicion'); ?></span></p>
                         <p class="m-0" style="font-size: 15px;">Expira el <?php the_field('fechaexpiracion'); ?></p>
-                         <div id="bddescription" class="w-100 pt-5" style="background-color: #f2f2f2;width: 100%;">
-                            <p class="px-4  fs-5 fw-bold" id="bddescriptiontitle" style="padding: 0px 20px;">Descripción:</p>
-                            <div style="width: 80%;padding: 0px 20px;">
+                         <div  class="w-100 pt-5" style="background-color: #f2f2f2;">
+                            <!-- <p class="px-4  fs-5 fw-bold" id="bddescriptiontitle" style="padding: 0px 20px;">Descripción:</p> -->
+                            <div style="width: 100%">
                                 <?php the_content(); ?>                        
                             </div>
                         </div>
@@ -109,7 +109,7 @@
 
                 </div>
                
-                <div id="bdcriterio" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
+                <div id="bdcriterio" style="padding: 0px 20px;margin-top: 4rem;">
                     <p class="px-4  fs-5">
 						<strong>
 							Criterio:
@@ -120,7 +120,7 @@
 					
 					
                 </div>
-                <div id="bdevidencia" class="w-auto pt-5" style="width: 100%; padding: 0px 20px;">
+                <div id="bdevidencia" class="w-auto pt-5" style="padding: 1rem 20px;">
                     <p class="px-4  fs-5">
 						<strong>
 							Evidencia:
