@@ -1,6 +1,7 @@
 @media (min-width: 768px) {
   #bdgimage {
-    margin-top: -90px;
+    margin-top: -270px !important;
+    margin-left: 2rem !important;
   }
   #bdgtitle {
     padding-left: 22rem;
@@ -16,6 +17,7 @@
   }
   #bdcriterio {
     margin-left: 22rem;
+    margin-top: -5rem !important;
   }
   #bdevidencia {
     margin-left: 22rem;
