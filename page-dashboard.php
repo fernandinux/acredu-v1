@@ -71,7 +71,7 @@
     
     <div style="width:100px; height:100px;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;" 
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
-        <img src="<?php echo $user_id;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
+        <img src="<?php echo $memberID;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
