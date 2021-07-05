@@ -78,7 +78,7 @@
         
         <!-- card -->
         
-        <div class="col my-5" style="max-width:300px">
+        <div class="mx-3 my-5" style="max-width:300px">
             <div class="card h-200 text-center py-5">
                 <a href="https://app.acredu.org/addcurso/?text-validate=<?php echo $posType ?>" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
                 <div class="card-body">
@@ -91,7 +91,7 @@
         <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
-        <div class="col my-5" >
+        <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
                             <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          

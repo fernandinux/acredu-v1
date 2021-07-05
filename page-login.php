@@ -9,6 +9,9 @@
             <h3 class="my-3">Lista de Cursos</h3><br>
             <a class="btn p-2 waves-effect waves-light" href="/dashboard/" role="button" style="background:green;">Ir al Dashboard</a>
         </div>
+        <?php wp_redirect('https://acredu.app/dashboard');
+        
+     ?>
 
      <?php else :?>
         <?php the_content(); ?>
