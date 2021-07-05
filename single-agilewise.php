@@ -33,7 +33,7 @@
 							<img alt="Colectivo23" src="https://acredu.app/wp-content/uploads/2021/07/LogoColorTrans.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
-					<div>
+					<div class="text-center">
 						<a target="_blank" href="https://bit.ly/3dMJ2Sn">https://agilewisecorp.com/
 						</a>
 	
@@ -133,10 +133,10 @@
 					<div style="text-align:justify">
 						<?php the_field('descripcion_event1'); ?>
 					</div>   
-					<p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p>
+					<!-- <p class="mt-5 text-center">Conoce donde puedes adquirir este producto:</p> -->
 						<div class="text-center">	
 							<a target="_blank" id="brochureproyetech" href="<?php the_field('button_link'); ?>" class="btn btn-primary">
-								Aquí
+								¡Conversemos!
 							</a>  
 						</div>
 					
@@ -153,7 +153,7 @@
 			
             <div style="margin: 20px auto;">
 				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
-				<a target="_blank" href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
+				<a target="_blank" href="https://bit.ly/3hBURMu" style="cursor: pointer;text-decoration: none;">
 						<img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
 				</a>
                 
