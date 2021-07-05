@@ -333,7 +333,7 @@ function certificate_giulianahuaman(){
             'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
-            'menu_position' => 16,
+            'menu_position' => 17,
             'menu_icon' => 'dashicons-awards',
             'can_export' => true,
             'publicly_queryable' => true,
@@ -358,7 +358,7 @@ function certificate_claudiapeve(){
             'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
-            'menu_position' => 16,
+            'menu_position' => 18,
             'menu_icon' => 'dashicons-awards',
             'can_export' => true,
             'publicly_queryable' => true,
@@ -381,7 +381,7 @@ function cursos_claudiapeve(){
             'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
-            'menu_position' => 15,
+            'menu_position' => 19,
             'menu_icon' => 'dashicons-category',
             'can_export' => true,
             'publicly_queryable' => true,
@@ -404,7 +404,7 @@ function badge_colectivo23(){
             'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
-            'menu_position' => 15,
+            'menu_position' => 20,
             'menu_icon' => 'dashicons-category',
             'can_export' => true,
             'publicly_queryable' => true,
@@ -427,7 +427,7 @@ function badge_castudio(){
             'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
-            'menu_position' => 15,
+            'menu_position' => 21,
             'menu_icon' => 'dashicons-category',
             'can_export' => true,
             'publicly_queryable' => true,
@@ -450,7 +450,7 @@ function badge_proyetech(){
             'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
             'public' => true,
             'show_in_menu' => true,
-            'menu_position' => 15,
+            'menu_position' => 22,
             'menu_icon' => 'dashicons-category',
             'can_export' => true,
             'publicly_queryable' => true,
@@ -459,6 +459,31 @@ function badge_proyetech(){
             'taxonomies'          => array( 'category' ),
     );
     register_post_type( 'badgeproyetech', $args );
+}
+
+function certificate_agilewise(){
+
+    $labels = array (
+        'name' => 'AGILEWISE-Certs',
+        'singular_name' => 'AGILEWISE-Cert',
+        'menu_name' => 'AGILEWISE',
+    );
+    $args = array(
+            'label' => 'AGILEWISE-Certs',
+            'descripcion' => 'Certificados de usuarios AGILEWISE',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 23,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'agilewise', $args );
 }
 
 add_action( 'init', 'cursos_proyetech');
@@ -479,6 +504,7 @@ add_action( 'init', 'certificate_claudiapeve');
 add_action( 'init', 'badge_colectivo23');
 add_action( 'init', 'badge_castudio');
 add_action( 'init', 'badge_proyetech');
+add_action( 'init', 'certificate_agilewise');
 
 /* PRUEBAS FORM post
 <?php
