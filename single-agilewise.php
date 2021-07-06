@@ -165,46 +165,24 @@
 				<?php the_field('descripcion_inst'); ?>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
+						<div class="panel-heading" role="tab" id="headingTwo">
 						<h4 class="panel-title">
-							<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Collapsible Group Item #1
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Temas formativos
 							</a>
 						</h4>
 						</div>
-						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 						<div class="panel-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-							<div class="panel-group" id="sub-accordion" role="tablist" aria-multiselectable="true">
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="subHeadingOne">
-								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseSubOne" aria-expanded="true" aria-controls="collapseSubOne">
-									Collapsible Sub-Group Item #1
-									</a>
-								</h4>
-								</div>
-								<div id="collapseSubOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="subHeadingOne">
-								<div class="panel-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-								</div>
-							</div>
-							<div class="panel panel-default">
-								<div class="panel-heading" role="tab" id="subHeadingTwo">
-								<h4 class="panel-title">
-									<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseSubTwo" aria-expanded="false" aria-controls="collapseSubTwo">
-									Collapsible Sub-Group Item #2
-									</a>
-								</h4>
-								</div>
-								<div id="collapseSubTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSubTwo">
-								<div class="panel-body">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-								</div>
-							</div>
-							</div>
+							<ul>
+								<li aria-level="1">Mindset Digital</li>
+								<li aria-level="1">Transformación Digital</li>
+								<li aria-level="1">Transformación Ágil</li>
+								<li aria-level="1">Liderazgo ágil</li>
+								<li aria-level="1">Innovación</li>
+								<li aria-level="1">Gestión de Productos y Servicios</li>
+								<li aria-level="1">Educación ágil y metodologías de enseñanza</li>
+							</ul>
 						</div>
 						</div>
 					</div>
@@ -212,13 +190,31 @@
 						<div class="panel-heading" role="tab" id="headingTwo">
 						<h4 class="panel-title">
 							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Collapsible Group Item #2
+							Entrenamientos y formación in-house
 							</a>
 						</h4>
 						</div>
 						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 						<div class="panel-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							Diseñamos programas formativos enfocados en la necesidad u oportunidad que se deseas trabajar, con ejemplos del sector y el mercado en el que te encuentras, aterrizando los términos y conceptos a un lenguaje práctico y sencillo.
+						</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+						<h4 class="panel-title">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							¿Cómo hacemos nuestros entrenamientos?
+							</a>
+						</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="panel-body">
+							<ol>
+								<li aria-level="1"><b>Alineamiento</b> (why &amp; where): Entendemos la necesidad de las capacitaciones, conociendo de cerca el contexto de a quiénes están dirigidas y qué se espera de ellas. Además, ayudamos a despejar dudas de los temas propuestos y entender cómo se va a medir el impacto.</li>
+								<li aria-level="1"><b>Estrategia</b> (what): Diseñamos la mejor estrategia de cómo se van a desarrollar las capacitaciones para la empresa. Cada tema, clase y mentor son seleccionados y preparados centrándonos en las necesidades y creando espacios para poner en práctica el conocimiento.</li>
+								<li aria-level="1"><b>Ejecución</b> (how): Cada taller cuenta con una Líder de Experiencia quien acompaña de inicio a fin el taller y el mentor se encarga de brindar la experiencia durante la clase. Además, cada participante tiene acceso a nuestra plataforma donde se dispone de material complementario.</li>
+							</ol>
 						</div>
 						</div>
 					</div>
