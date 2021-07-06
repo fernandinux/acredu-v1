@@ -167,7 +167,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingOne">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
+							<a class="h6 collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
 							Temas formativos
 							</a>
 						</h4>
@@ -189,7 +189,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwo">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<a class="h6 collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 							Entrenamientos y formación in-house
 							</a>
 						</h4>
@@ -203,7 +203,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingThree">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+							<a class="h6 collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
 							¿Cómo hacemos nuestros entrenamientos?
 							</a>
 						</h4>
@@ -221,7 +221,9 @@
 					</div>
 				
 			</div>
-			
+			<p>Juntos, ayudemos a tu equipo a desarrollar los conocimientos y habilidades que necesita, para afrontar la Transformación que estás iniciando.    </p>
+			<br>
+			<iframe loading="lazy" style="margin-top: 20px;" title="Agile Wise" src="https://www.youtube.com/embed/6ppdLz1T0KA?controls=0" allowfullscreen="allowfullscreen" width="100%" height="315" frameborder="0"></iframe>
 			
 		</div>
 	</div>
