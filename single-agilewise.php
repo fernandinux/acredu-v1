@@ -168,7 +168,7 @@
 						<div class="panel-heading" role="tab" id="headingOne">
 						<h4 class="panel-title">
 							<a class="h6 collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
-							Temas formativos
+							<i class="fas fa-caret-down"></i> Temas formativos
 							</a>
 						</h4>
 						</div>
@@ -190,7 +190,7 @@
 						<div class="panel-heading" role="tab" id="headingTwo">
 						<h4 class="panel-title">
 							<a class="h6 collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Entrenamientos y formación in-house
+							<i class="fas fa-caret-down"></i> Entrenamientos y formación in-house
 							</a>
 						</h4>
 						</div>
@@ -204,7 +204,7 @@
 						<div class="panel-heading" role="tab" id="headingThree">
 						<h4 class="panel-title">
 							<a class="h6 collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-							¿Cómo hacemos nuestros entrenamientos?
+							<i class="fas fa-caret-down"></i> ¿Cómo hacemos nuestros entrenamientos?
 							</a>
 						</h4>
 						</div>
