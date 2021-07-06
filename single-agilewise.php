@@ -165,14 +165,14 @@
 				<?php the_field('descripcion_inst'); ?>
 			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwo">
+						<div class="panel-heading" role="tab" id="headingOne">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
 							Temas formativos
 							</a>
 						</h4>
 						</div>
-						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 						<div class="panel-body">
 							<ul>
 								<li aria-level="1">Mindset Digital</li>
@@ -201,14 +201,14 @@
 						</div>
 					</div>
 					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwo">
+						<div class="panel-heading" role="tab" id="headingThree">
 						<h4 class="panel-title">
-							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
 							¿Cómo hacemos nuestros entrenamientos?
 							</a>
 						</h4>
 						</div>
-						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 						<div class="panel-body">
 							<ol>
 								<li aria-level="1"><b>Alineamiento</b> (why &amp; where): Entendemos la necesidad de las capacitaciones, conociendo de cerca el contexto de a quiénes están dirigidas y qué se espera de ellas. Además, ayudamos a despejar dudas de los temas propuestos y entender cómo se va a medir el impacto.</li>
