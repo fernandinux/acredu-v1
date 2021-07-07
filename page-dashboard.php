@@ -12,6 +12,7 @@
     $usach = 'USACHXY';
     $wiad = 'WIADXY';
     $claudiapeve = 'CLAUDIAPEVE';
+    $agilewise = 'AGILEWISE';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
@@ -37,6 +38,9 @@
                     }
                     if($memberLastName==$claudiapeve){
                     $posType = 'claudiapeve';
+                    }
+                    if($memberLastName==$agilewise){
+                    $posType = 'agilewise';
                     }
      
     $metadataImageProfile= get_user_meta( $memberID, 'pie_upload_21', true );
