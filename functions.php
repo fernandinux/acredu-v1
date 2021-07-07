@@ -606,9 +606,9 @@ function mp_get_member_level(){
 
     // Get member's info
     $memberInfo = get_userdata($memberID);
-    $memberName = $memberInfo->user_email;
+    $memberName = date_i18n( __( 'l jS \o\f F Y', 'textdomain' ) );
     if(empty($memberName)):
-      $memberName = 'ayuda@acredu.app';
+      $memberName = 'sin fecha';
     endif;
 
     // web referencia .https://silicodevalley.com/como-agregar-campos-personalizados-en-el-plugin-contact-form-7/
