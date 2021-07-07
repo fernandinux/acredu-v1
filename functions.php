@@ -595,49 +595,51 @@ $upload2= $_FILES['file-lista'];
 add_action('wpcf7_before_send_mail', 'guardar_postulante_por_cf7' ); 
 
  
-/*para el generador de pdf */
+/*reenvio de correos al crear curso o lista*/
 
-add_action('init', 'congres_redirect');
+function mp_get_member_level(){
 
-function congres_redirect() {
-  if(isset($_GET['print_id'])) {
-    view_conferinta();
-  }
+  // Get current user's ID
+  $memberID = get_current_user_id();
+
+  if( $memberID != 0 ):
+
+    // Get member's info
+    $memberInfo = get_userdata($memberID);
+    $memberName = $memberInfo->user_email;
+    if(empty($memberName)):
+      $memberName = 'ayuda@acredu.app';
+    endif;
+
+    // web referencia .https://silicodevalley.com/como-agregar-campos-personalizados-en-el-plugin-contact-form-7/
+    
+    $output = array(      
+      'member_level' => $memberName
+    );
+
+    return $output;
+
+  else:
+    return; // User is not logged in
+  endif;
+}
+/*creando el shortcode para agregar campo oculto*/
+add_action( 'wpcf7_init', 'mp_cf7_custom_shortcode' );
+
+function mp_cf7_custom_shortcode(){
+  wpcf7_add_form_tag( 'show_member_level', 'cf7_get_member_level' );
 }
 
-function view_conferinta() {
+function cf7_get_member_level(){
+  $memberLevel = mp_get_member_level();
+  if(empty($memberLevel)):
+    $value = 0;
+  else:
+    $value = $memberLevel['member_level'];
+  endif;
+  return '<input type="hidden" name="member-level" value="'. $value .'" />';
+}
 
-    $output = '<html>
-    <head><title>Page title</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head>
-    <style>
-    .printable {
-    border-collapse: collapse;
-    border: 1px solid #ddd;
-    }
-    .printable td {
-    border:1px solid #ddd;
-    padding:5px;
-    }
-    </style>
-    <body>';
-    
-    $id_rez = wp_get_current_user();
-    
-    $output .='<div style="">Prenume: '.get_user_meta( $id_rez, 'first_name', true ).'</div>
-    <div style="">Nume: '.get_user_meta( $id_rez, 'last_name', true ).'</div>';
-    
-    $output .= '
-    </body>
-    </html>';
-    
-    include(dirname(__FILE__)."/mpdf/src/mpdf.php");
-    $mpdf=new mPDF('c', 'A4-L');
-    $mpdf->WriteHTML($output);
-    $mpdf->Output();
-    exit;
-
-    }
 
 
 ?>
