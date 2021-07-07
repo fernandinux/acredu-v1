@@ -485,6 +485,29 @@ function certificate_agilewise(){
     );
     register_post_type( 'agilewise', $args );
 }
+function cursos_agilewise(){
+    $labels = array (
+        'name' => 'AGILEWISE-Cursos',
+        'singular_name' => 'AGILEWISE-Curso',
+        'menu_name' => 'AGILEWISE',
+    );
+    $args = array(
+            'label' => 'AGILEWISE-Cursos',
+            'descripcion' => 'Cursos de usuarios AGILEWISE',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 24,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'cursosagilewise', $args );
+}
 
 add_action( 'init', 'cursos_proyetech');
 add_action( 'init', 'cursos_miguels');
@@ -505,6 +528,7 @@ add_action( 'init', 'badge_colectivo23');
 add_action( 'init', 'badge_castudio');
 add_action( 'init', 'badge_proyetech');
 add_action( 'init', 'certificate_agilewise');
+add_action( 'init', 'cursos_agilewise');
 
 /* PRUEBAS FORM post
 <?php
