@@ -627,7 +627,7 @@ function mp_get_member_level(){
 add_action( 'wpcf7_init', 'mp_cf7_custom_shortcode' );
 
 function mp_cf7_custom_shortcode(){
-  wpcf7_add_form_tag( 'show_member_level', 'cf7_get_member_level' );
+  wpcf7_add_form_tag( 'show_member_level*', 'cf7_get_member_level' );
 }
 
 function cf7_get_member_level(){
