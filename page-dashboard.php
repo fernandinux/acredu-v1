@@ -37,10 +37,10 @@
                     $posType = 'cursoswiad';
                     }
                     if($memberLastName==$claudiapeve){
-                    $posType = 'claudiapeve';
+                    $posType = 'cursosclaudiapeve';
                     }
                     if($memberLastName==$agilewise){
-                    $posType = 'agilewise';
+                    $posType = 'cursosagilewise';
                     }
      
     $metadataImageProfile= get_user_meta( $memberID, 'pie_upload_21', true );
