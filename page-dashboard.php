@@ -81,7 +81,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
         <!-- card -->
-       <?php if($memberID=19){?>
+       <?php if($memberID==19){?>
         <div class="mx-3 my-5" style="max-width:300px">
             <div class="card h-200 text-center py-5">
                 <a href="https://app.acredu.org/addcurso/?text-validate=<?php echo $posType ?>" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
