@@ -56,7 +56,7 @@
     
     // $memberRole = $memberInfo->facebook;
     // $memberLocale = $memberInfo->twitter;
-     echo $memberID;
+    //echo $memberID;
     // echo $memberlogin;
     // echo $metadataImageProfile;
     // echo $memberDisplayName;
@@ -81,16 +81,9 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
         <!-- card -->
-       <?php if($memberID==19){?>
-        <div class="mx-3 my-5" style="max-width:300px">
-            <div class="card h-200 text-center py-5">
-                <a href="https://app.acredu.org/addcurso/?text-validate=<?php echo $posType ?>" ><i class="far fa-plus-square" style="font-size:10rem;color:#80808059"></i></a>
-                <div class="card-body">
-                    <h5 class="card-title">Agregar Curso</h5>                   
-                </div>
-            </div>
-        </div>
-        <?php } ?>
+       <?php if($memberID==19){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         } ?>
         
         <!-- card -->
 
