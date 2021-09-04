@@ -56,7 +56,7 @@
     
     // $memberRole = $memberInfo->facebook;
     // $memberLocale = $memberInfo->twitter;
-    // echo $memberID;
+     echo $memberID;
     // echo $memberlogin;
     // echo $metadataImageProfile;
     // echo $memberDisplayName;
