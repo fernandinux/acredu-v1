@@ -54,7 +54,7 @@
     
     // $memberDescription = $memberInfo->description;
     
-    // $memberRole = $memberInfo->facebook;
+    // $memberRole = $memberInfo->roles;
     // $memberLocale = $memberInfo->twitter;
     //echo $memberID;
     // echo $memberlogin;
