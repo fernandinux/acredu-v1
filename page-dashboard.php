@@ -81,9 +81,42 @@
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
         <!-- card -->
-       <?php if($memberID==19){
+       <?php 
+       
+        if($memberID==1){
         get_template_part( 'template-parts/content', 'addcurso' );
-         } ?>
+         }
+
+         if($memberID==19){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         } 
+
+         if($memberID==26){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         } 
+
+         if($memberID==24){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         }
+
+         if($memberID==30){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         }
+
+         if($memberID==27){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         }
+
+         if($memberID==25){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         }
+
+         if($memberID==28){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         }
+         ?>
+
+
         
         <!-- card -->
 
