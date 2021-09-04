@@ -83,7 +83,7 @@
         <!-- card -->
        <?php 
        
-        if($memberRole=="Editor"){
+        if($memberRole=="editor"){
         get_template_part( 'template-parts/content', 'addcurso' );
          }
 
@@ -137,9 +137,11 @@
                                 <a href="https://app.acredu.org/addlist/?codigo-curso-new=<?php the_title(); ?>&nombre-curso-new=<?php the_field('nombrecurso'); ?>"
                                 class="btn" style="background:#11af88; padding:5px;text-transform:capitalize">Agregar Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
- 
-                                <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
 
+                                 <?php if($memberRole=="editor"){?>                                                                            
+                                <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
+                                 <?php    } ?>
+                                 
                                 <?php endif; ?>
 
                             </div>                               
