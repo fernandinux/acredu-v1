@@ -65,7 +65,7 @@
     // echo $memberLastName;
     // echo $memberDescription;
     // echo $posType;
-    // echo $memberRole;
+    echo $memberRole;
     // echo $memberLocale;
 
     ?>
@@ -83,13 +83,9 @@
         <!-- card -->
        <?php 
        
-        if($memberID==1){
+        if($memberRole=="Editor"){
         get_template_part( 'template-parts/content', 'addcurso' );
          }
-
-         if($memberID==19){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         } 
 
          if($memberID==26){
         get_template_part( 'template-parts/content', 'addcurso' );
