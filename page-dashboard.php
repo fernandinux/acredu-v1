@@ -65,7 +65,7 @@
     // echo $memberLastName;
     // echo $memberDescription;
     // echo $posType;
-    echo $memberRole;
+    //echo $memberRole;
     // echo $memberLocale;
 
     ?>
@@ -141,7 +141,7 @@
                                  <?php if($memberRole=="editor"){?>                                                                            
                                 <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
                                  <?php    } ?>
-                                 
+
                                 <?php endif; ?>
 
                             </div>                               
