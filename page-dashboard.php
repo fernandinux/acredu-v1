@@ -54,7 +54,7 @@
     
     // $memberDescription = $memberInfo->description;
     
-    $memberRole = $memberInfo->roles;
+    $memberRole = implode(', ', $memberInfo->roles);
     // $memberLocale = $memberInfo->twitter;
     //echo $memberID;
     // echo $memberlogin;
