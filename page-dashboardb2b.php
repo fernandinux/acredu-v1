@@ -95,7 +95,10 @@
          }
 
          ?>
-                    
+                    <?php ?>
+
+
+                    <?php  ?>
                         
         
         <!-- card -->
@@ -136,10 +139,9 @@
                     /> -->                
             </div>
         </div>
-                        <?php endwhile; ?>
-                        <?php else:?>
-                         <!-- no posts found -->
-                       <?php endif; wp_reset_query(); ?>
+                        <?php endwhile; 
+                        wp_reset_postdata();?>
+                        
 
 
         
