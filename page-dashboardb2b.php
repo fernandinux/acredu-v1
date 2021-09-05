@@ -15,6 +15,7 @@
     $agilewise = 'AGILEWISE';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
+         $posCat=62;
     //     las variables para cuadno sea colectivo
     }
     if($memberLastName==$castudio){
@@ -74,7 +75,7 @@
     
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
+            <li class="breadcrumb-item"><a href="/predashboard">Panel</a></li>
             <li class="breadcrumb-item active" aria-current="page">Cliente Empresa</li>
         </ol>
     </nav>
@@ -95,11 +96,11 @@
 
          ?>
 
-
+                        
         
         <!-- card -->
 
-        <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+        <?php query_posts(array('category_name' => $posCat ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="mx-3 my-5" >

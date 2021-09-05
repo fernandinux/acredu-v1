@@ -74,7 +74,7 @@
     
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
+                <li class="breadcrumb-item"><a href="/predashboard">Panel</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Cliente Personas</li>
             </ol>
         </nav>
