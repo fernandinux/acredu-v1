@@ -102,29 +102,20 @@
                         
         
         <!-- card -->
-        <?php
-   $args = array('cat' => 62);
-   $category_posts = new WP_Query($args);
- 
-   if($category_posts->have_posts()) : 
-      while($category_posts->have_posts()) : 
-         $category_posts->the_post();
-?>
-         <h1><?php the_title() ?></h1>
-         <div class='post-content'><?php the_content() ?></div>    
 <?php
-      endwhile;
-   else: 
-?>
-      Vaya, no hay entradas.
-<?php
-   endif;
-?>
+         query_posts( array(
+	'post_type'=> $posType,
+	'showposts'=> '1',
+	'tax_query' => array(
+		array(
+			'taxonomy' => 'categoria', // Nombre de la taxonomía.
+			'field'    => 'slug',
+			'terms'    => 'b2b_colectivo', // El slug de la categoría a filtrar.
+		),
+) );?>
 
-        <?php $catquery = new WP_Query( 'cat=62&posts_per_page=10' );  ?>
-        
-                <?php while($catquery->have_posts()) : $catquery->the_post();
-               ?>  
+       <!-- <?php //query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?> -->
+                <?php if(have_posts()) : while(have_posts()) : the_post();?>
         <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
                             <a href="<?php the_permalink(); ?>">
