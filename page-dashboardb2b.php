@@ -105,7 +105,7 @@
 <?php
          query_posts( array(
 	'post_type'=> $posType,
-    'cat'=> '62',
+    'cat'=> 62,
     'posts_per_page' => -1,
 	 ));?>
 
