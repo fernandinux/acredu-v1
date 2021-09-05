@@ -95,16 +95,13 @@
          }
 
          ?>
-                    <?php ?>
-
-
-                    <?php  ?>
+                    
                         
         
         <!-- card -->
-<?php query_posts(array('post_type'=>$posType, 'cat'=>'62', 'posts_per_page'=>'-1'));?>
+<?php //query_posts(array('post_type'=>$posType, 'cat'=>'62', 'posts_per_page'=>'-1'));?>
 
-       <!-- <?php //query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?> -->
+       <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
         <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
