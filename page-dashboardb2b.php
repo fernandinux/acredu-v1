@@ -104,7 +104,7 @@
         <!-- card -->
 
         <?php $catquery = new WP_Query( 'cat=62&posts_per_page=10' );  ?>
-        Aqui <?php echo $catquery;   ?>
+        
                 <?php while($catquery->have_posts()) : $catquery->the_post();
                ?>  
         <div class="mx-3 my-5" >
