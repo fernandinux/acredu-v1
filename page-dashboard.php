@@ -87,29 +87,6 @@
         get_template_part( 'template-parts/content', 'addcurso' );
          }
 
-         if($memberID==26){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         } 
-
-         if($memberID==24){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         }
-
-         if($memberID==30){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         }
-
-         if($memberID==27){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         }
-
-         if($memberID==25){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         }
-
-         if($memberID==28){
-        get_template_part( 'template-parts/content', 'addcurso' );
-         }
          ?>
 
 
