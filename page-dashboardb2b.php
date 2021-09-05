@@ -105,14 +105,9 @@
 <?php
          query_posts( array(
 	'post_type'=> $posType,
-	'showposts'=> '1',
-	'tax_query' => array(
-		array(
-			'taxonomy' => 'categoria', // Nombre de la taxonomía.
-			'field'    => 'slug',
-			'terms'    => 'b2b_colectivo', // El slug de la categoría a filtrar.
-		),
-) );?>
+    'cat'=> '62',
+    'posts_per_page' => -1,
+	 ));?>
 
        <!-- <?php //query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?> -->
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
