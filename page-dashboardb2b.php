@@ -95,13 +95,13 @@
          }
 
          ?>
-
+                    
                         
         
         <!-- card -->
 
-        <?php query_posts(array('category_name' => 'b2b_colectivo' ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
-                <?php if(have_posts()) : while(have_posts()) : the_post();?>
+        <?php $catquery = new WP_Query( 'cat=62&posts_per_page=10' );  ?>
+                <?php while($catquery->have_posts()) : $catquery->the_post();?>
                     
         <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
