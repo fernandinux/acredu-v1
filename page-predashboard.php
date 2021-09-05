@@ -71,33 +71,84 @@
     ?>
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
-
+    
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/predashboard">Panel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cliente Personas</li>
+            </ol>
+        </nav>
     
     <div style="width:100px; height:100px;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;" 
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
-    <div class="row my-5">
-        <div class="col-sm-5  col-md-6  d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboard" class="w-25">
-                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
-            </a>
-            <a href="/dashboard">
-                <p>B2C - Clientes Personas</p>
-            </a>
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
+        
+        <!-- card -->
+       <?php 
+       
+        if($memberRole=="editor"){
+        get_template_part( 'template-parts/content', 'addcurso' );
+         }
+
+         ?>
+
+
+        
+        <!-- card -->
+
+        <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+                <?php if(have_posts()) : while(have_posts()) : the_post();?>
+                    
+        <div class="mx-3 my-5" >
+            <div class="card" style="width:220px">
+                            <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
+                            </a>   
+                            <div class="card-body" style="height:300px">
+                            <div style="height:220px">
+                                <p style="font-size:10px">Código:</p>
+                                <p class="card-title"><?php the_title(); ?></p>                                
+                                <p style="font-size:10px">Curso:</p>    
+                                <p class="card-title"><?php the_field('nombrecurso'); ?></p>
+                            </div>
+                            
+                                
+                               
+                                <a href="https://app.acredu.org/addlist/?codigo-curso-new=<?php the_title(); ?>&nombre-curso-new=<?php the_field('nombrecurso'); ?>"
+                                class="btn" style="background:#11af88; padding:5px;text-transform:capitalize">Agregar Lista</a>
+                                <?php if( !(get_post_status() == 'trash') ) : ?>
+
+                                 <?php if($memberRole=="editor"){?>                                                                            
+                                <a class="text-danger" onclick="return confirm('¿Esta seguro de borrar el curso  <?php echo get_the_title() ?>?')"href="<?php echo get_delete_post_link( get_the_ID() ); ?>">Borrar</a>
+                                 <?php    } ?>
+
+                                <?php endif; ?>
+
+                            </div>                               
+                    <!-- <img
+                        src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg"
+                        class="card-img-top"
+                        alt="..."
+                    /> -->                
+            </div>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
-                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
-            </a>
-            <a href="/dashboardb2b">
-                <p>B2B - Clientes Empresas</p>
-            </a>
-        </div>
+                        <?php endwhile; ?>
+                        <?php else:?>
+                         <!-- no posts found -->
+                       <?php endif; wp_reset_query(); ?>
+
+
+        
+        
+        
+  
     </div>
 	
-
-<div style="position: absolute;bottom: 0;width: 100%;">
+<br>
+<br>
+<div>
     <?php get_footer(); ?>
 </div>
