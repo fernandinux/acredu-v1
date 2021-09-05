@@ -104,8 +104,9 @@
         <!-- card -->
 
         <?php $catquery = new WP_Query( 'cat=2&posts_per_page=10' );  ?>
-                <?php while($catquery->have_posts()) : $catquery->the_post();?>
-                    
+        Aqui
+                <?php while($catquery->have_posts()) : $catquery->the_post();
+              echo $catquery;    ?>  
         <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
                             <a href="<?php the_permalink(); ?>">
