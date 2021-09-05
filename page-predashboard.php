@@ -79,7 +79,7 @@
     </div> 
 
     <div>
-    <img src="/img/fileicon.png" alt="">
+    <img src="./wp-content/uploads/2021/09/fileicon.png" alt="">
     </div>
 	
 <br>
