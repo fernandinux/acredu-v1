@@ -80,18 +80,18 @@
 
     <div class="row my-5">
         <div class="col-sm-5  col-md-6  d-flex justify-content-center align-items-center flex-column">
-            <a src="/dashboard" class="w-25">
+            <a href="/dashboard" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a src="/dashboard">
+            <a href="/dashboard">
                 <p>B2C - Clientes Personas</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a src="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a src="/dashboardb2b">
+            <a href="/dashboardb2b">
                 <p>B2B - Clientes Empresas</p>
             </a>
         </div>
