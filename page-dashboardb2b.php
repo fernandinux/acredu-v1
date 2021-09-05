@@ -15,7 +15,7 @@
     $agilewise = 'AGILEWISE';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
-         $posCat=62;
+         $posCat='B2B_colectivo';
     //     las variables para cuadno sea colectivo
     }
     if($memberLastName==$castudio){
