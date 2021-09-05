@@ -15,7 +15,6 @@
     $agilewise = 'AGILEWISE';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
-         $posCat='b2b_colectivo';
     //     las variables para cuadno sea colectivo
     }
     if($memberLastName==$castudio){
@@ -73,12 +72,12 @@
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
     
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/predashboard">Panel</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Cliente Empresa</li>
-        </ol>
-    </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/predashboard">Panel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cliente Personas</li>
+            </ol>
+        </nav>
     
     <div style="width:100px; height:100px;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;" 
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
@@ -95,14 +94,14 @@
          }
 
          ?>
-                    
-                        
+
+
         
         <!-- card -->
-<?php //query_posts(array('post_type'=>$posType, 'cat'=>'62', 'posts_per_page'=>'-1'));?>
 
-       <?php query_posts(array('post_type' => $posType ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+        <?php query_posts(array('post_type' => $posType ,'cat'=>'62','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
+                    
         <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
                             <a href="<?php the_permalink(); ?>">
@@ -136,9 +135,10 @@
                     /> -->                
             </div>
         </div>
-                        <?php endwhile; 
-                        wp_reset_postdata();?>
-                        
+                        <?php endwhile; ?>
+                        <?php else:?>
+                         <!-- no posts found -->
+                       <?php endif; wp_reset_query(); ?>
 
 
         
