@@ -84,15 +84,55 @@
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
             <a href="/dashboard">
-                <p>B2C - Clientes Personas</p>
+                <p>Interbank</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardclient" class="w-25">
+            <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardclient">
-                <p>B2B - Clientes Empresas</p>
+            <a href="/dashboardb2b">
+                <p>HIPOS IBK</p>
+            </a>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+            <a href="/dashboardb2b" class="w-25">
+                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
+            </a>
+            <a href="/dashboardb2b">
+                <p>Oeschle</p>
+            </a>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+            <a href="/dashboardb2b" class="w-25">
+                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
+            </a>
+            <a href="/dashboardb2b">
+                <p>Sitech</p>
+            </a>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+            <a href="/dashboardb2b" class="w-25">
+                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
+            </a>
+            <a href="/dashboardb2b">
+                <p>Farmacias Peruanas</p>
+            </a>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+            <a href="/dashboardb2b" class="w-25">
+                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
+            </a>
+            <a href="/dashboardb2b">
+                <p>Rimac</p>
+            </a>
+        </div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+            <a href="/dashboardb2b" class="w-25">
+                <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
+            </a>
+            <a href="/dashboardb2b">
+                <p>Alicorp</p>
             </a>
         </div>
     </div>
