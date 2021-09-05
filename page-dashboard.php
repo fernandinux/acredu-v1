@@ -71,7 +71,13 @@
     ?>
 
     <?php get_template_part( 'template-parts/content', 'encabezado' );?>
-
+    
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cliente Personas</li>
+            </ol>
+        </nav>
     
     <div style="width:100px; height:100px;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;" 
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
