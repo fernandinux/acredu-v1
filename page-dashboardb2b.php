@@ -102,6 +102,24 @@
                         
         
         <!-- card -->
+        <?php
+   $args = array('cat' => 62);
+   $category_posts = new WP_Query($args);
+ 
+   if($category_posts->have_posts()) : 
+      while($category_posts->have_posts()) : 
+         $category_posts->the_post();
+?>
+         <h1><?php the_title() ?></h1>
+         <div class='post-content'><?php the_content() ?></div>    
+<?php
+      endwhile;
+   else: 
+?>
+      Vaya, no hay entradas.
+<?php
+   endif;
+?>
 
         <?php $catquery = new WP_Query( 'cat=62&posts_per_page=10' );  ?>
         
