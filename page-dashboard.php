@@ -78,6 +78,11 @@
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
 
+    <div class="text-center my-4">
+    <p>¡Bienvenid@ a tu sesión, Rosa! </p>
+    <p>Elige el tipo de certificado: </p>
+    </div>
+    
     <div class="row my-5 w-100">
         <div class="col-sm-5  col-md-6  d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboard" class="w-25">

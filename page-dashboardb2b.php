@@ -1,6 +1,9 @@
 <?php get_header();?>
 
 <?php 
+    global $wp_query;    
+    $wp_query->query['curso'];
+echo $wp_query;
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
@@ -84,6 +87,10 @@
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
+    
+    <div class="text-center my-4">
+    <p>Elige el curso: </p>
+    </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
