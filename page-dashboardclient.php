@@ -82,65 +82,72 @@
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
-
+    
+    <?php
+    if ($memberLastName==$colectivo){ ?>
+         $posType = 'cursoscolectivo';
+    //     las variables para cuadno sea colectivo
     <div class="row my-5 w-100">
-        <div class="col-sm-5  col-md-6  d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5  col-md-2  d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>Interbank</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>HIPOS IBK</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>Oeschle</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>Sitech</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>Farmacias Peruanas</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>Rimac</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b">
+            <a href="/dashboardb2b" class="text-center">
                 <p>Alicorp</p>
             </a>
         </div>
     </div>
+    <?php
+    } ?>
+    
 	
 
 <div style="position: absolute;bottom: 0;width: 100%;">
