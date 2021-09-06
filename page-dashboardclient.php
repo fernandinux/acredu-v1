@@ -84,9 +84,9 @@
     </div> 
     
     <?php
+    //el iff para cuando sea colectivo solo muestra empresas de colectivo
     if ($memberLastName==$colectivo){ ?>
-         $posType = 'cursoscolectivo';
-    //     las variables para cuadno sea colectivo
+        
     <div class="row my-5 w-100">
         <div class="col-sm-5  col-md-2  d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b" class="w-25">
