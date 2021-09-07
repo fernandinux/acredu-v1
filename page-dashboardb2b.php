@@ -3,7 +3,7 @@
 <?php 
     if(isset($wp_query->query_vars['curso'])) {
 $sMsdsCat = urldecode($wp_query->query_vars['curso']);
-echo 'hola'
+echo 'hola';
 echo $sMsdsCat;
 }
     $memberID = get_current_user_id();
