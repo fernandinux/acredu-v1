@@ -1,11 +1,7 @@
 <?php get_header();?>
 
 <?php 
-    if(isset($wp_query->query_vars['curso'])) {
-$sMsdsCat = urldecode($wp_query->query_vars['curso']);
-echo 'hola';
-echo $sMsdsCat;
-}
+    
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
@@ -93,7 +89,13 @@ echo $sMsdsCat;
     <div class="text-center my-4">
     <p>Elige el curso: </p>
     </div>
-
+    <?php
+    if(isset($wp_query->query_vars['curso'])) {
+        $sMsdsCat = urldecode($wp_query->query_vars['curso']);
+        echo 'hola';
+        echo $sMsdsCat;
+        }
+    ?>
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
         <!-- card -->
