@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <?php 
-    
+    $my_c = get_query_var( 'curso' );
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
@@ -77,7 +77,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
                 <li class="breadcrumb-item"><a href="/dashboardclient">B2B - Clientes Empresa</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Listas</li>
+                <li class="breadcrumb-item active" aria-current="page">Cursos de <?php echo $my_c; ?></li>
             </ol>
         </nav>
     
@@ -87,14 +87,9 @@
     </div> 
     
     <div class="text-center my-4">
-    <p>Elige el curso: </p>
+    <p>Los cursos creados para <?php echo $my_c; ?> son: </p>
     </div>
-    <?php
-    $my_c = get_query_var( 'curso' );
-        echo 'hola';
-        echo $my_c;
-      
-    ?>
+    <?php echo $my_c; ?>
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
         <!-- card -->
