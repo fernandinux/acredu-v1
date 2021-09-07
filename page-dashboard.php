@@ -88,12 +88,12 @@
             <a href="/predashboard" style="width: 100px;">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/predashboard" style="width: 100px;">
+            <a href="/predashboard" ">
                 <p>B2C - Clientes Personas</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardclient" >
+            <a href="/dashboardclient" style="width: 100px;">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
             <a href="/dashboardclient">
