@@ -3,6 +3,7 @@
 <?php 
     if(isset($wp_query->query_vars['curso'])) {
 $sMsdsCat = urldecode($wp_query->query_vars['curso']);
+echo 'hola'
 echo $sMsdsCat;
 }
     $memberID = get_current_user_id();
@@ -58,7 +59,7 @@ echo $sMsdsCat;
     
     // $memberDescription = $memberInfo->description;
     
-    $memberRole = implode(', ', $memberInfo->roles);
+    $memberRole = implode(', ', $memberInfo->roles); // rol del usuario
     // $memberLocale = $memberInfo->twitter;
     //echo $memberID;
     // echo $memberlogin;
