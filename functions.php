@@ -640,6 +640,12 @@ function cf7_get_member_level(){
   return '<input type="hidden" name="member-level" value="'. $value .'" />';
 }
 
+function add_custom_query_var( $vars ){
+  $vars[] = "curso";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_custom_query_var' );
 
 
 ?>
+
