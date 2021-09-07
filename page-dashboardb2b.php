@@ -90,11 +90,10 @@
     <p>Elige el curso: </p>
     </div>
     <?php
-    if(isset($wp_query->query_vars['curso'])) {
-        $sMsdsCat = urldecode($wp_query->query_vars['curso']);
+    $my_c = get_query_var( 'curso' );
         echo 'hola';
         echo $sMsdsCat;
-        }
+      
     ?>
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
