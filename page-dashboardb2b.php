@@ -92,7 +92,7 @@
     <?php
     $my_c = get_query_var( 'curso' );
         echo 'hola';
-        echo $sMsdsCat;
+        echo $my_c;
       
     ?>
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
