@@ -1,9 +1,10 @@
 <?php get_header();?>
 
 <?php 
-    global $wp_query;    
-    $wp_query->query['curso'];
-echo $wp_query;
+    if(isset($wp_query->query_vars['curso'])) {
+$sMsdsCat = urldecode($wp_query->query_vars['curso']);
+echo $sMsdsCat;
+}
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
