@@ -82,9 +82,12 @@
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
-    
+    <div class="text-center my-4">
+    <p>Elige para qué empresa es el certificado: </p>
+    </div>
+
     <?php
-    //el iff para cuando sea colectivo solo muestra empresas de colectivo
+    //el if para cuando sea colectivo solo muestra empresas de colectivo
     if ($memberLastName==$colectivo){ ?>
         
     <div class="row my-5 w-100">

@@ -639,13 +639,12 @@ function cf7_get_member_level(){
   endif;
   return '<input type="hidden" name="member-level" value="'. $value .'" />';
 }
-
+/* funcion para habilitar los parametros por url */
 function add_custom_query_var( $vars ){
   $vars[] = "curso";
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
-
 
 ?>
 

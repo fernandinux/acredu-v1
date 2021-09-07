@@ -50,7 +50,7 @@
     
     // $memberDisplayName = $memberInfo->display_name;
     // $memberNickname = $memberInfo->nickname;
-    // $memberFirstName = $memberInfo->first_name;
+     $memberFirstName = $memberInfo->first_name;
     
     // $memberDescription = $memberInfo->description;
     
@@ -79,21 +79,21 @@
     </div> 
 
     <div class="text-center my-4">
-    <p>¡Bienvenid@ a tu sesión, Rosa! </p>
+    <p>¡Bienvenid@ a tu sesión, <?php echo $memberFirstName;?>! </p>
     <p>Elige el tipo de certificado: </p>
     </div>
-    
+
     <div class="row my-5 w-100">
         <div class="col-sm-5  col-md-6  d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboard" class="w-25">
+            <a href="/predashboard" style="width: 100px;">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboard">
+            <a href="/predashboard" style="width: 100px;">
                 <p>B2C - Clientes Personas</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardclient" class="w-25">
+            <a href="/dashboardclient" >
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
             <a href="/dashboardclient">
