@@ -95,55 +95,55 @@
             <a href="/dashboardb2b/?curso=Interbank" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=Interbank" class="text-center">
                 <p>Interbank</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b/?curso=HIPOS IBK" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=HIPOS IBK" class="text-center">
                 <p>HIPOS IBK</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b/?curso=Oeschle" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=Oeschle" class="text-center">
                 <p>Oeschle</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b/?curso=Sitech" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=Sitech" class="text-center">
                 <p>Sitech</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b/?curso=Farmacias Peruanas" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=Farmacias Peruanas" class="text-center">
                 <p>Farmacias Peruanas</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b/?curso=Rimac" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=Rimac" class="text-center">
                 <p>Rimac</p>
             </a>
         </div>
         <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b" class="w-25">
+            <a href="/dashboardb2b/?curso=Alicorp" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b" class="text-center">
+            <a href="/dashboardb2b/?curso=Alicorp" class="text-center">
                 <p>Alicorp</p>
             </a>
         </div>

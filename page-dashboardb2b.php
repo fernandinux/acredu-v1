@@ -87,9 +87,9 @@
     </div> 
     
     <div class="text-center my-4">
-    <p>Los cursos creados para <?php echo $my_c; ?> son: </p>
+    <p>Los cursos creados para <strong><?php echo $my_c; ?></strong> son: </p>
     </div>
-    <?php echo $my_c; ?>
+
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
         <!-- card -->
