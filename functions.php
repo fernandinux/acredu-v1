@@ -641,7 +641,8 @@ function cf7_get_member_level(){
 }
 /* funcion para habilitar los parametros por url */
 function add_custom_query_var( $vars ){
-  $vars[] = "curso";
+  $vars[] = "idcat";
+  $vars[] = "empresa";
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );

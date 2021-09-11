@@ -74,7 +74,7 @@
     
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/predashboard">Panel</a></li>
+                <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Cliente Personas</li>
             </ol>
         </nav>
@@ -83,6 +83,10 @@
     class="p-3 d-flex align-items-center rounded-circle mt-4 mb-0 mx-auto"> 
         <img src="<?php echo $metadataImageProfile;?>" alt="logo" class="img-fluid" style="width:100px; height:auto;">
     </div> 
+    
+    <div class="text-center my-4">
+    <p>Elige para qué curso es el certificado</p>
+    </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
         
