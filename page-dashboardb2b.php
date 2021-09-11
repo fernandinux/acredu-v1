@@ -1,7 +1,8 @@
 <?php get_header();?>
 
 <?php 
-    $my_c = get_query_var( 'curso' );
+    $idcategory = get_query_var( 'idcat' );
+    $nameempresa = get_query_var( 'empresa' );
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
@@ -77,7 +78,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
                 <li class="breadcrumb-item"><a href="/dashboardclient">B2B - Clientes Empresa</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Cursos de <?php echo $my_c; ?></li>
+                <li class="breadcrumb-item active" aria-current="page">Cursos de <?php echo $nameempresa; ?></li>
             </ol>
         </nav>
     
@@ -87,7 +88,7 @@
     </div> 
     
     <div class="text-center my-4">
-    <p>Los cursos creados para <strong><?php echo $my_c; ?></strong> son: </p>
+    <p>Los cursos creados para <strong><?php echo $nameempresa; ?></strong> son: </p>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 p-3">
@@ -105,7 +106,7 @@
         
         <!-- card -->
 
-        <?php query_posts(array('post_type' => $posType ,'cat'=>'62','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+        <?php query_posts(array('post_type' => $posType ,'cat'=>$idcategory,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="mx-3 my-5" >

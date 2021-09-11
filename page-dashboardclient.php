@@ -92,7 +92,7 @@
         
     <div class="row my-5 w-100">
         <div class="col-sm-5  col-md-2  d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b/?curso=Interbank" class="w-25">
+            <a href="/dashboardb2b/?idcat=62&empresa=Interbank" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
             <a href="/dashboardb2b/?curso=Interbank" class="text-center">
