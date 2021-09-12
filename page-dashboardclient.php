@@ -91,15 +91,25 @@
     if ($memberLastName==$colectivo){ ?>
         
     <div class="row my-5 w-100">
+    
+        <?php query_posts(array('post_type' => 'empresascolectivo' ,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+                <?php if(have_posts()) : while(have_posts()) : the_post();?>   
+
+
+    
         <div class="col-sm-5  col-md-2  d-flex justify-content-center align-items-center flex-column">
-            <a href="/dashboardb2b/?idcat=62&empresa=Interbank" class="w-25">
+            <a href="/dashboardb2b/?idcat=<?php $imageContent = get_the_content();
+				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
+				echo $stripped; ?>&empresa=<?php the_title(); ?>" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b/?curso=Interbank" class="text-center">
-                <p>Interbank</p>
+            <a href="/dashboardb2b/?curso=<?php $imageContent = get_the_content();
+				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
+				echo $stripped; ?>&empresa=<?php the_title(); ?>" class="text-center">
+                <p><?php the_title(); ?></p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <!-- <div class="col-sm-5 offset-sm-2 col-md-2 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardb2b/?curso=HIPOS IBK" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
@@ -146,7 +156,11 @@
             <a href="/dashboardb2b/?curso=Alicorp" class="text-center">
                 <p>Alicorp</p>
             </a>
-        </div>
+        </div> -->
+        <?php endwhile; ?>
+                        <?php else:?>
+                         <!-- no posts found -->
+                       <?php endif; wp_reset_query(); ?>
     </div>
     <?php
     } ?>
