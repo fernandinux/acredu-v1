@@ -103,7 +103,7 @@
 				echo $stripped; ?>&empresa=<?php the_title(); ?>" class="w-25">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/dashboardb2b/?curso=<?php $imageContent = get_the_content();
+            <a href="/dashboardb2b/?idcat=<?php $imageContent = get_the_content();
 				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 				echo $stripped; ?>&empresa=<?php the_title(); ?>" class="text-center">
                 <p><?php the_title(); ?></p>
