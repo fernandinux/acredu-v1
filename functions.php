@@ -671,9 +671,9 @@ function prefix_admin_add_lista() {
                     'post_title' => $_REQUEST['namelista'],
                     'post_content' =>  $_REQUEST['uploadlista'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    'post_type' =>  'listagraduados' //Importante especificar que este post es del tipo "Postulante"
+                    'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                    // 'tax_input' => array( 'category' => $cat_ID )
+                    'tax_input' => array( 'category' => $_REQUEST['idcat'] )
                     ) );
     if( ! is_wp_error( $lista_id ) ) {
                     update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
