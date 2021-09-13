@@ -121,7 +121,7 @@
                             
                                 
                                
-                                <a href="https://acredu.app/addlist/?codigo-curso-new=<?php the_title(); ?>&nombre-curso-new=<?php the_field('nombrecurso'); ?>"
+                                <a href="https://acredu.app/addlist/?empresa=colectivo23&curso=<?php the_field('nombrecurso'); ?>&idcat=74"
                                 class="btn" style="background:#11af88; padding:5px;text-transform:capitalize">Agregar Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
 

@@ -29,7 +29,7 @@
 <input type="hidden" name="curso" value=<?php echo $namecurso ?>>
 <input type="hidden" name="idcat" value=<?php echo $idcategory ?>>
 <div class="text-center mb-3">
-        <h3>Emitir lista para: <?php echo $nameempresa ?> / en el Curso: <?php echo $namecurso ?></h3>
+        <h3>Lista para <strong><?php echo $nameempresa ?></strong> en el curso <strong><?php echo $namecurso ?></h3></strong> 
 </div>
  <div class="form-outline mb-4">
     <input type="text" id="form6Example3" name="namelista" class="form-control" />
