@@ -647,5 +647,19 @@ function add_custom_query_var( $vars ){
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
 
+/* funcion para ingresar lista de curso */
+add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
+ 
+//this next action version allows users not logged in to submit requests
+//if you want to have both logged in and not logged in users submitting, you have to add both actions!
+//add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
+ 
+function prefix_admin_add_lista() {
+    status_header(200);
+    //request handlers should exit() when they complete their task
+    exit("Server received '{$_REQUEST['data']}' from your browser.");
+}
+
+
 ?>
 

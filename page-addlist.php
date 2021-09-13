@@ -16,7 +16,15 @@
         <div class="btn waves-effect waves-light" style="background-color: #1BB27C">
         <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Descargar plantilla csv </div></a>
         </div>
-    <?php the_content(); ?>
+    <?php //the_content(); ?>
+
+    <!-- Formulario para agregar lista  -->
+<form action="<?php echo esc_attr('admin-post.php'); ?>" method="post">
+<input type="hidden" name="action" value="add_lista">
+<input type="hidden" name="data" value="listaid">
+<input type="submit" value="Submit">
+</form>
+
 
 </div>
    
