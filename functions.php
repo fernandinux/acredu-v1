@@ -655,9 +655,14 @@ add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
 //add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
  
 function prefix_admin_add_lista() {
-    echo ('holaaaa');
+    redirect ('https://googloe.com');
 }
-
+function redirect($url){
+    $string = '<script type="text/javascript">';
+    $string .= 'window.location = "' . $url . '"';
+    $string .= '</script>';
+    echo $string;
+}
 
 ?>
 
