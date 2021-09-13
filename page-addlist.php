@@ -20,7 +20,7 @@
         <div class="btn waves-effect waves-light" style="background-color: #1BB27C">
         <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Descargar plantilla csv </div></a>
         </div>
-    <?php the_content(); ?>
+    <?php //the_content(); ?>
 
     <!-- Formulario para agregar lista  -->
 <form action="https://acredu.app/wp-admin/admin-post.php" method="post">
@@ -29,7 +29,7 @@
 <input type="hidden" name="curso" value=<?php echo $namecurso ?>>
 <input type="hidden" name="idcat" value=<?php echo $idcategory ?>>
 <div class="text-center mb-3">
-        <h3>Lista para <strong><?php echo $nameempresa ?></strong> en el curso <strong><?php echo $namecurso ?></h3></strong> 
+        <h3>Lista para <strong><?php echo $nameempresa ?></strong> en el curso <strong><?php $printnamecurso=str_replace("+", " ", $namecurso); echo $printnamecurso ?></h3></strong> 
 </div>
  <div class="form-outline mb-4">
     <input type="text" id="form6Example3" name="namelista" class="form-control" />
