@@ -662,6 +662,14 @@ add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
 //add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
  
 function prefix_admin_add_lista() {
+    
+     $lista_id = wp_insert_post( array(
+                    'post_title' => {$_REQUEST['name']},
+                    'post_content' =>  {$_REQUEST['fecha']},
+                    'post_status' => 'publish', // Indicamos que el postulante está publicado
+                    'post_type' =>  'listagraduados' //Importante especificar que este post es del tipo "Postulante"
+                    ) );
+
     redirect ('https://google.com');
 }
 
