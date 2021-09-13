@@ -662,7 +662,7 @@ add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
 //add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
  
 function prefix_admin_add_lista() {
-    redirect ('https://googloe.com');
+    redirect ('https://google.com');
 }
 
 
