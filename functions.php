@@ -655,9 +655,7 @@ add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
 //add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
  
 function prefix_admin_add_lista() {
-    status_header(200);
-    //request handlers should exit() when they complete their task
-    exit("Server received '{$_REQUEST['data']}' from your browser.");
+    echo ('holaaaa');
 }
 
 
