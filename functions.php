@@ -648,6 +648,13 @@ function add_custom_query_var( $vars ){
 add_filter( 'query_vars', 'add_custom_query_var' );
 
 /* funcion para ingresar lista de curso */
+
+function redirect($url){
+    $string = '<script type="text/javascript">';
+    $string .= 'window.location = "' . $url . '"';
+    $string .= '</script>';
+    echo $string;
+}
 add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
  
 //this next action version allows users not logged in to submit requests
@@ -657,12 +664,7 @@ add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
 function prefix_admin_add_lista() {
     redirect ('https://googloe.com');
 }
-function redirect($url){
-    $string = '<script type="text/javascript">';
-    $string .= 'window.location = "' . $url . '"';
-    $string .= '</script>';
-    echo $string;
-}
+
 
 ?>
 
