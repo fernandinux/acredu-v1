@@ -26,19 +26,19 @@
         <p>cliente Interbank / Curso Growth Hacking</p>
 </div>
  <div class="form-outline mb-4">
-    <input type="text" id="name" name="name" class="form-control" />
+    <input type="text" id="form6Example3" name="name" class="form-control" />
     <label class="form-label" for="form6Example3">Nombre de lista</label>
   </div>
 
   <!-- Text input -->
   <div class="form-outline mb-4">
-    <input type="text" id="fecha" name="fecha" class="form-control" />
+    <input type="text" id="form6Example4" name="fecha" class="form-control" />
     <label class="form-label" for="form6Example4">Fecha de emisión</label>
   </div>
 
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="emailcopy" name="emailcopy" class="form-control" />
+    <input type="email" id="form6Example5" name="emailcopy" class="form-control" />
     <label class="form-label" for="form6Example5">Email al que se copiará el envío</label>
   </div>
   <!-- Submit button -->
