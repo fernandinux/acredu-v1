@@ -19,7 +19,7 @@
     <?php //the_content(); ?>
 
     <!-- Formulario para agregar lista  -->
-<form action="<?php echo esc_attr('admin-post.php'); ?>" method="post">
+<form action="https://acredu.app/wp-admin/admin-post.php" method="post">
 <input type="hidden" name="action" value="add_lista">
 <input type="hidden" name="data" value="listaid">
 <input type="submit" value="Submit">
