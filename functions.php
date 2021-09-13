@@ -675,13 +675,13 @@ function prefix_admin_add_lista() {
                     // 'post_author' => $user->ID,
                     // 'tax_input' => array( 'category' => $cat_ID )
                     ) );
-    if( ! is_wp_error( $lista_id ) ) {
-                    update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
-                    update_field( 'emaillista', $_REQUEST['emaillista'], $lista_id );
-                    update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
-                    update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
+    // if( ! is_wp_error( $lista_id ) ) {
+    //                 update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
+    //                 update_field( 'emaillista', $_REQUEST['emaillista'], $lista_id );
+    //                 update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
+    //                 update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
                      
-                    };
+    //                 };
 
     redirect ('https://google.com');
 }
