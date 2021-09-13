@@ -1,10 +1,14 @@
 <?php get_header();?>
 
-    <?php get_template_part( 'template-parts/content', 'encabezado' );?>
+    <?php get_template_part( 'template-parts/content', 'encabezado' );
+    $idcategory = get_query_var( 'idcat' );
+    $nameempresa = get_query_var( 'empresa' );
+    $namecurso = get_query_var( 'curso' );
+    ?>
 
     <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/dashboard">Cursos</a></li>
+    <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
     <li class="breadcrumb-item active" aria-current="page">Nueva lista</li>
   </ol>
 </nav>
@@ -20,29 +24,36 @@
 
     <!-- Formulario para agregar lista  -->
 <form action="https://acredu.app/wp-admin/admin-post.php" method="post">
-<input type="hidden" name="action" value="add_lista">
-<input type="hidden" name="data" value="listaid">
+<input type="hidden" name="empresa" value=<?php $nameempresa ?>>
+<input type="hidden" name="curso" value=<?php $namecurso ?>>
+<input type="hidden" name="idcat" value=<?php $idcategory ?>>
 <div class="text-center mb-3">
-        <p>cliente Interbank / Curso Growth Hacking</p>
+        <h3>Emitir lista para: <?php echo $nameempresa ?> / en el Curso: <?php echo $namecurso ?></h3>
 </div>
  <div class="form-outline mb-4">
-    <input type="text" id="form6Example3" name="name" class="form-control" />
+    <input type="text" id="form6Example3" name="namelista" class="form-control" />
     <label class="form-label" for="form6Example3">Nombre de lista</label>
   </div>
 
   <!-- Text input -->
   <div class="form-outline mb-4">
-    <input type="text" id="form6Example4" name="fecha" class="form-control" />
-    <label class="form-label" for="form6Example4">Fecha de emisión</label>
+    <input type="text" id="form6Example4" name="fechalista" class="form-control" />
+    <label class="form-label" for="form6Example4">Fecha de finalización del curso</label>
   </div>
 
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="form6Example5" name="emailcopy" class="form-control" />
-    <label class="form-label" for="form6Example5">Email al que se copiará el envío</label>
+    <input type="email" id="form6Example5" name="emaillista" class="form-control" />
+    <label class="form-label" for="form6Example5">Email a quien copiar</label>
   </div>
+  <!-- google sheet -->
+  <div class="form-outline mb-4">
+    <input type="text" id="form6Example6" name="uploadlista" class="form-control" />
+    <label class="form-label" for="form6Example6">Comparte el enlace de Google Sheet aquí</label>
+  </div>
+  
   <!-- Submit button -->
-  <button type="submit" class="btn btn-block mb-4" style="background-color: #1BB27C">Place order</button>
+  <button type="submit" class="btn btn-block mb-4" style="background-color: #1BB27C">Enviar para emitir</button>
 </form>
 
 

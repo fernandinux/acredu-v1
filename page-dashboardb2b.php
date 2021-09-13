@@ -124,7 +124,7 @@
                             
                                 
                                
-                                <a href="https://app.acredu.org/addlist/?codigo-curso-new=<?php the_title(); ?>&nombre-curso-new=<?php the_field('nombrecurso'); ?>"
+                                <a href="https://app.acredu.org/addlist/?empresa=<?php echo $nameempresa; ?>&curso=<?php the_field('nombrecurso'); ?>&idcat=<?php echo $idcategory; ?>"
                                 class="btn" style="background:#11af88; padding:5px;text-transform:capitalize">Agregar Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
 

@@ -643,6 +643,7 @@ function cf7_get_member_level(){
 function add_custom_query_var( $vars ){
   $vars[] = "idcat";
   $vars[] = "empresa";
+  $vars[] = "curso";
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
@@ -667,13 +668,20 @@ function prefix_admin_add_lista() {
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
 
      $lista_id = wp_insert_post( array(
-                    'post_title' => $_REQUEST['name'],
-                    'post_content' =>  $_REQUEST['fecha'],
+                    'post_title' => $_REQUEST['namelista'],
+                    'post_content' =>  $_REQUEST['uploadlista'],
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
                     'post_type' =>  'listagraduados' //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
                     // 'tax_input' => array( 'category' => $cat_ID )
                     ) );
+    if( ! is_wp_error( $lista_id ) ) {
+                    update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
+                    update_field( 'emaillista', $_REQUEST['emaillista'], $lista_id );
+                    update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
+                    update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
+                     
+                    }
 
     redirect ('https://google.com');
 }
