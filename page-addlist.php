@@ -24,9 +24,9 @@
 
     <!-- Formulario para agregar lista  -->
 <form action="https://acredu.app/wp-admin/admin-post.php" method="post">
-<input type="hidden" name="empresa" value=<?php $nameempresa ?>>
-<input type="hidden" name="curso" value=<?php $namecurso ?>>
-<input type="hidden" name="idcat" value=<?php $idcategory ?>>
+<input type="hidden" name="empresa" value=<?php echo $nameempresa ?>>
+<input type="hidden" name="curso" value=<?php echo $namecurso ?>>
+<input type="hidden" name="idcat" value=<?php echo $idcategory ?>>
 <div class="text-center mb-3">
         <h3>Emitir lista para: <?php echo $nameempresa ?> / en el Curso: <?php echo $namecurso ?></h3>
 </div>
