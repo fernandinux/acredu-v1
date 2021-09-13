@@ -681,7 +681,7 @@ function prefix_admin_add_lista() {
                     update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
                     update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
                      
-                    }
+                    };
 
     redirect ('https://google.com');
 }
