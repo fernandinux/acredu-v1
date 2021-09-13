@@ -13,13 +13,13 @@
   </ol>
 </nav>
 <div style="max-width:300px; margin:0px auto 50px auto">
-        <div class="text-center my-5"> 
+        <!-- <div class="text-center my-5"> 
 
         <a href="https://app.acredu.org/wp-content/uploads/2021/03/Plantilla-lista-de-beneficiarios.csv" role="button">
         <img src="https://app.acredu.org/wp-content/uploads/2021/03/1200px-.csv_icon.svg_.png" alt="plantilla csv" style="width:100px" data-pagespeed-url-hash="3348433114" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" class="">
         <div class="btn waves-effect waves-light" style="background-color: #1BB27C">
         <i aria-hidden="true" class="fas fa-download mr-2" style="font-size:12px; background-color:#1BB27C;"></i>Descargar plantilla csv </div></a>
-        </div>
+        </div> -->
     <?php //the_content(); ?>
 
     <!-- Formulario para agregar lista  -->
@@ -29,7 +29,8 @@
 <input type="hidden" name="curso" value=<?php echo $namecurso ?>>
 <input type="hidden" name="idcat" value=<?php echo $idcategory ?>>
 <div class="text-center mb-3">
-        <h3>Lista para <strong><?php echo $nameempresa ?></strong> en el curso <strong><?php $printnamecurso=str_replace("+", " ", $namecurso); echo $printnamecurso ?></h3></strong> 
+        <h4>Lista para <strong><?php echo $nameempresa ?></strong> en el curso 
+        <strong><?php $printnamecurso=str_replace("+", " ", $namecurso); echo $printnamecurso ?></h4></strong> 
 </div>
  <div class="form-outline mb-4">
     <input type="text" id="form6Example3" name="namelista" class="form-control" />
