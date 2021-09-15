@@ -693,9 +693,9 @@ function prefix_admin_add_lista() {
                     update_field( 'nameempresa', $nameempresa, $lista_id );
                      
                     };
-    if ( $_REQUEST ) {
+    if ( $lista_id  ) {
 
-    $to = array($correoinstitucional,$memberemail);
+    $to = "$correoinstitucional,$memberemail";
 
     $subject = 'Se envió con éxito la lista '$namelista'!';
 
