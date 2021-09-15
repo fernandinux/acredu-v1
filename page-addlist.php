@@ -1,5 +1,23 @@
-<?php get_header();?>
+<?php get_header();
 
+  $memberID = get_current_user_id();
+    $memberInfo = get_userdata($memberID);
+    $memberLastName = $memberInfo->last_name;
+    $memberemail = $memberInfo->user_email;
+    $colectivo = 'COLECTIVOXXIII';
+    $castudio = 'CASTUDIOXY';
+    $proyetech = 'PROYETECHXY';
+    $miguels = 'MIGUELSXY';
+    $imce = 'IMCEXY';
+    $usach = 'USACHXY';
+    $wiad = 'WIADXY';
+    $claudiapeve = 'CLAUDIAPEVE';
+    $agilewise = 'AGILEWISE';
+    if ($memberLastName==$colectivo){
+         $correoinstitucional = 'lourdes@acredu.co';
+    //     las variables para cuadno sea colectivo
+    }
+?>
     <?php get_template_part( 'template-parts/content', 'encabezado' );
     $idcategory = get_query_var( 'idcat' );
     $nameempresa = get_query_var( 'empresa' );
@@ -28,6 +46,8 @@
 <input type="hidden" name="empresa" value=<?php echo $nameempresa ?>>
 <input type="hidden" name="curso" value=<?php echo $namecurso ?>>
 <input type="hidden" name="idcat" value=<?php echo $idcategory ?>>
+<input type="hidden" name="correoinstitucional" value=<?php echo $correoinstitucional ?>>
+<input type="hidden" name="memberemail" value=<?php echo $memberemail ?>>
 <div class="text-center mb-3">
         <h4>Lista para <strong><?php echo $nameempresa ?></strong> en el curso 
         <strong><?php $printnamecurso=str_replace("+", " ", $namecurso); echo $printnamecurso ?></h4></strong> 
@@ -39,20 +59,27 @@
 
   <!-- Text input -->
   <div class="form-outline mb-4">
-    <input type="text" id="form6Example4" name="fechalista" class="form-control" />
+    <input type="date" id="form6Example4" name="fechalista" class="form-control" />
     <label class="form-label" for="form6Example4">Fecha de finalización del curso</label>
   </div>
 
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="form6Example5" name="emaillista" class="form-control" />
-    <label class="form-label" for="form6Example5">Email a quien copiar</label>
+    <input type="text" id="form6Example5" name="duracionlista" class="form-control" />
+    <label class="form-label" for="form6Example5">Duración, ejemplo: 12 sesiones en 48 horas</label>
   </div>
   <!-- google sheet -->
   <div class="form-outline mb-4">
-    <input type="text" id="form6Example6" name="uploadlista" class="form-control" />
+    <input type="url" id="form6Example6" name="uploadlista" class="form-control" />
     <label class="form-label" for="form6Example6">Comparte el enlace de Google Sheet aquí</label>
   </div>
+
+  <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" require>
+  <label class="form-check-label" for="flexCheckDefault">
+    Compartí permisos de acceso al google sheet a la cuenta ayuda@acredu.org
+  </label>
+</div>
   
   <!-- Submit button -->
   <button type="submit" class="btn btn-block mb-4" style="background-color: #1BB27C">Enviar para emitir</button>
