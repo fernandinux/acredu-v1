@@ -702,7 +702,7 @@ function prefix_admin_add_lista() {
     // Send the message...
     wp_mail( $to, $subject, $message );
 
-}
+};
 
     redirect ('https://acredu.app/dashboard/');
 }
