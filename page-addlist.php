@@ -89,6 +89,8 @@
         <div class="invalid-feedback">No compartio con ayuda@acredu.org.</div>
       </div>
     </div>
+    </br>
+    </br>
   
   <!-- Submit button -->
   <button type="submit" class="btn btn-block mb-4" style="background-color: #1BB27C">Enviar para emitir</button>
