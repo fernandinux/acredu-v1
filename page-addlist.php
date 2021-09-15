@@ -41,7 +41,7 @@
     <?php //the_content(); ?>
 
     <!-- Formulario para agregar lista  -->
-<form action="https://acredu.app/wp-admin/admin-post.php" method="post" class="needs-validation">
+<form action="https://acredu.app/wp-admin/admin-post.php" method="post" class="needs-validation" novalidate>
 <input type="hidden" name="action" value="add_lista">
 <input type="hidden" name="empresa" value=<?php echo $nameempresa ?>>
 <input type="hidden" name="curso" value=<?php echo $namecurso ?>>

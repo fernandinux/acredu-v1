@@ -666,40 +666,55 @@ function prefix_admin_add_lista() {
     //  $user = wp_get_current_user();
     //  $arg = array( 'description' => "categoria de lista", 'parent' => 0 );
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
-    $name  = sanitize_text_field( $_REQUEST['namelista'] );
+    $namelista  = sanitize_text_field( $_REQUEST['namelista'] );
+    $nameempresa  = sanitize_text_field( $_REQUEST['empresa'] );
+    $namecurso  = sanitize_text_field( $_REQUEST['curso'] );
+    $duracionlista = sanitize_text_field( $_REQUEST['duracionlista'] );
+    $idcat = $_REQUEST['idcat'];
+    $fechalista = $_REQUEST['fechalista'];
+    $uploadlista = $_REQUEST['uploadlista'];
+    $correoinstitucional = $_REQUEST['correoinstitucional'];
+    $memberemail = $_REQUEST['memberemail'];
+
 
      $lista_id = wp_insert_post( array(
-                    'post_title' => $_REQUEST['namelista'],
-                    'post_content' =>  $_REQUEST['uploadlista'],
+                    'post_title' => $namelista,
+                    'post_content' =>  $uploadlista,
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
                     'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                    'tax_input' => array( 'category' => $_REQUEST['idcat'])
+                    'tax_input' => array( 'category' => $idcat)
                    
                     ) );
     if( ! is_wp_error( $lista_id ) ) {
-                    update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
-                    update_field( 'emaillista', $_REQUEST['emaillista'], $lista_id );
-                    update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
-                    update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
+                    update_field( 'fechalista', $fechalista, $lista_id );
+                    update_field( 'duracionlista', $duracionlista, $lista_id );
+                    update_field( 'namecurso', $namecurso, $lista_id );
+                    update_field( 'nameempresa', $nameempresa, $lista_id );
                      
                     };
     if ( $_REQUEST ) {
 
-    $to = 'fernando.paca@gmail.com, fernando.pareja@tenpo.cl';
+    $to = array($correoinstitucional,$memberemail);
 
-    $subject = 'Someone sent you a message!';
+    $subject = 'Se envió con éxito la lista '$namelista'!';
 
     // Build the body based on your form...
     // $name  = sanitize_text_field( $_REQUEST['namelista'] );
     // $email = sanitize_email( $_REQUEST['emaillista'] );
     // $body  = sanitize_textarea( $_REQUEST['curso'] );
     $cabeceras= array('Content-Type: text/html; charset=UTF-8');
-    $message = "Someone filled out your form as follows: \r\n\r\n";
-    $message.= "<h2>name:</h2> </br> <p>nombre</p> $name \r\n";
-    // $message.= "email: $email \r\rn";
-    // $message.= "the message: \r\n";
-    // $message.= $body;
+    $message = "<h4>Hola Colectivo23,</h4> \r\n\r\n";
+    $message.= "<p>Te confirmamos que hemos recibido tu solicitud de creación de una nueva emisión de certificados con el siguiente detalle:</p>  \r\n";
+    $message.= "<ul>
+ 	<li><strong>Nombre del curso publicado en el certificado:</strong> <em>'$namecurso'</em></li>
+ 	<li><strong>Nombre de la lista:</strong> <em>'$namelista'</em></li>
+ 	<li><strong>Fecha emisión a publicarse en el certificado:</strong> <em>'$fechalista'</em></li>
+ 	<li><strong>Correo en copia para el envío de certificados:</strong> <a  target="_blank" rel="noopener"><em>'$memberemail'</em></a></li>
+ 	<li><strong>Lista de beneficiarios:</strong> <a href='"$uploadlista"' target="_blank" rel="noopener"><em>enlace aquí</em></a></li>
+</ul> \r\rn";
+    $message.= "Gracias por tu solicitud, esta es una copia auto-generada para tu conocimiento, no es necesario que respondas a la misma. \r\n";
+    $message.= "<div></div><div>Saludos,</div><div></div><h3><i>Equipo de Ayuda de aCredu</i></h3>";
 
     // Send the message...
     wp_mail( $to, $subject, $message, $cabeceras );
