@@ -674,7 +674,8 @@ function prefix_admin_add_lista() {
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
                     'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                    'tax_input' => array( 'category' => $_REQUEST['idcat'] )
+                    'tax_input' => array( 'category' => $_REQUEST['idcat'], 'curso' => $_REQUEST['curso'],'taglista' => $_REQUEST['namelista'])
+                   
                     ) );
     if( ! is_wp_error( $lista_id ) ) {
                     update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
@@ -685,7 +686,7 @@ function prefix_admin_add_lista() {
                     };
     if ( $_REQUEST ) {
 
-    $to = 'fernando.paca@gmail.com';
+    $to = 'fernando.paca@gmail.com, fernando.pareja@tenpo.cl';
 
     $subject = 'Someone sent you a message!';
 
@@ -695,7 +696,7 @@ function prefix_admin_add_lista() {
     // $body  = sanitize_textarea( $_REQUEST['curso'] );
 
     $message = "Someone filled out your form as follows: \r\n\r\n";
-    $message.= "name: $name \r\n";
+    $message.= "<h2>name:</h2> $name \r\n";
     // $message.= "email: $email \r\rn";
     // $message.= "the message: \r\n";
     // $message.= $body;
