@@ -41,7 +41,7 @@
     <?php //the_content(); ?>
 
     <!-- Formulario para agregar lista  -->
-<form action="https://acredu.app/wp-admin/admin-post.php" method="post">
+<form action="https://acredu.app/wp-admin/admin-post.php" method="post" class="needs-validation">
 <input type="hidden" name="action" value="add_lista">
 <input type="hidden" name="empresa" value=<?php echo $nameempresa ?>>
 <input type="hidden" name="curso" value=<?php echo $namecurso ?>>
@@ -71,16 +71,22 @@
   <!-- google sheet -->
   <div class="form-outline mb-4">
     <input type="url" id="form6Example6" name="uploadlista" class="form-control" />
-    <label class="form-label" for="form6Example6">Comparte el enlace de Google Sheet aquí</label>
+    <label class="form-label" for="form6Example6">Aquí el enlace de Google Sheet aquí</label>
   </div>
 
-   <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-      <label class="form-check-label" for="invalidCheck">
-        Compartí el Sheet con ayuda@acredu.org
-      </label>
-      <div class="invalid-feedback">
-        Por favor, brindar acceso a ayuda@acredu.org
+    <div class="col-12">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="invalidCheck"
+          required
+        />
+        <label class="form-check-label" for="invalidCheck">
+          Compartí con ayuda@acredu.org
+        </label>
+        <div class="invalid-feedback">No compartio con ayuda@acredu.org.</div>
       </div>
     </div>
   
@@ -90,7 +96,25 @@
 
 
 </div>
-   
+   <script>
+   (() => {
+  'use strict';
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation');
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+   </script>
 	
 
 <div>
