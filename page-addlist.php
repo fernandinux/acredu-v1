@@ -66,7 +66,7 @@
   <!-- Email input -->
   <div class="form-outline mb-4">
     <input type="text" id="form6Example5" name="duracionlista" class="form-control" />
-    <label class="form-label" for="form6Example5">Duración, ejemplo: 12 sesiones en 48 horas</label>
+    <label class="form-label" for="form6Example5">Duración: 12 sesiones en 48 horas</label>
   </div>
   <!-- google sheet -->
   <div class="form-outline mb-4">
@@ -74,12 +74,15 @@
     <label class="form-label" for="form6Example6">Comparte el enlace de Google Sheet aquí</label>
   </div>
 
-  <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" require>
-  <label class="form-check-label" for="flexCheckDefault">
-    Compartí permisos de acceso al google sheet a la cuenta ayuda@acredu.org
-  </label>
-</div>
+   <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Compartí el Sheet con ayuda@acredu.org
+      </label>
+      <div class="invalid-feedback">
+        Por favor, brindar acceso a ayuda@acredu.org
+      </div>
+    </div>
   
   <!-- Submit button -->
   <button type="submit" class="btn btn-block mb-4" style="background-color: #1BB27C">Enviar para emitir</button>
