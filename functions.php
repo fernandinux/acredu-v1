@@ -689,20 +689,20 @@ function prefix_admin_add_lista() {
     $subject = 'Someone sent you a message!';
 
     // Build the body based on your form...
-    $name  = sanitize_text_field( $_REQUEST['namelista'] );
-    $email = sanitize_email( $_REQUEST['emaillista'] );
-    $body  = sanitize_textarea( $_REQUEST['curso'] );
+    // $name  = sanitize_text_field( $_REQUEST['namelista'] );
+    // $email = sanitize_email( $_REQUEST['emaillista'] );
+    // $body  = sanitize_textarea( $_REQUEST['curso'] );
 
     $message = "Someone filled out your form as follows: \r\n\r\n";
-    $message.= "name: $name \r\n";
-    $message.= "email: $email \r\rn";
-    $message.= "the message: \r\n";
-    $message.= $body;
+    // $message.= "name: $name \r\n";
+    // $message.= "email: $email \r\rn";
+    // $message.= "the message: \r\n";
+    // $message.= $body;
 
     // Send the message...
     wp_mail( $to, $subject, $message );
 
-};
+    };
 
     redirect ('https://acredu.app/dashboard/');
 }
