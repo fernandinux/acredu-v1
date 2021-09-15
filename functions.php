@@ -674,7 +674,7 @@ function prefix_admin_add_lista() {
                     'post_status' => 'publish', // Indicamos que el postulante está publicado
                     'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                    'tax_input' => array( 'category' => $_REQUEST['idcat'], 'curso' => $_REQUEST['curso'],'taglista' => $_REQUEST['namelista'])
+                    'tax_input' => array( 'category' => $_REQUEST['idcat'])
                    
                     ) );
     if( ! is_wp_error( $lista_id ) ) {
@@ -694,15 +694,15 @@ function prefix_admin_add_lista() {
     // $name  = sanitize_text_field( $_REQUEST['namelista'] );
     // $email = sanitize_email( $_REQUEST['emaillista'] );
     // $body  = sanitize_textarea( $_REQUEST['curso'] );
-
+    $cabeceras= array('Content-Type: text/html; charset=UTF-8');
     $message = "Someone filled out your form as follows: \r\n\r\n";
-    $message.= "<h2>name:</h2> $name \r\n";
+    $message.= "<h2>name:</h2> </br> <p>nombre</p> $name \r\n";
     // $message.= "email: $email \r\rn";
     // $message.= "the message: \r\n";
     // $message.= $body;
 
     // Send the message...
-    wp_mail( $to, $subject, $message );
+    wp_mail( $to, $subject, $message, $cabeceras );
 
     };
 
