@@ -666,6 +666,7 @@ function prefix_admin_add_lista() {
     //  $user = wp_get_current_user();
     //  $arg = array( 'description' => "categoria de lista", 'parent' => 0 );
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
+    $name  = sanitize_text_field( $_REQUEST['namelista'] );
 
      $lista_id = wp_insert_post( array(
                     'post_title' => $_REQUEST['namelista'],
@@ -694,7 +695,7 @@ function prefix_admin_add_lista() {
     // $body  = sanitize_textarea( $_REQUEST['curso'] );
 
     $message = "Someone filled out your form as follows: \r\n\r\n";
-    // $message.= "name: $name \r\n";
+    $message.= "name: $name \r\n";
     // $message.= "email: $email \r\rn";
     // $message.= "the message: \r\n";
     // $message.= $body;
