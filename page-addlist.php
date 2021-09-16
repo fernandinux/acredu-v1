@@ -43,11 +43,11 @@
     <!-- Formulario para agregar lista  -->
 <form action="https://acredu.app/wp-admin/admin-post.php" method="post" class="needs-validation" novalidate>
 <input type="hidden" name="action" value="add_lista">
-<input type="hidden" name="empresa" value='<?php echo $nameempresa ?>'>
-<input type="hidden" name="curso" value='<?php echo $namecurso ?>'>
-<input type="hidden" name="idcat" value='<?php echo $idcategory ?>'>
-<input type="hidden" name="correoinstitucional" value='<?php echo $correoinstitucional ?>'>
-<input type="hidden" name="memberemail" value='<?php echo $memberemail ?>'>
+ <input  name="empresa" value="<?php echo $nameempresa ?>"> 
+<input type="hidden" name="curso" value="<?php echo $namecurso ?>">
+<input type="hidden" name="idcat" value="<?php echo $idcategory ?>">
+<input type="hidden" name="correoinstitucional" value="<?php echo $correoinstitucional ?>">
+<input type="hidden" name="memberemail" value="<?php echo $memberemail ?>">
 <div class="text-center mb-3">
         <h4>Lista para <strong><?php echo $nameempresa ?></strong> en el curso 
         <strong><?php $printnamecurso=str_replace("+", " ", $namecurso); echo $printnamecurso ?></h4></strong> 

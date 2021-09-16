@@ -656,13 +656,13 @@ function redirect($url){
     $string .= '</script>';
     echo $string;
 }
-add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
+//add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
  
 //this next action version allows users not logged in to submit requests
 //if you want to have both logged in and not logged in users submitting, you have to add both actions!
 //add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
  
-function prefix_admin_add_lista() {
+//function prefix_admin_add_lista() {
     //  $user = wp_get_current_user();
     //  $arg = array( 'description' => "categoria de lista", 'parent' => 0 );
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
@@ -677,22 +677,22 @@ function prefix_admin_add_lista() {
     // $memberemail = $_REQUEST['memberemail'];
 
 
-     $lista_id = wp_insert_post( array(
-                    'post_title' => $_REQUEST['namelista'],
-                    'post_content' =>  $_REQUEST['uploadlista'];,
-                    'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
+  //   $lista_id = wp_insert_post( array(
+                    // 'post_title' => $_REQUEST['namelista'],
+                    // 'post_content' =>  $_REQUEST['uploadlista'];,
+                    // 'post_status' => 'publish', // Indicamos que el postulante está publicado
+                    // 'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                    'tax_input' => array( 'category' => $_REQUEST['idcat'])
+    //                 'tax_input' => array( 'category' => $_REQUEST['idcat'])
                    
-                    ) );
-    if( ! is_wp_error( $lista_id ) ) {
-                    update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
-                    update_field( 'duracionlista', $_REQUEST['duracionlista'], $lista_id );
-                    update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
-                    update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
+    //                 ) );
+    // if( ! is_wp_error( $lista_id ) ) {
+    //                 update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
+    //                 update_field( 'duracionlista', $_REQUEST['duracionlista'], $lista_id );
+    //                 update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
+    //                 update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
                      
-                    };
+    //                 };
 //     if ( $lista_id  ) {
 
 //     $to = "$correoinstitucional,$memberemail";
@@ -721,8 +721,8 @@ function prefix_admin_add_lista() {
 
 //     };
 
-    redirect ('https://acredu.app/dashboard/');
-}
+//     redirect ('https://acredu.app/dashboard/');
+// }
 
 
 ?>
