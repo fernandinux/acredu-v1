@@ -675,7 +675,7 @@ function prefix_admin_add_lista() {
     // $uploadlista = $_REQUEST['uploadlista'];
     // $correoinstitucional = $_REQUEST['correoinstitucional'];
     // $memberemail = $_REQUEST['memberemail'];
-
+    $cat_ID = '81';
 
      $lista_id = wp_insert_post( array(
                      'post_title' => $_REQUEST['namelista'],
@@ -683,7 +683,7 @@ function prefix_admin_add_lista() {
                      'post_status' => 'publish', // Indicamos que el postulante está publicado
                      'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                     'tax_input' => array( 'category' => ''intval($_REQUEST['idcat'])'')
+                     'tax_input' => array( 'category' => $cat_ID  )
                    
                     ) );
     // if( ! is_wp_error( $lista_id ) ) {
