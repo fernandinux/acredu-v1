@@ -683,7 +683,7 @@ function prefix_admin_add_lista() {
                      'post_status' => 'publish', // Indicamos que el postulante está publicado
                      'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
-                     'tax_input' => array( 'category' => $cat_ID  )
+                     'tax_input' => array( 'category' => '81'  )
                    
                     ) );
     // if( ! is_wp_error( $lista_id ) ) {
