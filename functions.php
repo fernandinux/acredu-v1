@@ -675,7 +675,7 @@ function prefix_admin_add_lista() {
     // $uploadlista = $_REQUEST['uploadlista'];
     // $correoinstitucional = $_REQUEST['correoinstitucional'];
     // $memberemail = $_REQUEST['memberemail'];
-    $cat_ID = '81';
+    $cat_ID = 81;
 
      $lista_id = wp_insert_post( array(
                      'post_title' => $_REQUEST['namelista'],
