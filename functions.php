@@ -677,15 +677,15 @@ function prefix_admin_add_lista() {
     // $memberemail = $_REQUEST['memberemail'];
 
 
-  //   $lista_id = wp_insert_post( array(
-                    // 'post_title' => $_REQUEST['namelista'],
-                    // 'post_content' =>  $_REQUEST['uploadlista'];,
-                    // 'post_status' => 'publish', // Indicamos que el postulante está publicado
-                    // 'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
+     $lista_id = wp_insert_post( array(
+                     'post_title' => $_REQUEST['namelista'],
+                     'post_content' =>  $_REQUEST['uploadlista'],
+                     'post_status' => 'publish', // Indicamos que el postulante está publicado
+                     'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
     //                 'tax_input' => array( 'category' => $_REQUEST['idcat'])
                    
-    //                 ) );
+                    ) );
     // if( ! is_wp_error( $lista_id ) ) {
     //                 update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
     //                 update_field( 'duracionlista', $_REQUEST['duracionlista'], $lista_id );
