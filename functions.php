@@ -679,7 +679,7 @@ function prefix_admin_add_lista() {
 
      $lista_id = wp_insert_post( array(
                      'post_title' => $_REQUEST['namelista'],
-                     'post_content' =>  $_REQUEST['uploadlista'],
+                     'post_content' =>  $_REQUEST['idcat'],
                      'post_status' => 'publish', // Indicamos que el postulante está publicado
                      'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
