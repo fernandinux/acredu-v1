@@ -44,7 +44,7 @@
 <form action="https://acredu.app/wp-admin/admin-post.php" method="post" class="needs-validation" novalidate>
 <input type="hidden" name="action" value="add_lista">
  <input  name="empresa" value="<?php echo $nameempresa ?>"> 
-<input  name="curso" value="<?php echo $namecurso ?>">
+<input  name="curso" value="<?php $namecurso ?>">
 <input  name="idcat" value="<?php echo $idcategory ?>">
 <input  name="correoinstitucional" value="<?php echo $correoinstitucional ?>">
 <input  name="memberemail" value="<?php echo $memberemail ?>">
