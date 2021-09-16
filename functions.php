@@ -656,13 +656,13 @@ function redirect($url){
     $string .= '</script>';
     echo $string;
 }
-//add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
+add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
  
 //this next action version allows users not logged in to submit requests
 //if you want to have both logged in and not logged in users submitting, you have to add both actions!
 //add_action( 'admin_post_nopriv_add_foobar', 'prefix_admin_add_foobar' );
  
-//function prefix_admin_add_lista() {
+function prefix_admin_add_lista() {
     //  $user = wp_get_current_user();
     //  $arg = array( 'description' => "categoria de lista", 'parent' => 0 );
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
@@ -721,8 +721,8 @@ function redirect($url){
 
 //     };
 
-//     redirect ('https://acredu.app/dashboard/');
-// }
+    redirect ('https://acredu.app/dashboard/');
+}
 
 
 ?>
