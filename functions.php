@@ -674,7 +674,8 @@ function prefix_admin_add_lista() {
     $fechalista = $_REQUEST['fechalista'];
     $uploadlista = $_REQUEST['uploadlista'];
     $correoinstitucional = $_REQUEST['correoinstitucional'];
-    $memberemail = $_REQUEST['memberemail'];
+    // $memberemail = $_REQUEST['memberemail'];
+    $memberemail = 'ayuda@acredu.app';
     
    
 
@@ -697,7 +698,7 @@ function prefix_admin_add_lista() {
                     };
      if ( $lista_id  ) {
 
-    $to = "$correoinstitucional";
+    $to = "$correoinstitucional,$memberemail";
 
      $subject = "Se envió con éxito la lista $namelista!";
 
