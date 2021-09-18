@@ -695,18 +695,18 @@ function prefix_admin_add_lista() {
                     update_field( 'emaillista', $memberemail, $lista_id );
                      
                     };
-//     if ( $lista_id  ) {
+     if ( $lista_id  ) {
 
-//     $to = "$correoinstitucional,$memberemail";
+    $to = 'fernando.paca@gmail.com';
 
-//     $subject = 'Se envió con éxito la lista '$namelista'!';
+     $subject = 'Se envió con éxito la lista '$namelista'!';
 
 //     // Build the body based on your form...
 //     // $name  = sanitize_text_field( $_REQUEST['namelista'] );
 //     // $email = sanitize_email( $_REQUEST['emaillista'] );
 //     // $body  = sanitize_textarea( $_REQUEST['curso'] );
-//     $cabeceras= array('Content-Type: text/html; charset=UTF-8');
-//     $message = "<h4>Hola Colectivo23,</h4> \r\n\r\n";
+     $cabeceras= array('Content-Type: text/html; charset=UTF-8');
+     $message = "<h4>Hola Colectivo23,</h4> \r\n\r\n";
 //     $message.= "<p>Te confirmamos que hemos recibido tu solicitud de creación de una nueva emisión de certificados con el siguiente detalle:</p>  \r\n";
 //     $message.= "<ul>
 //  	<li><strong>Nombre del curso publicado en el certificado:</strong> <em>'$namecurso'</em></li>
@@ -719,9 +719,9 @@ function prefix_admin_add_lista() {
 //     $message.= "<div></div><div>Saludos,</div><div></div><h3><i>Equipo de Ayuda de aCredu</i></h3>";
 
 //     // Send the message...
-//     wp_mail( $to, $subject, $message, $cabeceras );
+     wp_mail( $to, $subject, $message, $cabeceras );
 
-//     };
+     };
 
     redirect ('https://acredu.app/dashboard/');
 }
