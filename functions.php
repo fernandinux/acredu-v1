@@ -666,7 +666,7 @@ function prefix_admin_add_lista() {
     //  $user = wp_get_current_user();
     //  $arg = array( 'description' => "categoria de lista", 'parent' => 0 );
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
-    // $namelista  = sanitize_text_field( $_REQUEST['namelista'] );
+    $namelista  = sanitize_text_field( $_REQUEST['namelista'] );
     // $nameempresa  = sanitize_text_field( $_REQUEST['empresa'] );
     // $namecurso  = sanitize_text_field( $_REQUEST['curso'] );
     // $duracionlista = sanitize_text_field( $_REQUEST['duracionlista'] );
@@ -679,7 +679,7 @@ function prefix_admin_add_lista() {
    
 
      $lista_id = wp_insert_post( array(
-                     'post_title' => $_REQUEST['namelista'],
+                     'post_title' => $namelista,
                      'post_content' =>  $_REQUEST['idcat'],
                      'post_status' => 'publish', // Indicamos que el postulante está publicado
                      'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
