@@ -14,7 +14,7 @@
     $claudiapeve = 'CLAUDIAPEVE';
     $agilewise = 'AGILEWISE';
     if ($memberLastName==$colectivo){
-         $correoinstitucional = 'lourdes@acredu.co';
+         $correoinstitucional = 'fernando.paca@gmail.com';
     //     las variables para cuadno sea colectivo
     }
 ?>

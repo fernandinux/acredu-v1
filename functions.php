@@ -697,7 +697,7 @@ function prefix_admin_add_lista() {
                     };
      if ( $lista_id  ) {
 
-    $to = 'fernando.paca@gmail.com';
+    $to = "$correoinstitucional";
 
      $subject = "Se envió con éxito la lista $namelista!";
 
