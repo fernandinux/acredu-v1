@@ -687,13 +687,13 @@ function prefix_admin_add_lista() {
                      'tax_input' => array( 'category' => $idcat  )
                    
                     ) );
-    // if( ! is_wp_error( $lista_id ) ) {
-    //                 update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
+     if( ! is_wp_error( $lista_id ) ) {
+                     update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
     //                 update_field( 'duracionlista', $_REQUEST['duracionlista'], $lista_id );
     //                 update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
     //                 update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
                      
-    //                 };
+                    };
 //     if ( $lista_id  ) {
 
 //     $to = "$correoinstitucional,$memberemail";
