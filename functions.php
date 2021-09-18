@@ -709,11 +709,10 @@ function prefix_admin_add_lista() {
      $cabeceras= array('Content-Type: text/html; charset=UTF-8');
      $message = "<h4>Hola Colectivo23,</h4> \r\n\r\n";
      $message.= "<p>Te confirmamos que hemos recibido tu solicitud de creación de una nueva emisión de certificados con el siguiente detalle:</p>  \r\n";
-//     $message.= "<ul>
-//  	<li><strong>Nombre del curso publicado en el certificado:</strong> <em>'$namecurso'</em></li>
-//  	<li><strong>Nombre de la lista:</strong> <em>'$namelista'</em></li>
-//  	<li><strong>Fecha emisión a publicarse en el certificado:</strong> <em>'$fechalista'</em></li>
-//  	<li><strong>Correo en copia para el envío de certificados:</strong> <a  target="_blank" rel="noopener"><em>'$memberemail'</em></a></li>
+     $message.= "<ul><li><strong>Nombre del curso publicado en el certificado:</strong> <em>$namecurso</em></li>
+  	<li><strong>Nombre de la lista:</strong> <em>$namelista</em></li>
+  	<li><strong>Fecha emisión a publicarse en el certificado:</strong> <em>$fechalista</em></li>
+  	<li><strong>Correo en copia para el envío de certificados:</strong> <a  target="_blank" rel="noopener"><em>$memberemail</em></a></li>
 //  	<li><strong>Lista de beneficiarios:</strong> <a href='"$uploadlista"' target="_blank" rel="noopener"><em>enlace aquí</em></a></li>
 // </ul> \r\rn";
 //     $message.= "Gracias por tu solicitud, esta es una copia auto-generada para tu conocimiento, no es necesario que respondas a la misma. \r\n";
