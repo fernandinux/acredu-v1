@@ -671,7 +671,7 @@ function prefix_admin_add_lista() {
     // $namecurso  = sanitize_text_field( $_REQUEST['curso'] );
     // $duracionlista = sanitize_text_field( $_REQUEST['duracionlista'] );
     $idcat = $_REQUEST['idcat'];
-    // $fechalista = $_REQUEST['fechalista'];
+    $fechalista = $_REQUEST['fechalista'];
     // $uploadlista = $_REQUEST['uploadlista'];
     // $correoinstitucional = $_REQUEST['correoinstitucional'];
     // $memberemail = $_REQUEST['memberemail'];
@@ -688,7 +688,7 @@ function prefix_admin_add_lista() {
                    
                     ) );
      if( ! is_wp_error( $lista_id ) ) {
-                     update_field( 'fechalista', $_REQUEST['fechalista'], $lista_id );
+                     update_field( 'fechalista', $fechalista, $lista_id );
     //                 update_field( 'duracionlista', $_REQUEST['duracionlista'], $lista_id );
     //                 update_field( 'namecurso', $_REQUEST['curso'], $lista_id );
     //                 update_field( 'nameempresa', $_REQUEST['empresa'], $lista_id );
