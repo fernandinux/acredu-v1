@@ -668,7 +668,7 @@ function prefix_admin_add_lista() {
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
     $namelista  = sanitize_text_field( $_REQUEST['namelista'] );
     $nameempresa  = sanitize_text_field( $_REQUEST['empresa'] );
-    $namecurso  = sanitize_text_field( $_REQUEST['curso'] );
+    $namecurso  = str_replace("+", " ", $_REQUEST['curso'])  ;
     $duracionlista = sanitize_text_field( $_REQUEST['duracionlista'] );
     $idcat = $_REQUEST['idcat'];
     $fechalista = $_REQUEST['fechalista'];
