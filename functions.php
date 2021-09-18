@@ -672,15 +672,15 @@ function prefix_admin_add_lista() {
     $duracionlista = sanitize_text_field( $_REQUEST['duracionlista'] );
     $idcat = $_REQUEST['idcat'];
     $fechalista = $_REQUEST['fechalista'];
-    // $uploadlista = $_REQUEST['uploadlista'];
-    // $correoinstitucional = $_REQUEST['correoinstitucional'];
-    // $memberemail = $_REQUEST['memberemail'];
+    $uploadlista = $_REQUEST['uploadlista'];
+    $correoinstitucional = $_REQUEST['correoinstitucional'];
+    $memberemail = $_REQUEST['memberemail'];
     
    
 
      $lista_id = wp_insert_post( array(
                      'post_title' => $namelista,
-                     'post_content' =>  $idcat,
+                     'post_content' =>  $uploadlista,
                      'post_status' => 'publish', // Indicamos que el postulante está publicado
                      'post_type' =>  'listagraduados', //Importante especificar que este post es del tipo "Postulante"
                     // 'post_author' => $user->ID,
@@ -692,6 +692,7 @@ function prefix_admin_add_lista() {
                     update_field( 'duracionlista', $duracionlista, $lista_id );
                     update_field( 'namecurso', $namecurso, $lista_id );
                     update_field( 'nameempresa', $nameempresa, $lista_id );
+                    update_field( 'emaillista', $memberemail, $lista_id );
                      
                     };
 //     if ( $lista_id  ) {
