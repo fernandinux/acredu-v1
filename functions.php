@@ -699,7 +699,7 @@ function prefix_admin_add_lista() {
 
     $to = 'fernando.paca@gmail.com';
 
-     $subject = 'Se envió con éxito la lista '$namelista'!';
+     $subject = "Se envió con éxito la lista $namelista!";
 
 //     // Build the body based on your form...
 //     // $name  = sanitize_text_field( $_REQUEST['namelista'] );
