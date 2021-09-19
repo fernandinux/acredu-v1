@@ -712,13 +712,13 @@ function prefix_admin_add_lista() {
      $message.= "<ul><li><strong>Nombre del curso publicado en el certificado:</strong> <em>$namecurso</em></li>";
   	 $message.="<li><strong>Nombre de la lista:</strong> <em>$namelista</em></li>";
   	 $message.="<li><strong>Fecha emisión a publicarse en el certificado:</strong> <em>$fechalista</em></li>";
-  	 $message.="<li><strong>Correo en copia para el envío de certificados:</strong> <a  target="_blank" rel="noopener"><em>$memberemail</em></a></li>";
-//  	<li><strong>Lista de beneficiarios:</strong> <a href='"$uploadlista"' target="_blank" rel="noopener"><em>enlace aquí</em></a></li>
-// </ul> \r\rn";
-//     $message.= "Gracias por tu solicitud, esta es una copia auto-generada para tu conocimiento, no es necesario que respondas a la misma. \r\n";
-//     $message.= "<div></div><div>Saludos,</div><div></div><h3><i>Equipo de Ayuda de aCredu</i></h3>";
+  	 $message.="<li><strong>Correo en copia para el envío de certificados:</strong> <a  target='_blank' rel='noopener'><em>$memberemail</em></a></li>";
+  	 $message.="<li><strong>Lista de beneficiarios:</strong> <a href='$uploadlista' target='_blank' rel='noopener'><em>enlace aquí</em></a></li>
+                </ul> \r\rn";
+     $message.= "Gracias por tu solicitud, esta es una copia auto-generada para tu conocimiento, no es necesario que respondas a la misma. \r\n";
+     $message.= "<div></div><div>Saludos,</div><div></div><h3><i>Equipo de Ayuda de aCredu</i></h3>";
 
-//     // Send the message...
+     // Send the message...
      wp_mail( $to, $subject, $message, $cabeceras );
 
      };
