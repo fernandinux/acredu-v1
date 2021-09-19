@@ -107,9 +107,7 @@
         <!-- card -->
 
         <?php query_posts(array('post_type' => $posType ,'cat'=>$idcategory,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
-                <?php if(have_posts()) : while(have_posts()) : the_post();
-                $idcat= get_query_var('cat');
-                $urlparmetros=add_query_arg( array('idcat' => $idcat,'empresa' => $nameempresa,), the_permalink() );
+                <?php if(have_posts()) : while(have_posts()) : the_post();       
                 ?>
                     
         <div class="mx-3 my-5" >
@@ -121,8 +119,10 @@
                             <div style="height:220px">
                                 
                                 <p style="font-size:10px">Código:</p>
-                                
-                                <a href="<?php $urlparmetros; ?>">
+                                <?php 
+                                $idcat= get_query_var('cat');
+                                ?>
+                                <a href="<?php add_query_arg( array('idcat' => $idcat,'empresa' => $nameempresa,), the_permalink() ); ?>">
                                 <p class="card-title"><?php the_title(); ?></p> 
                                 </a>                               
                                 <p style="font-size:10px">Curso:</p> 
