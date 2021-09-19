@@ -119,8 +119,8 @@
                             <div style="height:220px">
                                 
                                 <p style="font-size:10px">Código:</p>
-                                
-                                <a href="<?php add_query_arg( array('idcat' => '74','empresa' => 'fer'), get_permalink() ); ?>">
+                                <?php $urlpost=get_permalink(); ?>
+                                <a href="<?php $urlpost ?>">
                                 <p class="card-title"><?php the_title(); ?></p> 
                                 </a>                               
                                 <p style="font-size:10px">Curso:</p> 
