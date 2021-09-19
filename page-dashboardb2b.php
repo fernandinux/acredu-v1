@@ -116,8 +116,12 @@
                             </a>   
                             <div class="card-body" style="height:300px">
                             <div style="height:220px">
+                                <a href="<?php the_permalink(); ?>">
                                 <p style="font-size:10px">Código:</p>
-                                <p class="card-title"><?php the_title(); ?></p>                                
+                                </a>
+                                <a href="<?php the_permalink(); ?>">
+                                <p class="card-title"><?php the_title(); ?></p> 
+                                </a>                               
                                 <p style="font-size:10px">Curso:</p>    
                                 <p class="card-title"><?php the_field('nombrecurso'); ?></p>
                             </div>
