@@ -644,6 +644,7 @@ function add_custom_query_var( $vars ){
   $vars[] = "idcat";
   $vars[] = "empresa";
   $vars[] = "curso";
+  $vars[] = "lista";
   return $vars;
 }
 add_filter( 'query_vars', 'add_custom_query_var' );
@@ -725,7 +726,7 @@ function prefix_admin_add_lista() {
 
      };
 
-    redirect ('https://acredu.app/recibimos-tu-lista/');
+    redirect ("https://acredu.app/recibimos-tu-lista/");
 }
 
 
