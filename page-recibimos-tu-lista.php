@@ -16,6 +16,9 @@ get_header();
 ?>
 <?php
 	get_template_part( 'template-parts/content', 'encabezado' );
+	$listaname = get_query_var( 'idcat' );
+    $nameempresa = get_query_var( 'empresa' );
+    $namecurso = get_query_var( 'curso' );
 	?>
 	<div style="max-width:300px; margin:30px auto 10px auto">
 		<h4 style="text-align: center;"><strong>Recibimos la nueva lista del curso, muy pronto nuestro equipo lo procesará.</strong></h4>

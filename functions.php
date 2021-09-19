@@ -664,6 +664,9 @@ add_action( 'admin_post_add_lista', 'prefix_admin_add_lista' );
  
 function prefix_admin_add_lista() {
     //  $user = wp_get_current_user();
+    $memberID = get_current_user_id();
+    $memberInfo = get_userdata($memberID);
+    $memberFirstName = $memberInfo->first_name;
     //  $arg = array( 'description' => "categoria de lista", 'parent' => 0 );
     //  $cat_ID = wp_insert_term($_REQUEST['name'], "category", $arg);
     $namelista  = sanitize_text_field( $_REQUEST['namelista'] );
@@ -707,14 +710,13 @@ function prefix_admin_add_lista() {
 //     // $email = sanitize_email( $_REQUEST['emaillista'] );
 //     // $body  = sanitize_textarea( $_REQUEST['curso'] );
      $cabeceras= array('Content-Type: text/html; charset=UTF-8');
-     $message = "<h4>Hola Colectivo23,</h4> \r\n\r\n";
+     $message = "<h4>Hola $memberFirstName,</h4> \r\n\r\n";
      $message.= "<p>Te confirmamos que hemos recibido tu solicitud de creación de una nueva emisión de certificados con el siguiente detalle:</p>  \r\n";
      $message.= "<ul><li><strong>Nombre del curso publicado en el certificado:</strong> <em>$namecurso</em></li>";
   	 $message.="<li><strong>Nombre de la lista:</strong> <em>$namelista</em></li>";
   	 $message.="<li><strong>Fecha emisión a publicarse en el certificado:</strong> <em>$fechalista</em></li>";
   	 $message.="<li><strong>Correo en copia para el envío de certificados:</strong> <a  target='_blank' rel='noopener'><em>$memberemail</em></a></li>";
-  	 $message.="<li><strong>Lista de beneficiarios:</strong> <a href='$uploadlista' target='_blank' rel='noopener'><em>enlace aquí</em></a></li>
-                </ul> \r\rn";
+  	 $message.="<li><strong>Lista de beneficiarios:</strong> <a href='$uploadlista' target='_blank' rel='noopener'><em>enlace aquí</em></a></li></ul> \r\r\n";
      $message.= "Gracias por tu solicitud, esta es una copia auto-generada para tu conocimiento, no es necesario que respondas a la misma. \r\n";
      $message.= "<div></div><div>Saludos,</div><div></div><h3><i>Equipo de Ayuda de aCredu</i></h3>";
 
@@ -723,7 +725,7 @@ function prefix_admin_add_lista() {
 
      };
 
-    redirect ('https://acredu.app/dashboard/');
+    redirect ('https://acredu.app/recibimos-tu-lista/');
 }
 
 
