@@ -31,6 +31,8 @@ $memberemail = $memberInfo->user_email;
 		<p>&nbsp;</p>
 		<?php if ( $idcat ): ?>
 			<p style="text-align: center;"><a href="https://acredu.app/dashboardb2b/?idcat=<?php echo $idcat ?>&empresa=<?php echo $nameempresa ?>">Regresar a cursos de <?php echo $nameempresa ?></a></p>
+			</br>
+			<p style="text-align: center;"><a href="https://acredu.app/dashboardclient">Regresar a Clientes Empresas</a></p>
 		<?php else:?>
 		<p style="text-align: center;"><a href="https://acredu.app/predashboard/">Regresar a cursos de Colectivo23</a></p>
 		<?php endif; ?>
