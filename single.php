@@ -58,7 +58,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php query_posts(array('post_type' => 'lista' ,'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+            <?php query_posts(array('post_type' => 'listagraduados' ,'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                 <tr>
                     <th scope="row">1</th>
@@ -73,6 +73,7 @@
                          <!-- no posts found -->
                             <tr>
                                 <th scope="row">0</th>
+                                <td>Sin datos</td>
                                 <td>Sin datos</td>
                                 <td>Sin datos</td>
                                 <td>Sin datos</td>
