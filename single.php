@@ -69,7 +69,7 @@
                     <td><?php the_title(); ?></td>
                     <td><?php the_field('fechalista'); ?></td>
                     <td><?php the_field('cantcertemitidos'); ?></td>
-                    <td><?php echo $estado; ?></td>
+                    <td><?php echo esc_html( $estado->name ); ?></td>
                     <td><?php the_field('fechaenvio'); ?></td>
                     <td><?php the_content(); ?></td>
                 </tr>
