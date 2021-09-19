@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <?php 
-    $idcategory = get_query_var( 'idcat' );
+    global $idcategory = get_query_var( 'idcat' );
     $nameempresa = get_query_var( 'empresa' );
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
@@ -120,7 +120,7 @@
                                 
                                 <p style="font-size:10px">Código:</p>
                                 
-                                <a href="<?php the_permalink(); ?>?">
+                                <a href="<?php the_permalink(); ?>?idcat=<?php $idcategory ?>">
                                 <p class="card-title"><?php the_title(); ?></p> 
                                 </a>                               
                                 <p style="font-size:10px">Curso:</p> 
