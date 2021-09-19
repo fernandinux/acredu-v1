@@ -64,10 +64,13 @@
             </thead>
             <tbody>
             <?php query_posts(array('post_type' => 'listagraduados' ,'cat'=>$idcategory,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
-                <?php $numitem=0;?>
+                <?php $numitem=0;
+                    $namecurso= get_field('nombrecurso');
+                ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                 <?php $numitem=$numitem+1;
-               
+                      $namecursolista = get_field('namecurso');
+                    if ($namecurso == $namecursolista):
                 ?>
                 <tr>
                     <th scope="row"><?php echo $numitem ?></th>
@@ -78,7 +81,11 @@
                     <td><?php the_field('fechaenvio'); ?></td>
                     <td><?php the_content(); ?></td>
                 </tr>
-                <?php endwhile; ?>
+
+                <?php 
+                endif;
+
+                endwhile; ?>
                         <?php else:?>
                          <!-- no posts found -->
                             <tr>
