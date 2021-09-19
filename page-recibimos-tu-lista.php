@@ -30,16 +30,16 @@ $memberemail = $memberInfo->user_email;
 		<p style="text-align: center;"><strong>Gracias por usar aCredu.</strong></p>
 		<p>&nbsp;</p>
 		<?php 
-		if ( $idcat ){?>
+		//if ( $idcat ){ ?>
 			<p style="text-align: center;"><a href="https://acredu.app/dashboardb2b/?idcat=<?php echo $idcat ?>&empresa=<?php echo $nameempresa ?>">Regresar a cursos de <?php echo $nameempresa ?></a></p>
 		<p>&nbsp;</p>
-		<?php};
-		else{
+		<?php //};
+		// else{
 		?>
 		<p style="text-align: center;"><a href="https://acredu.app/predashboard/">Regresar a cursos de Colectivo23</a></p>
 		<p>&nbsp;</p>
-		<?php};
-		endif?>
+		<?php // };
+		// endif ?>
 	</div>
 	
 <div class="verifooter">
