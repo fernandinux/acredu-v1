@@ -58,6 +58,8 @@
                 </tr>
             </thead>
             <tbody>
+            <?php query_posts(array('post_type' => 'lista' ,'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+                <?php if(have_posts()) : while(have_posts()) : the_post();?>
                 <tr>
                     <th scope="row">1</th>
                     <td>Nueva lista</td>
@@ -66,6 +68,18 @@
                     <td>excel</td>
                     <td>https://www.google.com</td>
                 </tr>
+                <?php endwhile; ?>
+                        <?php else:?>
+                         <!-- no posts found -->
+                            <tr>
+                                <th scope="row">0</th>
+                                <td>Sin datos</td>
+                                <td>Sin datos</td>
+                                <td>Sin datos</td>
+                                <td>Sin datos</td>
+                                <td>Sin datos</td>
+                            </tr>
+                       <?php endif; wp_reset_query(); ?>
                 <tr>
                     <th scope="row">2</th>
                     <td>Adipisicing</td>
