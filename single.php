@@ -59,9 +59,11 @@
             </thead>
             <tbody>
             <?php query_posts(array('post_type' => 'listagraduados' ,'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+                <?php $numitem=0;?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
+                <?php $numitem=$numitem+1;?>
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row"><?php echo $numitem ?></th>
                     <td>Nueva lista</td>
                     <td>24/03/2021</td>
                     <td>emitido</td>
