@@ -713,6 +713,7 @@ function prefix_admin_add_lista() {
      $cabeceras= array('Content-Type: text/html; charset=UTF-8');
      $message = "<h4>Hola $memberFirstName,</h4> \r\n\r\n";
      $message.= "<p>Te confirmamos que hemos recibido tu solicitud de creación de una nueva emisión de certificados con el siguiente detalle:</p>  \r\n";
+     $message.= "<ul><li><strong>Nombre de la empresa:</strong> <em>$nameempresa</em></li>";
      $message.= "<ul><li><strong>Nombre del curso publicado en el certificado:</strong> <em>$namecurso</em></li>";
   	 $message.="<li><strong>Nombre de la lista:</strong> <em>$namelista</em></li>";
   	 $message.="<li><strong>Fecha emisión a publicarse en el certificado:</strong> <em>$fechalista</em></li>";
