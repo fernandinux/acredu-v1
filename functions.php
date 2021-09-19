@@ -726,7 +726,7 @@ function prefix_admin_add_lista() {
 
      };
 
-    redirect ("https://acredu.app/recibimos-tu-lista/");
+    redirect ("https://acredu.app/recibimos-tu-lista/?lista=$namelista&idcat=$idcat&empresa=$nameempresa&curso=$namecurso");
 }
 
 
