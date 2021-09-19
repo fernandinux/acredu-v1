@@ -119,10 +119,8 @@
                             <div style="height:220px">
                                 
                                 <p style="font-size:10px">Código:</p>
-                                <?php 
-                                $idcatt= get_query_var('cat');
-                                ?>
-                                <a href="<?php add_query_arg( array('idcat' => $idcatt,'empresa' => $nameempresa,), the_permalink() ); ?>">
+                                
+                                <a href="<?php add_query_arg( array('idcat' => $idcategory,'empresa' => the_field('nombrecurso');,), the_permalink(); ); ?>">
                                 <p class="card-title"><?php the_title(); ?></p> 
                                 </a>                               
                                 <p style="font-size:10px">Curso:</p> 
