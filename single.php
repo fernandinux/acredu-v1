@@ -63,18 +63,18 @@
                 </tr>
             </thead>
             <tbody>
-            <?php query_posts(array('post_type' => 'listagraduados' ,'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+            <?php query_posts(array('post_type' => 'listagraduados' ,'cat'=>$idcategory,'orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php $numitem=0;?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                 <?php $numitem=$numitem+1;
-                $estado = get_the_terms( get_the_ID(), 'atendido' );
+               
                 ?>
                 <tr>
                     <th scope="row"><?php echo $numitem ?></th>
                     <td><?php the_title(); ?></td>
                     <td><?php the_field('fechalista'); ?></td>
                     <td><?php the_field('cantcertemitidos'); ?></td>
-                    <td><?php echo $estado->slug ; ?></td>
+                    <td><?php the_field('estado'); ?></td>
                     <td><?php the_field('fechaenvio'); ?></td>
                     <td><?php the_content(); ?></td>
                 </tr>
