@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <?php 
-    global $idcategory = get_query_var( 'idcat' );
+    $idcategory = get_query_var( 'idcat' );
     $nameempresa = get_query_var( 'empresa' );
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
