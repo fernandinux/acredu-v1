@@ -50,10 +50,10 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nombre de la lista</th>
-                    <th scope="col">fecha publicación</th>
+                    <th scope="col">Fecha fin de curso</th>
                     <th scope="col">Cantidad</th>
                     <th scope="col">Estado</th>
-                    <th scope="col">forma de entrega</th>
+                    <th scope="col">Fecha de envío</th>
                     <th scope="col">Enlace</th>
                 </tr>
             </thead>
@@ -61,14 +61,17 @@
             <?php query_posts(array('post_type' => 'listagraduados' ,'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php $numitem=0;?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
-                <?php $numitem=$numitem+1;?>
+                <?php $numitem=$numitem+1;
+                $estado = get_the_terms( get_the_ID(), 'atendido' );
+                ?>
                 <tr>
                     <th scope="row"><?php echo $numitem ?></th>
-                    <td>Nueva lista</td>
-                    <td>24/03/2021</td>
-                    <td>emitido</td>
-                    <td>excel</td>
-                    <td>https://www.google.com</td>
+                    <td><?php the_title(); ?></td>
+                    <td><?php the_field('fechalista'); ?></td>
+                    <td><?php the_field('cantcertemitidos'); ?></td>
+                    <td><?php echo $estado; ?></td>
+                    <td><?php the_field('fechaenvio'); ?></td>
+                    <td><?php the_content(); ?></td>
                 </tr>
                 <?php endwhile; ?>
                         <?php else:?>
