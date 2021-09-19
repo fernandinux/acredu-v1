@@ -10,7 +10,12 @@
 </nav>
 
 <main class='container-fluid'>
-    <?php if(have_posts()){
+    <?php 
+    $idcategory = get_query_var( 'idcat' );
+    $namecurso = get_query_var( 'curso' );
+    
+    
+    if(have_posts()){
             while(have_posts()){
                 the_post();
                 ?>
