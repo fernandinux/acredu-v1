@@ -678,8 +678,9 @@ function prefix_admin_add_lista() {
     $fechalista = $_REQUEST['fechalista'];
     $uploadlista = $_REQUEST['uploadlista'];
     $correoinstitucional = $_REQUEST['correoinstitucional'];
-    // $memberemail = $_REQUEST['memberemail'];
-    $memberemail = 'ayuda@acredu.app';
+    $memberemail = $_REQUEST['memberemail'];
+    //se usa para hacer pruebas y no le llegue correo al user
+    //$memberemail = 'ayuda@acredu.app'; 
     
    
 
