@@ -51,7 +51,7 @@ $nameempresa = get_query_var( 'empresa' );
 
 			
 			<!-- Empieza la tabla  -->
-            <h2 class="my-2">Listas generadas para este curso:</h2>
+            <h3 class="my-2">Listas generadas para este curso:</h3>
     <div class="row m-5">
         <div class="table-responsive">
             <table class="table table-hover table-sm table-light border-success">
@@ -63,7 +63,7 @@ $nameempresa = get_query_var( 'empresa' );
                     <th scope="col">Cantidad</th>
                     <th scope="col">Estado</th>
                     <th scope="col">Fecha de envío</th>
-                    <th scope="col">Enlace</th>
+                    <th scope="col">Enlace con nombres</th>
                 </tr>
             </thead>
             <tbody>
