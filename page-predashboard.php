@@ -1,6 +1,8 @@
 <?php get_header();?>
 
 <?php 
+    $idcategory = get_query_var( 'idcat' );
+    $nameempresa = get_query_var( 'empresa' );
     $memberID = get_current_user_id();
     $memberInfo = get_userdata($memberID);
     $memberLastName = $memberInfo->last_name;
@@ -108,15 +110,17 @@
                     
         <div class="mx-3 my-5" >
             <div class="card" style="width:220px">
-                            <a href="<?php the_permalink(); ?>">
+                            <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
                             <div class="card-body" style="height:300px">
                             <div style="height:180px">
                                 <p style="font-size:10px">Código:</p>
-                                <p class="card-title"><?php the_title(); ?></p>                                
-                                <p style="font-size:10px">Curso:</p>    
-                                <p class="card-title"><?php the_field('nombrecurso'); ?></p>
+                                <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">
+                                <p class="card-title"><?php the_title(); ?></p></a>                                 
+                                <p style="font-size:10px">Curso:</p>
+                                <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">    
+                                <p class="card-title"><?php the_field('nombrecurso'); ?></p></a> 
                             </div>
                             
                                 
