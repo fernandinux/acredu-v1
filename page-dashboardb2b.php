@@ -115,15 +115,15 @@
                             <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
-                            <div class="card-body" style="height:300px">
-                            <div style="height:220px">
+                            <div class="card-body" style="height:200px">
+                            <div style="height:120px">
                                 
-                                <p style="font-size:10px">Código:</p>
+                                <p style="font-size:10px; display: inline;">Código:</p>
                                 
                                 <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">
-                                <p class="card-title"><?php the_title(); ?></p> 
+                                <p class="card-title" style="display: inline;"><?php the_title(); ?></p> 
                                 </a>                               
-                                <p style="font-size:10px">Curso:</p> 
+                                <p style="font-size:10px; margin-bottom: 2px;">Curso:</p> 
                                 <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">   
                                 <p class="card-title"><?php the_field('nombrecurso'); ?></p>
                                 </a>
