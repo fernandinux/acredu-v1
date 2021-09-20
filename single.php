@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
-<?php get_template_part( 'template-parts/content', 'encabezado' );?>
+<?php get_template_part( 'template-parts/content', 'encabezado' );
+$idcategory = get_query_var( 'idcat' );
+$nameempresa = get_query_var( 'empresa' );
+?>
 
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
@@ -11,10 +14,7 @@
 </nav>
 
 <main class='container-fluid'>
-    <?php 
-    $idcategory = get_query_var( 'idcat' );
-    $nameempresa = get_query_var( 'empresa' );
-    
+    <?php       
     
     if(have_posts()){
             while(have_posts()){
