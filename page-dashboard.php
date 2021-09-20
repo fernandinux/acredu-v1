@@ -85,10 +85,10 @@
 
     <div class="row my-5 w-100">
         <div class="col-sm-5  col-md-6  d-flex justify-content-center align-items-center flex-column">
-            <a href="/predashboard" style="width: 100px;">
+            <a href="/predashboard/?idcat=74&empresa=Colectivo23" style="width: 100px;">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/predashboard">
+            <a href="/predashboard/?idcat=74&empresa=Colectivo23">
                 <p>B2C - Clientes Personas</p>
             </a>
         </div>
