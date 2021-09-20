@@ -83,7 +83,7 @@ $nameempresa = get_query_var( 'empresa' );
                     <td><?php the_field('cantcertemitidos'); ?></td>
                     <td><?php the_field('estado'); ?></td>
                     <td><?php the_field('fechaenvio'); ?></td>
-                    <td><a href="<?php get_the_content(); ?>">Link <?php the_title(); ?></a> </td>
+                    <td><a href="<?php echo get_the_content(); ?>">Link <?php the_title(); ?></a> </td>
                 </tr>
 
                 <?php 
