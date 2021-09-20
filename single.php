@@ -4,7 +4,7 @@
 
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/dashboard">Cursos</a></li>
+    <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
     <li class="breadcrumb-item active" aria-current="page">Listas de <?php the_title(); ?></li>
   </ol>
 </nav>
@@ -12,7 +12,7 @@
 <main class='container-fluid'>
     <?php 
     $idcategory = get_query_var( 'idcat' );
-    $namecurso = get_query_var( 'curso' );
+    $nameempresa = get_query_var( 'empresa' );
     
     
     if(have_posts()){
@@ -36,6 +36,8 @@
             <!-- <img src="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg" class="img-fluid shadow d-block animated zoomIn wp-post-image" alt="" loading="lazy" srcset="https://app.acredu.org/wp-content/uploads/2021/03/addCertif.jpg 700w, https://app.acredu.org/wp-content/uploads/2021/03/addCertif-300x222.jpg 300w" sizes="(max-width: 180px) 100vw, 180px" data-pagespeed-url-hash="3451760859" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="180" height="133"> -->
         </div>
         <div class="w-50 p-5">
+        <p style="margin:0px;font-size:12px">Empresa:</p>
+            <strong><?php echo $nameempresa ?> </strong>
         <p style="margin:0px;font-size:12px">Código de Curso:</p>
             <strong><?php the_title(); ?> </strong> 
         <p style="margin:0px;font-size:12px">Nombre del Curso:</p>
@@ -48,6 +50,7 @@
 
 			
 			<!-- Empieza la tabla  -->
+            <h2 class="my-2">Listas generadas para este curso:</h2>
     <div class="row m-5">
         <div class="table-responsive">
             <table class="table table-hover table-sm table-light border-success">
