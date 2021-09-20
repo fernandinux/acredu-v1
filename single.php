@@ -5,8 +5,8 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
-    <li class="breadcrumb-item"><a href="javascript:window.history.back();">Cursos de <?php echo $nameempresa ?></a></li>
-    <li class="breadcrumb-item active" aria-current="page">Listas de <?php the_field('nombrecurso'); ?> para <?php echo $nameempresa ?></li>
+    <li class="breadcrumb-item"><a href="javascript:window.history.back();">Cursos de <?php echo $nameempresa; ?></a></li>
+    <li class="breadcrumb-item active" aria-current="page">Listas de <?php the_field('nombrecurso'); ?> para <?php echo $nameempresa; ?></li>
   </ol>
 </nav>
 
@@ -20,7 +20,7 @@
             while(have_posts()){
                 the_post();
                 ?>
-                    <!-- ejemplo que funciona 
+                    <!-- ejemplo que funciona
                     <div class='row'>
                         <div class='col-12 text-center'>   
                         <?php /*the_post_thumbnail( 'large', array( 'class' => 'img-fluid' )); */?> 
@@ -38,7 +38,7 @@
         </div>
         <div class="w-50 p-5">
         <p style="margin:0px;font-size:12px">Empresa:</p>
-            <strong><?php echo $nameempresa ?> </strong>
+            <strong><?php echo $nameempresa; ?> </strong>
         <p style="margin:0px;font-size:12px">Código de Curso:</p>
             <strong><?php the_title(); ?> </strong> 
         <p style="margin:0px;font-size:12px">Nombre del Curso:</p>
