@@ -30,11 +30,11 @@ $memberemail = $memberInfo->user_email;
 		<p style="text-align: center;"><strong>Gracias por usar aCredu.</strong></p>
 		<p>&nbsp;</p>
 		<?php if ( $idcat ): ?>
-			<p style="text-align: center;"><a href="https://acredu.app/dashboardb2b/?idcat=<?php echo $idcat ?>&empresa=<?php echo $nameempresa ?>"><i class="fas fa-angle-double-left"></i> Regresar a cursos de <?php echo $nameempresa ?></a></p>
+			<p style="text-align: center;"><a href="https://acredu.app/dashboardb2b/?idcat=<?php echo $idcat ?>&empresa=<?php echo $nameempresa ?>"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a cursos de <?php echo $nameempresa ?></a></p>
 			</br>
-			<p style="text-align: center;"><a href="https://acredu.app/dashboardclient"><i class="fas fa-angle-double-left"></i> Regresar a Clientes Empresas</a></p>
+			<p style="text-align: center;"><a href="https://acredu.app/dashboardclient"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a Clientes Empresas</a></p>
 		<?php else:?>
-		<p style="text-align: center;"><a href="https://acredu.app/predashboard/"><i class="fas fa-angle-double-left"></i> Regresar a cursos de Colectivo23</a></p>
+		<p style="text-align: center;"><a href="https://acredu.app/predashboard/"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a cursos de Colectivo23</a></p>
 		<?php endif; ?>
 	</div>
 	
