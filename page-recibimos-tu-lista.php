@@ -25,8 +25,8 @@ $memberemail = $memberInfo->user_email;
     $nameempresa = get_query_var( 'empresa' );
     $namecurso = get_query_var( 'curso' );
 	?>
-	<div style="max-width:300px; margin:30px auto 10px auto">
-		<p style="text-align: center;"><strong><?php echo $memberFirstName ?></strong>,recibimos la nueva lista:<strong><?php echo $listaname ?></strong> para la empresa: <strong><?php echo $nameempresa ?></strong> en el curso: <strong><?php echo $namecurso ?></strong>, se envio una copia de esta solicitud al correo: <strong><?php echo $memberemail ?></strong> y muy pronto nuestro equipo lo procesará y te copiará los correos de envío.</p></h4>
+	<div style="max-width:500px; margin:30px auto 10px auto">
+		<p style="text-align: center;"><strong><?php echo $memberFirstName ?>,</br></strong>Recibimos la nueva lista <strong><?php echo $listaname ?></strong> para la empresa <strong><?php echo $nameempresa ?></strong> en el curso <strong><?php echo $namecurso ?></strong></br>Se envió una copia de esta solicitud al correo <strong><?php echo $memberemail ?></strong></br> Muy pronto nuestro equipo lo procesará y te copiará los envios de certificados.</p></h4>
 		<p style="text-align: center;"><strong>Gracias por usar aCredu.</strong></p>
 		<p>&nbsp;</p>
 		<?php if ( $idcat ): ?>
