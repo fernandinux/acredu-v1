@@ -5,7 +5,8 @@
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Listas de <?php the_title(); ?></li>
+    <li class="breadcrumb-item"><a href="javascript:window.history.back();">Cursos de <?php echo $nameempresa ?></a></li>
+    <li class="breadcrumb-item active" aria-current="page">Listas de <?php the_field('nombrecurso'); ?> para <?php echo $nameempresa ?></li>
   </ol>
 </nav>
 
