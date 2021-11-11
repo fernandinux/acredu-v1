@@ -29,7 +29,7 @@
 				
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div class="text-center">
-						<a target="_blank" id="logousach" href="https://info.solucionesdementes.com" class="">
+						<a target="_blank"  href="https://info.solucionesdementes.com" class="">
 							<img alt="Socialab" src="https://acredu.app/wp-content/uploads/2021/11/Logo-Soluciones-dementes.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
@@ -153,7 +153,7 @@
 			
             <div style="margin: 20px auto;">
 				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
-				<a target="_blank" href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=+928481574&text=Hola%20quiero%20mas%20informaci%C3%B3n%20de%20Socialab" style="cursor: pointer;text-decoration: none;">
 						<img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
 				</a>
                 
