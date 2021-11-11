@@ -508,6 +508,53 @@ function cursos_agilewise(){
     );
     register_post_type( 'cursosagilewise', $args );
 }
+function certificate_socialab(){
+
+    $labels = array (
+        'name' => 'SOCIALAB-Certs',
+        'singular_name' => 'SOCIALAB-Cert',
+        'menu_name' => 'SOCIALAB',
+    );
+    $args = array(
+            'label' => 'SOCIALAB-Certs',
+            'descripcion' => 'Certificados de usuarios SOCIALAB',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 23,
+            'menu_icon' => 'dashicons-awards',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'socialab', $args );
+}
+function cursos_socialab(){
+    $labels = array (
+        'name' => 'SOCIALAB-Cursos',
+        'singular_name' => 'SOCIALAB-Curso',
+        'menu_name' => 'SOCIALAB',
+    );
+    $args = array(
+            'label' => 'SOCIALAB-Cursos',
+            'descripcion' => 'Cursos de usuarios SOCIALAB',
+            'labels' => $labels,
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'custom-fields'),
+            'public' => true,
+            'show_in_menu' => true,
+            'menu_position' => 24,
+            'menu_icon' => 'dashicons-category',
+            'can_export' => true,
+            'publicly_queryable' => true,
+            'rewrite' => true,
+            'show_in_rest' => true,
+            'taxonomies'          => array( 'category' ),
+    );
+    register_post_type( 'cursossocialab', $args );
+}
 
 add_action( 'init', 'cursos_proyetech');
 add_action( 'init', 'cursos_miguels');
@@ -524,6 +571,8 @@ add_action( 'init', 'certificate_proyetech');
 add_action( 'init', 'certificate_imce');
 add_action( 'init', 'certificate_giulianahuaman');
 add_action( 'init', 'certificate_claudiapeve');
+add_action( 'init', 'certificate_socialab');
+add_action( 'init', 'cursos_socialab');
 add_action( 'init', 'badge_colectivo23');
 add_action( 'init', 'badge_castudio');
 add_action( 'init', 'badge_proyetech');
