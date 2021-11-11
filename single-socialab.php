@@ -33,7 +33,7 @@
 							<img alt="Socialab" src="https://acredu.app/wp-content/uploads/2021/11/Logo-Soluciones-dementes.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
-					<div>
+					<div class="text-center">
 						<a target="_blank" href="https://info.solucionesdementes.com">https://info.solucionesdementes.com
 						</a>
 	
