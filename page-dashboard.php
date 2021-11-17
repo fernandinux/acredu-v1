@@ -13,6 +13,7 @@
     $wiad = 'WIADXY';
     $claudiapeve = 'CLAUDIAPEVE';
     $agilewise = 'AGILEWISE';
+    $socialab = 'SOCIALAB';
     if ($memberLastName==$colectivo){
          $posType = 'cursoscolectivo';
     //     las variables para cuadno sea colectivo
@@ -41,6 +42,9 @@
                     }
                     if($memberLastName==$agilewise){
                     $posType = 'cursosagilewise';
+                    }
+		if($memberLastName==$agilewise){
+                    $posType = 'cursossocialab';
                     }
      
     $metadataImageProfile= get_user_meta( $memberID, 'pie_upload_21', true );
@@ -92,7 +96,11 @@
                 <p>B2C - Clientes Personas</p>
             </a>
         </div>
-        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
+        <div 
+	     style="<?php if($memberLastName==$agilewise){
+                    echo 'display: none;';
+                    } ?>"
+	     class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardclient" style="width: 100px;">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
