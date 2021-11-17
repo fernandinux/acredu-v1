@@ -113,7 +113,7 @@
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="mx-3 my-5" >
-            <div class="card" style="width:220px">
+            <div class="card" style="width:320px">
                             <a href="<?php the_permalink(); ?>?idcat=<?php echo $idcategory ?>&empresa=<?php echo $nameempresa ?>">
                             <?php the_post_thumbnail('medium', array( 'class' => 'card-img-top h-auto' )); ?>                                                          
                             </a>   
