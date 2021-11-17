@@ -98,7 +98,7 @@
         </div>
         <div 
 	     style="<?php if($memberLastName==$agilewise){
-                    echo 'display: none;';
+                    echo "display: none;";
                     } ?>"
 	     class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 d-flex justify-content-center align-items-center flex-column">
             <a href="/dashboardclient" style="width: 100px;">
