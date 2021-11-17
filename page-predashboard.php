@@ -129,7 +129,7 @@
                             
                                 
                                
-                                <a href="https://acredu.app/addlist/?empresa=Colectivo23&curso=<?php the_field('nombrecurso'); ?>&idcat=74"
+                                <a href="https://acredu.app/addlist/?empresa=Socialab&curso=<?php the_field('nombrecurso'); ?>&idcat=74"
                                 class="btn" style="background:#11af88; padding:5px;text-transform:capitalize">Agregar Lista</a>
                                 <?php if( !(get_post_status() == 'trash') ) : ?>
 
