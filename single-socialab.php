@@ -37,7 +37,12 @@
 						<a target="_blank" href="https://info.solucionesdementes.com">https://info.solucionesdementes.com
 						</a>
 	
-					</div>	
+					</div>
+					<div class="text-center">
+						<a target="_blank" href="http://2021.solucionesdementes.com">http://2021.solucionesdementes.com
+						</a>
+	
+					</div>
 
 														
 				</div>
@@ -153,7 +158,7 @@
 			
             <div style="margin: 20px auto;">
 				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
-				<a target="_blank" href="https://api.whatsapp.com/send?phone=+928481574&text=Hola%20quiero%20mas%20informaci%C3%B3n%20de%20Socialab" style="cursor: pointer;text-decoration: none;">
+				<a target="_blank" href="https://api.whatsapp.com/send?phone=+573214273007&text=Hola%20quiero%20mas%20informaci%C3%B3n%20de%20Socialab" style="cursor: pointer;text-decoration: none;">
 						<img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
 				</a>
                 
