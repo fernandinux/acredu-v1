@@ -29,6 +29,7 @@
     $idcategory = get_query_var( 'idcat' );
     $nameempresa = get_query_var( 'empresa' );
     $namecurso = get_query_var( 'curso' );
+	echo($idcategory);
     ?>
 
     <nav aria-label="breadcrumb">
