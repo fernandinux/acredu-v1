@@ -109,7 +109,7 @@
         
         <!-- card -->
 
-        <?php query_posts(array('post_type' => $posType , 'cat'=>'74','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
+        <?php query_posts(array('post_type' => $posType , 'cat'=>'90','orderby' => 'DESC', 'posts_per_page' => -1)); ?>
                 <?php if(have_posts()) : while(have_posts()) : the_post();?>
                     
         <div class="mx-3 my-5" >
