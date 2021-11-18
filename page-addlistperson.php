@@ -13,9 +13,15 @@
     $wiad = 'WIADXY';
     $claudiapeve = 'CLAUDIAPEVE';
     $agilewise = 'AGILEWISE';
+    $socialab = 'SOCIALAB';
     if ($memberLastName==$colectivo){
       //correo de la institucion se puede cambiaar para hacer pruebas
          $correoinstitucional = 'hola@colectivo23.com';
+    //     las variables para cuadno sea colectivo
+    }
+    if ($memberLastName==$socialab){
+      //correo de la institucion se puede cambiaar para hacer pruebas
+         $correoinstitucional = 'fernandopaca@gmail.com';
     //     las variables para cuadno sea colectivo
     }
 ?>
@@ -28,7 +34,6 @@
     <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/dashboard">Panel</a></li>
-     <li class="breadcrumb-item"><a href="/dashboardclient">B2B - Clientes Empresa</a></li>  
     <li class="breadcrumb-item"><a href="javascript:window.history.back();">Cursos de <?php echo $nameempresa; ?></a></li>
     <li class="breadcrumb-item active" aria-current="page">Nueva lista</li>
   </ol>
