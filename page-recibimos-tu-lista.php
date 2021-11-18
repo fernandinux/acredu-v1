@@ -34,7 +34,7 @@ $memberemail = $memberInfo->user_email;
 			</br>
 			<p style="text-align: center;"><a href="https://acredu.app/dashboardclient"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a Clientes Empresas</a></p>
 		<?php else:?>
-		<p style="text-align: center;"><a href="https://acredu.app/predashboard/"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a cursos de Colectivo23</a></p>
+		<p style="text-align: center;"><a href="https://acredu.app/predashboard/"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a cursos de <?php echo $nameempresa ?></a></p>
 		<?php endif; ?>
 	</div>
 	
