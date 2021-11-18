@@ -29,7 +29,7 @@ $memberemail = $memberInfo->user_email;
 		<p style="text-align: center;"><strong><?php echo $memberFirstName ?>,</br></strong>Recibimos la nueva lista <strong><?php echo $listaname ?></strong> para la empresa <strong><?php echo $nameempresa ?></strong> en el curso <strong><?php echo $namecurso ?></strong></br>Se envió una copia de esta solicitud al correo <strong><?php echo $memberemail ?></strong></br> Muy pronto nuestro equipo lo procesará y te copiará los envios de certificados.</p></h4>
 		<p style="text-align: center;"><strong>Gracias por usar aCredu.</strong></p>
 		<p>&nbsp;</p>
-		<?php if ( $idcat ): ?>
+		<?php if ( $idcat=="91" ): ?>
 			<p style="text-align: center;"><a href="https://acredu.app/dashboardb2b/?idcat=<?php echo $idcat ?>&empresa=<?php echo $nameempresa ?>"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a cursos de <?php echo $nameempresa ?></a></p>
 			</br>
 			<p style="text-align: center;"><a href="https://acredu.app/dashboardclient"><i class="fas fa-angle-double-left" style="color:#007bff;font-size:medium;"></i> Regresar a Clientes Empresas</a></p>
