@@ -43,7 +43,7 @@
                     if($memberLastName==$agilewise){
                     $posType = 'cursosagilewise';
                     }
-		if($memberLastName==$agilewise){
+		if($memberLastName==$socialab){
                     $posType = 'cursossocialab';
                     }
      
