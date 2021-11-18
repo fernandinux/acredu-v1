@@ -92,7 +92,7 @@
             <a href="/predashboard/?idcat=74&empresa=Colectivo23" style="width: 100px;">
                 <img src="/wp-content/uploads/2021/09/fileicon.png" class="img-fluid">
             </a>
-            <a href="/predashboard/?idcat=74&empresa=Colectivo23">
+            <a href="/predashboard/?idcat=90&empresa=Socialab">
                 <p>B2C - Clientes Personas</p>
             </a>
         </div>
