@@ -30,7 +30,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div class="text-center">
 						<a target="_blank"  href="https://info.solucionesdementes.com" class="">
-							<img alt="Socialab" src="https://acredu.app/wp-content/uploads/2021/11/Logo-Soluciones-dementes.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="Socialab" src="https://acredu.app/wp-content/uploads/2021/12/Logo-Soluciones-dementes.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div class="text-center">
