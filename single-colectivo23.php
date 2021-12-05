@@ -82,25 +82,25 @@
 								<div class="carousel-inner" role="listbox"> 
 									<!--First slide-->
 									<div class="carousel-item active">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio2-scaled.jpg"
+										<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio2-scaled.jpg"
 										alt="First slide">
 									</div>
 									<!--/First slide-->
 									<!--Second slide-->
 									<div class="carousel-item">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio3.png"
+										<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio3.png"
 										alt="Second slide">
 									</div>
 									<!--/Second slide-->
 									<!--Third slide-->
 									<div class="carousel-item">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio1-scaled.jpg"
+										<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio1-scaled.jpg"
 										alt="Third slide">
 									</div>
 									<!--/Third slide-->
 									<!--4 slide-->
 									<div class="carousel-item">
-										<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio4.jpg"
+										<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio4.jpg"
 										alt="Third slide">
 									</div>
 									<!--/4 slide-->
@@ -154,7 +154,7 @@
             <div style="margin: 20px auto;">
 				<h4 class="my-0 text-center mb-4"><b><?php the_field('empresa_emisora'); ?></b></h4>
 				<a target="_blank" href="https://bit.ly/3uJtg0E" style="cursor: pointer;text-decoration: none;">
-						<img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
+						<img src="https://acredu.app/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
 				</a>
                 
             </div>			
