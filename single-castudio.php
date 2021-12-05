@@ -35,7 +35,7 @@
 				<div class="row d-flex justify-content-center">
 					<a id="shareface" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"><i class="fa fa-facebook"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Compartir</span></i></a>
 					<a id="sharelink" target="_blank" onClick="_gaq.push(['_trackEvent', ' bnp', ‘Click', 'databnpshare');" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>/&title=Acredu&summary=<?php the_field('name_event'); ?>"><i class="fa fa-linkedin"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Compartir</span></i></a>
-					<a id="sharepdf" target="_blank" href="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>.pdf"><i class="fa fa-download"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Descargar</span></i></a>
+					<a id="sharepdf" target="_blank" href="https://acredu.app/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php the_field('id'); ?>.pdf"><i class="fa fa-download"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Descargar</span></i></a>
 				</div>
 			
 			<hr style="height:1px;border-width:0;color:black;background-color:gray">
@@ -45,7 +45,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2 text-lg-left text-center">
 					<div>
 						<a target="_blank" id="logousach" href="https://bit.ly/3kyDz3V" class="">
-							<img alt="CAstudio" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="CAstudio" src="https://acredu.app/wp-content/uploads/2021/02/castudio.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
@@ -109,25 +109,25 @@
 							<div class="carousel-inner" role="listbox"> 
 								<!--First slide-->
 								<div class="carousel-item active">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio2-scaled.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio2-scaled.jpg"
 									alt="First slide">
 								</div>
 								<!--/First slide-->
 								<!--Second slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio3.png"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio3.png"
 									alt="Second slide">
 								</div>
 								<!--/Second slide-->
 								<!--Third slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio1-scaled.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio1-scaled.jpg"
 									alt="Third slide">
 								</div>
 								<!--/Third slide-->
 								<!--4 slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/02/castudio4.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/02/castudio4.jpg"
 									alt="Third slide">
 								</div>
 								<!--/4 slide-->
@@ -167,43 +167,43 @@
 							<div class="carousel-inner" role="listbox"> 
 								<!--First slide-->
 								<div class="carousel-item active">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide1.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide1.jpg"
 									alt="First slide">
 								</div>
 								<!--/First slide-->
 								<!--Second slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide2.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide2.jpg"
 									alt="Second slide">
 								</div>
 								<!--/Second slide-->
 								<!--Third slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide3.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide3.jpg"
 									alt="Third slide">
 								</div>
 								<!--/Third slide-->
 								<!--4 slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide4.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide4.jpg"
 									alt="Third slide">
 								</div>
 								<!--/4 slide-->
 								<!--5 slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide5.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide5.jpg"
 									alt="Third slide">
 								</div>
 								<!--/5 slide-->
 								<!--6 slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide6.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide6.jpg"
 									alt="Third slide">
 								</div>
 								<!--/6 slide-->
 								<!--7 slide-->
 								<div class="carousel-item">
-									<img class="d-block w-100" src="https://app.acredu.org/wp-content/uploads/2021/03/slide7.jpg"
+									<img class="d-block w-100" src="https://acredu.app/wp-content/uploads/2021/03/slide7.jpg"
 									alt="Third slide">
 								</div>
 								<!--/7 slide-->
@@ -266,7 +266,7 @@
 			
             <div style="margin: 20px auto;">
             <a href="http://bit.ly/3dPOqVQ" style="cursor: pointer;text-decoration: none;">
-                    <img src="https://app.acredu.org/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
+                    <img src="https://acredu.app/wp-content/uploads/2021/02/BOTON-WHATSAPP-01.png" style="width:13rem;"/>
             </a>
                 
             </div>			
