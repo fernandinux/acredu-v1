@@ -29,17 +29,17 @@
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
               <a target="_blank" href="https://www.facebook.com/coralify">
-			  <img alt="aCredu facebook" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_facebook1.png" class="img-fluid align-middle w-50">
+			  <img alt="aCredu facebook" src="https://acredu.app/wp-content/uploads/2021/01/icon_facebook1.png" class="img-fluid align-middle w-50">
               </a>
             </li>
             <li class="list-inline-item">
               <a target="_blank" href="https://www.youtube.com/channel/UCa23OQNMhf81BZV7_whVfKg">
-			  <img alt="aCredu youtube" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_youtube1.png" class="img-fluid align-middle w-50">
+			  <img alt="aCredu youtube" src="https://acredu.app/wp-content/uploads/2021/01/icon_youtube1.png" class="img-fluid align-middle w-50">
               </a>
             </li>
             <li class="list-inline-item">
               <a target="_blank" href=" https://www.linkedin.com/company/coralify">
-			  <img alt="aCredu linkedin" src="https://app.acredu.org/wp-content/uploads/2021/01/icon_linkedin1.png" class="img-fluid align-middle w-50">
+			  <img alt="aCredu linkedin" src="https://acredu.app/wp-content/uploads/2021/01/icon_linkedin1.png" class="img-fluid align-middle w-50">
               </a>
             </li>
           </ul>
