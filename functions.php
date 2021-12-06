@@ -829,5 +829,14 @@ function disable_emojis() {
    return $urls;
    }
 
+/**
+ * Deregister scripts
+ */
+function deregister_or_dequeue_scripts() {
+    wp_dequeue_script('wc-password-strength-meter');
+}
+
+add_action('wp_print_scripts', 'deregister_or_dequeue_scripts', 20);
+
 ?>
 
