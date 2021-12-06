@@ -24,6 +24,7 @@
             <small>¿Algo salió mal con tu certificado?, escribenos:</small>
             <a id="ayudabnp" target="_blank" href="https://bit.ly/2EIKmrc"><i class="fa fa-whatsapp faw"></i></a></div>			
 		</div>
+		<?php get_template_part( 'template-parts/content', 'certificate' );?>
         
 	</div>
 
