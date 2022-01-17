@@ -50,7 +50,7 @@
 					<i class="fa fa-linkedin"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Compartir</span></i>
 				</a>
 				<a id="sharepdf" target="_blank" 
-					href="https://app.acredu.org/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
+					href="https://app.acredu.org/wp-content/uploads/<?php the_field('creationyear'); ?>/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
 						$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 						echo $stripped; ?>.pdf">
 					<i class="fa fa-download"><span style="font-size:15px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Descargar pdf</span></i>
