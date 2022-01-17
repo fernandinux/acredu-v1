@@ -19,7 +19,7 @@
 	<div class="row">		
 		<div class="col-md-12 pt-5 cloudy-knoxville-gradient">
 
-			<img src="https://3.233.163.243/wp-content/uploads/2021/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
+			<img src="https://3.233.163.243/wp-content/uploads/<?php the_field('creationyear'); ?>/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
 				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 				echo $stripped; ?>-pdf.jpg" 
 			class="img-fluid shadow-lg mx-auto d-block animated zoomIn thumb-of-pdf wp-post-image" 
