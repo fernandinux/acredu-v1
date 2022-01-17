@@ -19,7 +19,7 @@
 	<div class="row">		
 		<div class="col-md-12 pt-5 cloudy-knoxville-gradient">
 
-			<img src="https://3.233.163.243/wp-content/uploads/<?php the_field('creationyear'); ?>/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
+			<img src="https://acredu.app/wp-content/uploads/<?php the_field('creationyear'); ?>/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
 				$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 				echo $stripped; ?>-pdf.jpg" 
 			class="img-fluid shadow-lg mx-auto d-block animated zoomIn thumb-of-pdf wp-post-image" 
@@ -50,7 +50,7 @@
 					<i class="fa fa-linkedin"><span style="font-size:18px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Compartir</span></i>
 				</a>
 				<a id="sharepdf" target="_blank" 
-					href="https://app.acredu.org/wp-content/uploads/<?php the_field('creationyear'); ?>/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
+					href="https://acredu.app/wp-content/uploads/<?php the_field('creationyear'); ?>/<?php the_field('mespublicacion'); ?>/<?php $imageContent = get_the_content();
 						$stripped = strip_tags($imageContent, '<p>'); //quitar etiquetas
 						echo $stripped; ?>.pdf">
 					<i class="fa fa-download"><span style="font-size:15px; margin: 0px 0px 0px 8px;font-family:Roboto; font-weight:bold">Descargar pdf</span></i>
@@ -63,7 +63,7 @@
 				<div class="d-flex flex-column my-auto ml-lg-4 ml-sm-2">
 					<div>
 						<a target="_blank" id="logousach" href="https://bit.ly/3nQtrDD" class="">
-							<img alt="IMCE" src="https://app.acredu.org/wp-content/uploads/2021/01/IMCE-FINAL.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+							<img alt="IMCE" src="https://acredu.app/wp-content/uploads/2021/01/IMCE-FINAL.png" class="w-sm-75 w-25 img-fluid mx-auto" data-pagespeed-url-hash="2790086286" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
 						</a>
 					</div>
 					<div>
